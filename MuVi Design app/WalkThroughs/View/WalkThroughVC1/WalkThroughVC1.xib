@@ -17,6 +17,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WalkThroughVC1" customModule="MuVi_Design_app" customModuleProvider="target">
             <connections>
                 <outlet property="btnNext" destination="A1y-ly-zJo" id="yus-sM-sxA"/>
+                <outlet property="lblMovieExp" destination="Aes-pm-5wZ" id="are-4b-89d"/>
                 <outlet property="pageControl" destination="FT9-NY-LsR" id="BVw-0a-wPk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

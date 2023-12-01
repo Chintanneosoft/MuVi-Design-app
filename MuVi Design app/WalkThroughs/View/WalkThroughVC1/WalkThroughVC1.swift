@@ -11,17 +11,21 @@ class WalkThroughVC1: UIViewController {
     
     @IBOutlet weak var btnNext: UIButton!
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var lblMovieExp: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setUpUI()
+
     }
     
     private func setUpUI(){
         pageControl.currentPage = 1
+        lblMovieExp.setFont(font: Fonts.barlowRegular.rawValue, size: 30)
         
-//        btnNext.applyGradient(colours: [], isHorizontal: <#T##Bool#>)
+        btnNext.setTitleFont(font: Fonts.barlowRegular.rawValue, size: 18)
+        btnNext.applyGradient(colours: [UIColor.red, UIColor.blue], isHorizontal: true)
     }
 
 

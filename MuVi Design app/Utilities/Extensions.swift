@@ -26,6 +26,11 @@ extension UIView {
     }
 }
 
+extension UILabel{
+    func setFont(font: String, size: CGFloat){
+        self.font = UIFont(name: font, size: size)
+    }
+}
 
 extension UIColor {
     convenience init(hex: String) {
@@ -51,6 +56,7 @@ extension UIColor {
 
 
 extension UIButton{
-    
-//    func setFonts()
+    func setTitleFont(font: String, size: CGFloat){
+        self.titleLabel?.setFont(font: font, size: size)
+    }
 }
