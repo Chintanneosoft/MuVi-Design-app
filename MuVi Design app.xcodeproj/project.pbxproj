@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		9293BB3E2B199A5500A85E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB3D2B199A5500A85E86 /* AppDelegate.swift */; };
 		9293BB402B199A5500A85E86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB3F2B199A5500A85E86 /* SceneDelegate.swift */; };
-		9293BB422B199A5500A85E86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB412B199A5500A85E86 /* ViewController.swift */; };
-		9293BB452B199A5500A85E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB432B199A5500A85E86 /* Main.storyboard */; };
 		9293BB472B199A5900A85E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB462B199A5900A85E86 /* Assets.xcassets */; };
 		9293BB4A2B199A5900A85E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB482B199A5900A85E86 /* LaunchScreen.storyboard */; };
+		9293BB542B19AA5100A85E86 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB522B19AA5100A85E86 /* LoginVC.swift */; };
+		9293BB552B19AA5100A85E86 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB532B19AA5100A85E86 /* LoginVC.xib */; };
+		9293BB582B19B23900A85E86 /* Barlow in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB572B19B23800A85E86 /* Barlow */; };
+		9293BB5C2B19BBE900A85E86 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB5B2B19BBE800A85E86 /* Extensions.swift */; };
+		9293BB5E2B19C8DE00A85E86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB5D2B19C8DE00A85E86 /* Constants.swift */; };
+		9293BB652B19EC1800A85E86 /* WalkThroughVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB632B19EC1800A85E86 /* WalkThroughVC.swift */; };
+		9293BB662B19EC1800A85E86 /* WalkThroughVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB642B19EC1800A85E86 /* WalkThroughVC.xib */; };
+		9293BB6F2B19F03600A85E86 /* WalkThroughCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB6D2B19F03600A85E86 /* WalkThroughCell1.swift */; };
+		9293BB702B19F03600A85E86 /* WalkThroughCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB6E2B19F03600A85E86 /* WalkThroughCell1.xib */; };
+		9293BB732B19F05200A85E86 /* WalkThroughCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB712B19F05200A85E86 /* WalkThroughCell2.swift */; };
+		9293BB742B19F05200A85E86 /* WalkThroughCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB722B19F05200A85E86 /* WalkThroughCell2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9293BB3A2B199A5500A85E86 /* MuVi Design app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MuVi Design app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9293BB3D2B199A5500A85E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9293BB3F2B199A5500A85E86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9293BB412B199A5500A85E86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9293BB442B199A5500A85E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9293BB462B199A5900A85E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9293BB492B199A5900A85E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9293BB4B2B199A5900A85E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9293BB522B19AA5100A85E86 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		9293BB532B19AA5100A85E86 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		9293BB572B19B23800A85E86 /* Barlow */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = Barlow; path = "MuVi Design app/Resources/Barlow"; sourceTree = SOURCE_ROOT; };
+		9293BB5B2B19BBE800A85E86 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9293BB5D2B19C8DE00A85E86 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9293BB632B19EC1800A85E86 /* WalkThroughVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughVC.swift; sourceTree = "<group>"; };
+		9293BB642B19EC1800A85E86 /* WalkThroughVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkThroughVC.xib; sourceTree = "<group>"; };
+		9293BB6D2B19F03600A85E86 /* WalkThroughCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughCell1.swift; sourceTree = "<group>"; };
+		9293BB6E2B19F03600A85E86 /* WalkThroughCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkThroughCell1.xib; sourceTree = "<group>"; };
+		9293BB712B19F05200A85E86 /* WalkThroughCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughCell2.swift; sourceTree = "<group>"; };
+		9293BB722B19F05200A85E86 /* WalkThroughCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkThroughCell2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,112 @@
 		9293BB3C2B199A5500A85E86 /* MuVi Design app */ = {
 			isa = PBXGroup;
 			children = (
-				9293BB3D2B199A5500A85E86 /* AppDelegate.swift */,
-				9293BB3F2B199A5500A85E86 /* SceneDelegate.swift */,
-				9293BB412B199A5500A85E86 /* ViewController.swift */,
-				9293BB432B199A5500A85E86 /* Main.storyboard */,
-				9293BB462B199A5900A85E86 /* Assets.xcassets */,
+				9293BB672B19EE9800A85E86 /* Models */,
+				9293BB622B19EB9E00A85E86 /* WalkThrough */,
+				9293BB5A2B19BBC500A85E86 /* Utilities */,
+				9293BB592B19B43400A85E86 /* Resources */,
+				9293BB512B199C7600A85E86 /* Application */,
+				9293BB562B19AA6200A85E86 /* Login */,
 				9293BB482B199A5900A85E86 /* LaunchScreen.storyboard */,
 				9293BB4B2B199A5900A85E86 /* Info.plist */,
 			);
 			path = "MuVi Design app";
+			sourceTree = "<group>";
+		};
+		9293BB512B199C7600A85E86 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9293BB3D2B199A5500A85E86 /* AppDelegate.swift */,
+				9293BB3F2B199A5500A85E86 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9293BB562B19AA6200A85E86 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9293BB692B19EEB000A85E86 /* View */,
+				9293BB682B19EEA500A85E86 /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9293BB592B19B43400A85E86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9293BB462B199A5900A85E86 /* Assets.xcassets */,
+				9293BB572B19B23800A85E86 /* Barlow */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9293BB5A2B19BBC500A85E86 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9293BB5B2B19BBE800A85E86 /* Extensions.swift */,
+				9293BB5D2B19C8DE00A85E86 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9293BB622B19EB9E00A85E86 /* WalkThrough */ = {
+			isa = PBXGroup;
+			children = (
+				9293BB6B2B19EECC00A85E86 /* View */,
+				9293BB6A2B19EEC600A85E86 /* ViewModel */,
+			);
+			path = WalkThrough;
+			sourceTree = "<group>";
+		};
+		9293BB672B19EE9800A85E86 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9293BB682B19EEA500A85E86 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9293BB692B19EEB000A85E86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9293BB522B19AA5100A85E86 /* LoginVC.swift */,
+				9293BB532B19AA5100A85E86 /* LoginVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9293BB6A2B19EEC600A85E86 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9293BB6B2B19EECC00A85E86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9293BB632B19EC1800A85E86 /* WalkThroughVC.swift */,
+				9293BB642B19EC1800A85E86 /* WalkThroughVC.xib */,
+				9293BB6C2B19EFF600A85E86 /* cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9293BB6C2B19EFF600A85E86 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				9293BB6D2B19F03600A85E86 /* WalkThroughCell1.swift */,
+				9293BB6E2B19F03600A85E86 /* WalkThroughCell1.xib */,
+				9293BB712B19F05200A85E86 /* WalkThroughCell2.swift */,
+				9293BB722B19F05200A85E86 /* WalkThroughCell2.xib */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +241,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9293BB4A2B199A5900A85E86 /* LaunchScreen.storyboard in Resources */,
+				9293BB582B19B23900A85E86 /* Barlow in Resources */,
+				9293BB742B19F05200A85E86 /* WalkThroughCell2.xib in Resources */,
+				9293BB702B19F03600A85E86 /* WalkThroughCell1.xib in Resources */,
 				9293BB472B199A5900A85E86 /* Assets.xcassets in Resources */,
-				9293BB452B199A5500A85E86 /* Main.storyboard in Resources */,
+				9293BB552B19AA5100A85E86 /* LoginVC.xib in Resources */,
+				9293BB662B19EC1800A85E86 /* WalkThroughVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +257,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9293BB422B199A5500A85E86 /* ViewController.swift in Sources */,
+				9293BB6F2B19F03600A85E86 /* WalkThroughCell1.swift in Sources */,
+				9293BB5E2B19C8DE00A85E86 /* Constants.swift in Sources */,
 				9293BB3E2B199A5500A85E86 /* AppDelegate.swift in Sources */,
+				9293BB732B19F05200A85E86 /* WalkThroughCell2.swift in Sources */,
 				9293BB402B199A5500A85E86 /* SceneDelegate.swift in Sources */,
+				9293BB542B19AA5100A85E86 /* LoginVC.swift in Sources */,
+				9293BB652B19EC1800A85E86 /* WalkThroughVC.swift in Sources */,
+				9293BB5C2B19BBE900A85E86 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9293BB432B199A5500A85E86 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9293BB442B199A5500A85E86 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9293BB482B199A5900A85E86 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +408,6 @@
 				INFOPLIST_FILE = "MuVi Design app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +435,6 @@
 				INFOPLIST_FILE = "MuVi Design app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
