@@ -15,10 +15,9 @@ enum Constants:String{
 
 enum VCNames:String{
     case LoginVC = "LoginVC"
-    case WalkThrough = "WalkThrough"
+    case WalkThroughVC1 = "WalkThroughVC1"
+    case WalkThroughVC2 = "WalkThroughVC2"
 }
 
-enum CellNames:String{
-    case WalkThroughCell1 =  "WalkThroughCell1"
-    case WalkThroughCell2 =  "WalkThroughCell2"
-}
+//enum CellNames:String{
+//}

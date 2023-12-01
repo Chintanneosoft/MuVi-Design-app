@@ -48,3 +48,9 @@ extension UIColor {
         )
     }
 }
+
+
+extension UIButton{
+    
+//    func setFonts()
+}
