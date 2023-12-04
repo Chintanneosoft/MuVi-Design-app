@@ -28,6 +28,11 @@
 		928AE1842B1DC5BD00B517F5 /* WalkThroughCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AE1822B1DC5BD00B517F5 /* WalkThroughCell.swift */; };
 		928AE1852B1DC5BD00B517F5 /* WalkThroughCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1832B1DC5BD00B517F5 /* WalkThroughCell.xib */; };
 		928AE1872B1DED9400B517F5 /* WalkThroughVC + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AE1862B1DED9400B517F5 /* WalkThroughVC + CollectionView.swift */; };
+		928AE18A2B1DF5A600B517F5 /* PreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AE1882B1DF5A600B517F5 /* PreferencesVC.swift */; };
+		928AE18B2B1DF5A600B517F5 /* PreferencesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1892B1DF5A600B517F5 /* PreferencesVC.xib */; };
+		928AE18E2B1DF98F00B517F5 /* PreferencesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AE18C2B1DF98F00B517F5 /* PreferencesCell.swift */; };
+		928AE18F2B1DF98F00B517F5 /* PreferencesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928AE18D2B1DF98F00B517F5 /* PreferencesCell.xib */; };
+		928AE1912B1E00AC00B517F5 /* PreferencesVC + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AE1902B1E00AC00B517F5 /* PreferencesVC + CollectionView.swift */; };
 		9293BB3E2B199A5500A85E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB3D2B199A5500A85E86 /* AppDelegate.swift */; };
 		9293BB402B199A5500A85E86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB3F2B199A5500A85E86 /* SceneDelegate.swift */; };
 		9293BB472B199A5900A85E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB462B199A5900A85E86 /* Assets.xcassets */; };
@@ -62,6 +67,11 @@
 		928AE1822B1DC5BD00B517F5 /* WalkThroughCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughCell.swift; sourceTree = "<group>"; };
 		928AE1832B1DC5BD00B517F5 /* WalkThroughCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkThroughCell.xib; sourceTree = "<group>"; };
 		928AE1862B1DED9400B517F5 /* WalkThroughVC + CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WalkThroughVC + CollectionView.swift"; sourceTree = "<group>"; };
+		928AE1882B1DF5A600B517F5 /* PreferencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesVC.swift; sourceTree = "<group>"; };
+		928AE1892B1DF5A600B517F5 /* PreferencesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesVC.xib; sourceTree = "<group>"; };
+		928AE18C2B1DF98F00B517F5 /* PreferencesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesCell.swift; sourceTree = "<group>"; };
+		928AE18D2B1DF98F00B517F5 /* PreferencesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesCell.xib; sourceTree = "<group>"; };
+		928AE1902B1E00AC00B517F5 /* PreferencesVC + CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreferencesVC + CollectionView.swift"; sourceTree = "<group>"; };
 		9293BB3A2B199A5500A85E86 /* MuVi Design app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MuVi Design app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9293BB3D2B199A5500A85E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9293BB3F2B199A5500A85E86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +125,9 @@
 		928AE17E2B1DC4EC00B517F5 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
+				928AE1882B1DF5A600B517F5 /* PreferencesVC.swift */,
+				928AE1892B1DF5A600B517F5 /* PreferencesVC.xib */,
+				928AE1902B1E00AC00B517F5 /* PreferencesVC + CollectionView.swift */,
 			);
 			path = Preferences;
 			sourceTree = "<group>";
@@ -124,6 +137,8 @@
 			children = (
 				928AE1822B1DC5BD00B517F5 /* WalkThroughCell.swift */,
 				928AE1832B1DC5BD00B517F5 /* WalkThroughCell.xib */,
+				928AE18C2B1DF98F00B517F5 /* PreferencesCell.swift */,
+				928AE18D2B1DF98F00B517F5 /* PreferencesCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -317,6 +332,7 @@
 				928AE1742B1D9EAB00B517F5 /* Barlow-Thin.ttf in Resources */,
 				928AE1792B1D9EAB00B517F5 /* Barlow-ExtraLight.ttf in Resources */,
 				928AE1852B1DC5BD00B517F5 /* WalkThroughCell.xib in Resources */,
+				928AE18B2B1DF5A600B517F5 /* PreferencesVC.xib in Resources */,
 				928AE16C2B1D9EAB00B517F5 /* Barlow-Black.ttf in Resources */,
 				928AE1782B1D9EAB00B517F5 /* Barlow-Regular.ttf in Resources */,
 				928AE16E2B1D9EAB00B517F5 /* Barlow-ThinItalic.ttf in Resources */,
@@ -327,6 +343,7 @@
 				928AE1692B1D9EAB00B517F5 /* Barlow-Italic.ttf in Resources */,
 				928AE1712B1D9EAB00B517F5 /* Barlow-ExtraLightItalic.ttf in Resources */,
 				928AE1682B1D9EAB00B517F5 /* Barlow-BoldItalic.ttf in Resources */,
+				928AE18F2B1DF98F00B517F5 /* PreferencesCell.xib in Resources */,
 				928AE1762B1D9EAB00B517F5 /* Barlow-ExtraBold.ttf in Resources */,
 				928AE16D2B1D9EAB00B517F5 /* Barlow-Light.ttf in Resources */,
 				9293BB472B199A5900A85E86 /* Assets.xcassets in Resources */,
@@ -345,6 +362,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				928AE1912B1E00AC00B517F5 /* PreferencesVC + CollectionView.swift in Sources */,
+				928AE18E2B1DF98F00B517F5 /* PreferencesCell.swift in Sources */,
+				928AE18A2B1DF5A600B517F5 /* PreferencesVC.swift in Sources */,
 				928AE1842B1DC5BD00B517F5 /* WalkThroughCell.swift in Sources */,
 				9293BB5E2B19C8DE00A85E86 /* Constants.swift in Sources */,
 				928AE1872B1DED9400B517F5 /* WalkThroughVC + CollectionView.swift in Sources */,

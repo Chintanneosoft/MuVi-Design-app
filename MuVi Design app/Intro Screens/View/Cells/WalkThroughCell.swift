@@ -6,6 +6,8 @@
 //
 
 import UIKit
+
+//MARK: - ShowNextPageDelegate Protocol
 protocol ShowNextPageDelegate:NSObject{
     func showNextPage(pageNumber: Int)
 }

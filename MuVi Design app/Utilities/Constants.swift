@@ -25,6 +25,7 @@ enum Constants:String{
 enum VCNames:String{
     case LoginVC = "LoginVC"
     case WalkThroughVC = "WalkThroughVC"
+    case PreferencesVC = "PreferencesVC"
 }
 
 enum Fonts: String{
@@ -34,12 +35,14 @@ enum Fonts: String{
 
 enum CellNames:String{
     case WalkThroughCell = "WalkThroughCell"
+    case PreferencesCell = "PreferencesCell"
 }
 
 struct AppColors{
     static var redColor = UIColor(red: 235.0/255.0, green: 48.0/255.0, blue: 91.0/255.0, alpha: 1.0)
     static var purpleColor = UIColor(red: 86.0/255.0, green: 28.0/255.0, blue: 216.0/255.0, alpha: 1.0)
     static var primary = UIColor(red: 57.0/255.0, green: 7.0/255.0, blue: 128.0/255.0, alpha: 1.0)
+    static var secondary = UIColor(red: 221.0/255.0, green: 47.0/255.0, blue: 128.0/255.0, alpha: 1.0)
     static var darkPurpleColor = UIColor(red: 57.0/255.0, green: 25.0/255.0, blue: 101.0/255.0, alpha: 1.0)
 }
 

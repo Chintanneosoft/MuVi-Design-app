@@ -36,7 +36,7 @@ extension WalkThroughVC: ShowNextPageDelegate{
         if pageNumber < walkThroughData.count - 1{
             walkThroughCollectionView.scrollToItem(at: IndexPath(item: pageNumber + 1, section: 0), at: .centeredHorizontally, animated: true)
         } else {
-            let nextVC = LoginVC(nibName: VCNames.LoginVC.rawValue, bundle: nil)
+            let nextVC = PreferencesVC(nibName: VCNames.PreferencesVC.rawValue, bundle: nil)
             navigationController?.pushViewController(nextVC, animated: true)
         }
     }
