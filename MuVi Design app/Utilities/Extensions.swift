@@ -9,19 +9,18 @@ import Foundation
 import UIKit
 
 extension UIView {
-
-    func applyGradient(colours: [UIColor]) {
-        self.applyGradient(colours: colours, isHorizontal: false)
-    }
-
-    func applyGradient(colours: [UIColor], isHorizontal: Bool ) {
+    func applyGradient(colours: [UIColor], angle: Double = 0) {
         let gradient: CAGradientLayer = CAGradientLayer()
         gradient.frame = self.bounds
         gradient.colors = colours.map { $0.cgColor }
-        if isHorizontal{
-            gradient.startPoint = CGPoint(x: 0.0, y: 0.5)
-            gradient.endPoint = CGPoint(x: 1.0, y: 0.5)
-        }
+        gradient.locations = [0.0,1.0]
+        
+        let x: Double = cos(angle + .pi / 2)
+        let y: Double = sin(angle + .pi / 2)
+        
+        gradient.startPoint = CGPoint(x: 0.5 - x/2, y: 0.5 - y/2)
+        gradient.endPoint = CGPoint(x: 0.5 + x/2, y: 0.5 + y/2)
+        
         self.layer.insertSublayer(gradient, at: 0)
     }
 }
@@ -31,29 +30,6 @@ extension UILabel{
         self.font = UIFont(name: font, size: size)
     }
 }
-
-extension UIColor {
-    convenience init(hex: String) {
-        let scanner = Scanner(string: hex)
-        scanner.scanLocation = 0
-
-        var rgbValue: UInt64 = 0
-
-        scanner.scanHexInt64(&rgbValue)
-
-        let r = (rgbValue & 0xff0000) >> 16
-        let g = (rgbValue & 0xff00) >> 8
-        let b = rgbValue & 0xff
-
-        self.init(
-            red: CGFloat(r) / 0xff,
-            green: CGFloat(g) / 0xff,
-            blue: CGFloat(b) / 0xff,
-            alpha: 1
-        )
-    }
-}
-
 
 extension UIButton{
     func setTitleFont(font: String, size: CGFloat){

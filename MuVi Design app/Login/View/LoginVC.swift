@@ -10,7 +10,6 @@ import UIKit
 class LoginVC: UIViewController {
 
     @IBOutlet weak var btnRegister: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,7 +18,7 @@ class LoginVC: UIViewController {
     }
     
     private func setUpUI(){
-        self.view.applyGradient(colours:[UIColor(named: Constants.primary1.rawValue) ?? UIColor(), UIColor(named: Constants.primary2.rawValue) ?? UIColor()])
+        self.view.applyGradient(colours: [AppColors.primary, AppColors.darkPurpleColor])
         
         btnRegister.clipsToBounds = true
         btnRegister.layer.cornerRadius = 20

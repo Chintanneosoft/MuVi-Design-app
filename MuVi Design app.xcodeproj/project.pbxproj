@@ -7,22 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		928AE1682B1D9EAB00B517F5 /* Barlow-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1562B1D9EA800B517F5 /* Barlow-BoldItalic.ttf */; };
+		928AE1692B1D9EAB00B517F5 /* Barlow-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1572B1D9EA800B517F5 /* Barlow-Italic.ttf */; };
+		928AE16A2B1D9EAB00B517F5 /* Barlow-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1582B1D9EA800B517F5 /* Barlow-BlackItalic.ttf */; };
+		928AE16B2B1D9EAB00B517F5 /* Barlow-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1592B1D9EA800B517F5 /* Barlow-SemiBoldItalic.ttf */; };
+		928AE16C2B1D9EAB00B517F5 /* Barlow-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE15A2B1D9EA900B517F5 /* Barlow-Black.ttf */; };
+		928AE16D2B1D9EAB00B517F5 /* Barlow-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE15B2B1D9EA900B517F5 /* Barlow-Light.ttf */; };
+		928AE16E2B1D9EAB00B517F5 /* Barlow-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE15C2B1D9EA900B517F5 /* Barlow-ThinItalic.ttf */; };
+		928AE16F2B1D9EAB00B517F5 /* Barlow-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE15D2B1D9EA900B517F5 /* Barlow-ExtraBoldItalic.ttf */; };
+		928AE1702B1D9EAB00B517F5 /* Barlow-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE15E2B1D9EA900B517F5 /* Barlow-MediumItalic.ttf */; };
+		928AE1712B1D9EAB00B517F5 /* Barlow-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE15F2B1D9EA900B517F5 /* Barlow-ExtraLightItalic.ttf */; };
+		928AE1722B1D9EAB00B517F5 /* Barlow-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1602B1D9EAA00B517F5 /* Barlow-Bold.ttf */; };
+		928AE1732B1D9EAB00B517F5 /* Barlow-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1612B1D9EAA00B517F5 /* Barlow-LightItalic.ttf */; };
+		928AE1742B1D9EAB00B517F5 /* Barlow-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1622B1D9EAA00B517F5 /* Barlow-Thin.ttf */; };
+		928AE1752B1D9EAB00B517F5 /* Barlow-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1632B1D9EAA00B517F5 /* Barlow-SemiBold.ttf */; };
+		928AE1762B1D9EAB00B517F5 /* Barlow-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1642B1D9EAA00B517F5 /* Barlow-ExtraBold.ttf */; };
+		928AE1772B1D9EAB00B517F5 /* Barlow-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1652B1D9EAA00B517F5 /* Barlow-Medium.ttf */; };
+		928AE1782B1D9EAB00B517F5 /* Barlow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1662B1D9EAA00B517F5 /* Barlow-Regular.ttf */; };
+		928AE1792B1D9EAB00B517F5 /* Barlow-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1672B1D9EAB00B517F5 /* Barlow-ExtraLight.ttf */; };
 		9293BB3E2B199A5500A85E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB3D2B199A5500A85E86 /* AppDelegate.swift */; };
 		9293BB402B199A5500A85E86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB3F2B199A5500A85E86 /* SceneDelegate.swift */; };
 		9293BB472B199A5900A85E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB462B199A5900A85E86 /* Assets.xcassets */; };
 		9293BB4A2B199A5900A85E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB482B199A5900A85E86 /* LaunchScreen.storyboard */; };
 		9293BB542B19AA5100A85E86 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB522B19AA5100A85E86 /* LoginVC.swift */; };
 		9293BB552B19AA5100A85E86 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB532B19AA5100A85E86 /* LoginVC.xib */; };
-		9293BB582B19B23900A85E86 /* Barlow in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB572B19B23800A85E86 /* Barlow */; };
 		9293BB5C2B19BBE900A85E86 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB5B2B19BBE800A85E86 /* Extensions.swift */; };
 		9293BB5E2B19C8DE00A85E86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB5D2B19C8DE00A85E86 /* Constants.swift */; };
-		9293BB652B19EC1800A85E86 /* WalkThroughVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB632B19EC1800A85E86 /* WalkThroughVC1.swift */; };
-		9293BB662B19EC1800A85E86 /* WalkThroughVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB642B19EC1800A85E86 /* WalkThroughVC1.xib */; };
-		9293BB792B19FCC400A85E86 /* WalkThroughVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB772B19FCC400A85E86 /* WalkThroughVC2.swift */; };
-		9293BB7A2B19FCC400A85E86 /* WalkThroughVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB782B19FCC400A85E86 /* WalkThroughVC2.xib */; };
+		9293BB652B19EC1800A85E86 /* WalkThroughFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB632B19EC1800A85E86 /* WalkThroughFirstVC.swift */; };
+		9293BB662B19EC1800A85E86 /* WalkThroughFirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB642B19EC1800A85E86 /* WalkThroughFirstVC.xib */; };
+		9293BB792B19FCC400A85E86 /* WalkThroughSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB772B19FCC400A85E86 /* WalkThroughSecondVC.swift */; };
+		9293BB7A2B19FCC400A85E86 /* WalkThroughSecondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB782B19FCC400A85E86 /* WalkThroughSecondVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		928AE1562B1D9EA800B517F5 /* Barlow-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-BoldItalic.ttf"; sourceTree = "<group>"; };
+		928AE1572B1D9EA800B517F5 /* Barlow-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Italic.ttf"; sourceTree = "<group>"; };
+		928AE1582B1D9EA800B517F5 /* Barlow-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-BlackItalic.ttf"; sourceTree = "<group>"; };
+		928AE1592B1D9EA800B517F5 /* Barlow-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		928AE15A2B1D9EA900B517F5 /* Barlow-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Black.ttf"; sourceTree = "<group>"; };
+		928AE15B2B1D9EA900B517F5 /* Barlow-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Light.ttf"; sourceTree = "<group>"; };
+		928AE15C2B1D9EA900B517F5 /* Barlow-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ThinItalic.ttf"; sourceTree = "<group>"; };
+		928AE15D2B1D9EA900B517F5 /* Barlow-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		928AE15E2B1D9EA900B517F5 /* Barlow-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-MediumItalic.ttf"; sourceTree = "<group>"; };
+		928AE15F2B1D9EA900B517F5 /* Barlow-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		928AE1602B1D9EAA00B517F5 /* Barlow-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Bold.ttf"; sourceTree = "<group>"; };
+		928AE1612B1D9EAA00B517F5 /* Barlow-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-LightItalic.ttf"; sourceTree = "<group>"; };
+		928AE1622B1D9EAA00B517F5 /* Barlow-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Thin.ttf"; sourceTree = "<group>"; };
+		928AE1632B1D9EAA00B517F5 /* Barlow-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-SemiBold.ttf"; sourceTree = "<group>"; };
+		928AE1642B1D9EAA00B517F5 /* Barlow-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraBold.ttf"; sourceTree = "<group>"; };
+		928AE1652B1D9EAA00B517F5 /* Barlow-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Medium.ttf"; sourceTree = "<group>"; };
+		928AE1662B1D9EAA00B517F5 /* Barlow-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Regular.ttf"; sourceTree = "<group>"; };
+		928AE1672B1D9EAB00B517F5 /* Barlow-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraLight.ttf"; sourceTree = "<group>"; };
 		9293BB3A2B199A5500A85E86 /* MuVi Design app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MuVi Design app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9293BB3D2B199A5500A85E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9293BB3F2B199A5500A85E86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,13 +66,12 @@
 		9293BB4B2B199A5900A85E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9293BB522B19AA5100A85E86 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9293BB532B19AA5100A85E86 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
-		9293BB572B19B23800A85E86 /* Barlow */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = Barlow; path = "MuVi Design app/Resources/Barlow"; sourceTree = SOURCE_ROOT; };
 		9293BB5B2B19BBE800A85E86 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9293BB5D2B19C8DE00A85E86 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		9293BB632B19EC1800A85E86 /* WalkThroughVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughVC1.swift; sourceTree = "<group>"; };
-		9293BB642B19EC1800A85E86 /* WalkThroughVC1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkThroughVC1.xib; sourceTree = "<group>"; };
-		9293BB772B19FCC400A85E86 /* WalkThroughVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughVC2.swift; sourceTree = "<group>"; };
-		9293BB782B19FCC400A85E86 /* WalkThroughVC2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkThroughVC2.xib; sourceTree = "<group>"; };
+		9293BB632B19EC1800A85E86 /* WalkThroughFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughFirstVC.swift; sourceTree = "<group>"; };
+		9293BB642B19EC1800A85E86 /* WalkThroughFirstVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkThroughFirstVC.xib; sourceTree = "<group>"; };
+		9293BB772B19FCC400A85E86 /* WalkThroughSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughSecondVC.swift; sourceTree = "<group>"; };
+		9293BB782B19FCC400A85E86 /* WalkThroughSecondVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkThroughSecondVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +85,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		928AE1552B1D9E8600B517F5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				928AE15A2B1D9EA900B517F5 /* Barlow-Black.ttf */,
+				928AE1582B1D9EA800B517F5 /* Barlow-BlackItalic.ttf */,
+				928AE1602B1D9EAA00B517F5 /* Barlow-Bold.ttf */,
+				928AE1562B1D9EA800B517F5 /* Barlow-BoldItalic.ttf */,
+				928AE1642B1D9EAA00B517F5 /* Barlow-ExtraBold.ttf */,
+				928AE15D2B1D9EA900B517F5 /* Barlow-ExtraBoldItalic.ttf */,
+				928AE1672B1D9EAB00B517F5 /* Barlow-ExtraLight.ttf */,
+				928AE15F2B1D9EA900B517F5 /* Barlow-ExtraLightItalic.ttf */,
+				928AE1572B1D9EA800B517F5 /* Barlow-Italic.ttf */,
+				928AE15B2B1D9EA900B517F5 /* Barlow-Light.ttf */,
+				928AE1612B1D9EAA00B517F5 /* Barlow-LightItalic.ttf */,
+				928AE1652B1D9EAA00B517F5 /* Barlow-Medium.ttf */,
+				928AE15E2B1D9EA900B517F5 /* Barlow-MediumItalic.ttf */,
+				928AE1662B1D9EAA00B517F5 /* Barlow-Regular.ttf */,
+				928AE1632B1D9EAA00B517F5 /* Barlow-SemiBold.ttf */,
+				928AE1592B1D9EA800B517F5 /* Barlow-SemiBoldItalic.ttf */,
+				928AE1622B1D9EAA00B517F5 /* Barlow-Thin.ttf */,
+				928AE15C2B1D9EA900B517F5 /* Barlow-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		928AE17E2B1DC4EC00B517F5 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
 		9293BB312B199A5500A85E86 = {
 			isa = PBXGroup;
 			children = (
@@ -70,12 +136,13 @@
 		9293BB3C2B199A5500A85E86 /* MuVi Design app */ = {
 			isa = PBXGroup;
 			children = (
+				928AE1552B1D9E8600B517F5 /* Fonts */,
 				9293BB672B19EE9800A85E86 /* Models */,
-				9293BB622B19EB9E00A85E86 /* WalkThroughs */,
+				9293BB562B19AA6200A85E86 /* Login */,
+				9293BB622B19EB9E00A85E86 /* Intro Screens */,
 				9293BB5A2B19BBC500A85E86 /* Utilities */,
 				9293BB592B19B43400A85E86 /* Resources */,
 				9293BB512B199C7600A85E86 /* Application */,
-				9293BB562B19AA6200A85E86 /* Login */,
 				9293BB482B199A5900A85E86 /* LaunchScreen.storyboard */,
 				9293BB4B2B199A5900A85E86 /* Info.plist */,
 			);
@@ -104,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				9293BB462B199A5900A85E86 /* Assets.xcassets */,
-				9293BB572B19B23800A85E86 /* Barlow */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -118,13 +184,13 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		9293BB622B19EB9E00A85E86 /* WalkThroughs */ = {
+		9293BB622B19EB9E00A85E86 /* Intro Screens */ = {
 			isa = PBXGroup;
 			children = (
 				9293BB6B2B19EECC00A85E86 /* View */,
 				9293BB6A2B19EEC600A85E86 /* ViewModel */,
 			);
-			path = WalkThroughs;
+			path = "Intro Screens";
 			sourceTree = "<group>";
 		};
 		9293BB672B19EE9800A85E86 /* Models */ = {
@@ -160,28 +226,29 @@
 		9293BB6B2B19EECC00A85E86 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9293BB752B19FC7400A85E86 /* WalkThroughVC1 */,
-				9293BB762B19FC8C00A85E86 /* WalkThroughVC2 */,
+				9293BB752B19FC7400A85E86 /* WalkThrough1 */,
+				9293BB762B19FC8C00A85E86 /* WalkThrough2 */,
+				928AE17E2B1DC4EC00B517F5 /* Preferences */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		9293BB752B19FC7400A85E86 /* WalkThroughVC1 */ = {
+		9293BB752B19FC7400A85E86 /* WalkThrough1 */ = {
 			isa = PBXGroup;
 			children = (
-				9293BB632B19EC1800A85E86 /* WalkThroughVC1.swift */,
-				9293BB642B19EC1800A85E86 /* WalkThroughVC1.xib */,
+				9293BB632B19EC1800A85E86 /* WalkThroughFirstVC.swift */,
+				9293BB642B19EC1800A85E86 /* WalkThroughFirstVC.xib */,
 			);
-			path = WalkThroughVC1;
+			path = WalkThrough1;
 			sourceTree = "<group>";
 		};
-		9293BB762B19FC8C00A85E86 /* WalkThroughVC2 */ = {
+		9293BB762B19FC8C00A85E86 /* WalkThrough2 */ = {
 			isa = PBXGroup;
 			children = (
-				9293BB772B19FCC400A85E86 /* WalkThroughVC2.swift */,
-				9293BB782B19FCC400A85E86 /* WalkThroughVC2.xib */,
+				9293BB772B19FCC400A85E86 /* WalkThroughSecondVC.swift */,
+				9293BB782B19FCC400A85E86 /* WalkThroughSecondVC.xib */,
 			);
-			path = WalkThroughVC2;
+			path = WalkThrough2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,12 +309,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				928AE1722B1D9EAB00B517F5 /* Barlow-Bold.ttf in Resources */,
 				9293BB4A2B199A5900A85E86 /* LaunchScreen.storyboard in Resources */,
-				9293BB582B19B23900A85E86 /* Barlow in Resources */,
-				9293BB7A2B19FCC400A85E86 /* WalkThroughVC2.xib in Resources */,
+				928AE1742B1D9EAB00B517F5 /* Barlow-Thin.ttf in Resources */,
+				928AE1792B1D9EAB00B517F5 /* Barlow-ExtraLight.ttf in Resources */,
+				928AE16C2B1D9EAB00B517F5 /* Barlow-Black.ttf in Resources */,
+				928AE1782B1D9EAB00B517F5 /* Barlow-Regular.ttf in Resources */,
+				928AE16E2B1D9EAB00B517F5 /* Barlow-ThinItalic.ttf in Resources */,
+				928AE16F2B1D9EAB00B517F5 /* Barlow-ExtraBoldItalic.ttf in Resources */,
+				928AE1702B1D9EAB00B517F5 /* Barlow-MediumItalic.ttf in Resources */,
+				928AE16B2B1D9EAB00B517F5 /* Barlow-SemiBoldItalic.ttf in Resources */,
+				928AE16A2B1D9EAB00B517F5 /* Barlow-BlackItalic.ttf in Resources */,
+				928AE1692B1D9EAB00B517F5 /* Barlow-Italic.ttf in Resources */,
+				9293BB7A2B19FCC400A85E86 /* WalkThroughSecondVC.xib in Resources */,
+				928AE1712B1D9EAB00B517F5 /* Barlow-ExtraLightItalic.ttf in Resources */,
+				928AE1682B1D9EAB00B517F5 /* Barlow-BoldItalic.ttf in Resources */,
+				928AE1762B1D9EAB00B517F5 /* Barlow-ExtraBold.ttf in Resources */,
+				928AE16D2B1D9EAB00B517F5 /* Barlow-Light.ttf in Resources */,
 				9293BB472B199A5900A85E86 /* Assets.xcassets in Resources */,
+				928AE1772B1D9EAB00B517F5 /* Barlow-Medium.ttf in Resources */,
 				9293BB552B19AA5100A85E86 /* LoginVC.xib in Resources */,
-				9293BB662B19EC1800A85E86 /* WalkThroughVC1.xib in Resources */,
+				928AE1732B1D9EAB00B517F5 /* Barlow-LightItalic.ttf in Resources */,
+				928AE1752B1D9EAB00B517F5 /* Barlow-SemiBold.ttf in Resources */,
+				9293BB662B19EC1800A85E86 /* WalkThroughFirstVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +345,9 @@
 				9293BB5E2B19C8DE00A85E86 /* Constants.swift in Sources */,
 				9293BB3E2B199A5500A85E86 /* AppDelegate.swift in Sources */,
 				9293BB402B199A5500A85E86 /* SceneDelegate.swift in Sources */,
-				9293BB792B19FCC400A85E86 /* WalkThroughVC2.swift in Sources */,
+				9293BB792B19FCC400A85E86 /* WalkThroughSecondVC.swift in Sources */,
 				9293BB542B19AA5100A85E86 /* LoginVC.swift in Sources */,
-				9293BB652B19EC1800A85E86 /* WalkThroughVC1.swift in Sources */,
+				9293BB652B19EC1800A85E86 /* WalkThroughFirstVC.swift in Sources */,
 				9293BB5C2B19BBE900A85E86 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
