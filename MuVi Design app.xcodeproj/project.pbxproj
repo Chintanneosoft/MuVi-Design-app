@@ -25,6 +25,9 @@
 		928AE1772B1D9EAB00B517F5 /* Barlow-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1652B1D9EAA00B517F5 /* Barlow-Medium.ttf */; };
 		928AE1782B1D9EAB00B517F5 /* Barlow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1662B1D9EAA00B517F5 /* Barlow-Regular.ttf */; };
 		928AE1792B1D9EAB00B517F5 /* Barlow-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1672B1D9EAB00B517F5 /* Barlow-ExtraLight.ttf */; };
+		928AE1842B1DC5BD00B517F5 /* WalkThroughCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AE1822B1DC5BD00B517F5 /* WalkThroughCell.swift */; };
+		928AE1852B1DC5BD00B517F5 /* WalkThroughCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1832B1DC5BD00B517F5 /* WalkThroughCell.xib */; };
+		928AE1872B1DED9400B517F5 /* WalkThroughVC + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928AE1862B1DED9400B517F5 /* WalkThroughVC + CollectionView.swift */; };
 		9293BB3E2B199A5500A85E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB3D2B199A5500A85E86 /* AppDelegate.swift */; };
 		9293BB402B199A5500A85E86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB3F2B199A5500A85E86 /* SceneDelegate.swift */; };
 		9293BB472B199A5900A85E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB462B199A5900A85E86 /* Assets.xcassets */; };
@@ -33,10 +36,8 @@
 		9293BB552B19AA5100A85E86 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB532B19AA5100A85E86 /* LoginVC.xib */; };
 		9293BB5C2B19BBE900A85E86 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB5B2B19BBE800A85E86 /* Extensions.swift */; };
 		9293BB5E2B19C8DE00A85E86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB5D2B19C8DE00A85E86 /* Constants.swift */; };
-		9293BB652B19EC1800A85E86 /* WalkThroughFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB632B19EC1800A85E86 /* WalkThroughFirstVC.swift */; };
-		9293BB662B19EC1800A85E86 /* WalkThroughFirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB642B19EC1800A85E86 /* WalkThroughFirstVC.xib */; };
-		9293BB792B19FCC400A85E86 /* WalkThroughSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB772B19FCC400A85E86 /* WalkThroughSecondVC.swift */; };
-		9293BB7A2B19FCC400A85E86 /* WalkThroughSecondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB782B19FCC400A85E86 /* WalkThroughSecondVC.xib */; };
+		9293BB652B19EC1800A85E86 /* WalkThroughVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9293BB632B19EC1800A85E86 /* WalkThroughVC.swift */; };
+		9293BB662B19EC1800A85E86 /* WalkThroughVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB642B19EC1800A85E86 /* WalkThroughVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,9 @@
 		928AE1652B1D9EAA00B517F5 /* Barlow-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Medium.ttf"; sourceTree = "<group>"; };
 		928AE1662B1D9EAA00B517F5 /* Barlow-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Regular.ttf"; sourceTree = "<group>"; };
 		928AE1672B1D9EAB00B517F5 /* Barlow-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-ExtraLight.ttf"; sourceTree = "<group>"; };
+		928AE1822B1DC5BD00B517F5 /* WalkThroughCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughCell.swift; sourceTree = "<group>"; };
+		928AE1832B1DC5BD00B517F5 /* WalkThroughCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkThroughCell.xib; sourceTree = "<group>"; };
+		928AE1862B1DED9400B517F5 /* WalkThroughVC + CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WalkThroughVC + CollectionView.swift"; sourceTree = "<group>"; };
 		9293BB3A2B199A5500A85E86 /* MuVi Design app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MuVi Design app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9293BB3D2B199A5500A85E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9293BB3F2B199A5500A85E86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,10 +72,8 @@
 		9293BB532B19AA5100A85E86 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
 		9293BB5B2B19BBE800A85E86 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9293BB5D2B19C8DE00A85E86 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		9293BB632B19EC1800A85E86 /* WalkThroughFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughFirstVC.swift; sourceTree = "<group>"; };
-		9293BB642B19EC1800A85E86 /* WalkThroughFirstVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkThroughFirstVC.xib; sourceTree = "<group>"; };
-		9293BB772B19FCC400A85E86 /* WalkThroughSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughSecondVC.swift; sourceTree = "<group>"; };
-		9293BB782B19FCC400A85E86 /* WalkThroughSecondVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkThroughSecondVC.xib; sourceTree = "<group>"; };
+		9293BB632B19EC1800A85E86 /* WalkThroughVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughVC.swift; sourceTree = "<group>"; };
+		9293BB642B19EC1800A85E86 /* WalkThroughVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkThroughVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,15 @@
 			children = (
 			);
 			path = Preferences;
+			sourceTree = "<group>";
+		};
+		928AE17F2B1DC56300B517F5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				928AE1822B1DC5BD00B517F5 /* WalkThroughCell.swift */,
+				928AE1832B1DC5BD00B517F5 /* WalkThroughCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		9293BB312B199A5500A85E86 = {
@@ -226,29 +237,21 @@
 		9293BB6B2B19EECC00A85E86 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9293BB752B19FC7400A85E86 /* WalkThrough1 */,
-				9293BB762B19FC8C00A85E86 /* WalkThrough2 */,
+				928AE17F2B1DC56300B517F5 /* Cells */,
+				9293BB752B19FC7400A85E86 /* WalkThrough */,
 				928AE17E2B1DC4EC00B517F5 /* Preferences */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		9293BB752B19FC7400A85E86 /* WalkThrough1 */ = {
+		9293BB752B19FC7400A85E86 /* WalkThrough */ = {
 			isa = PBXGroup;
 			children = (
-				9293BB632B19EC1800A85E86 /* WalkThroughFirstVC.swift */,
-				9293BB642B19EC1800A85E86 /* WalkThroughFirstVC.xib */,
+				9293BB632B19EC1800A85E86 /* WalkThroughVC.swift */,
+				9293BB642B19EC1800A85E86 /* WalkThroughVC.xib */,
+				928AE1862B1DED9400B517F5 /* WalkThroughVC + CollectionView.swift */,
 			);
-			path = WalkThrough1;
-			sourceTree = "<group>";
-		};
-		9293BB762B19FC8C00A85E86 /* WalkThrough2 */ = {
-			isa = PBXGroup;
-			children = (
-				9293BB772B19FCC400A85E86 /* WalkThroughSecondVC.swift */,
-				9293BB782B19FCC400A85E86 /* WalkThroughSecondVC.xib */,
-			);
-			path = WalkThrough2;
+			path = WalkThrough;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +316,7 @@
 				9293BB4A2B199A5900A85E86 /* LaunchScreen.storyboard in Resources */,
 				928AE1742B1D9EAB00B517F5 /* Barlow-Thin.ttf in Resources */,
 				928AE1792B1D9EAB00B517F5 /* Barlow-ExtraLight.ttf in Resources */,
+				928AE1852B1DC5BD00B517F5 /* WalkThroughCell.xib in Resources */,
 				928AE16C2B1D9EAB00B517F5 /* Barlow-Black.ttf in Resources */,
 				928AE1782B1D9EAB00B517F5 /* Barlow-Regular.ttf in Resources */,
 				928AE16E2B1D9EAB00B517F5 /* Barlow-ThinItalic.ttf in Resources */,
@@ -321,7 +325,6 @@
 				928AE16B2B1D9EAB00B517F5 /* Barlow-SemiBoldItalic.ttf in Resources */,
 				928AE16A2B1D9EAB00B517F5 /* Barlow-BlackItalic.ttf in Resources */,
 				928AE1692B1D9EAB00B517F5 /* Barlow-Italic.ttf in Resources */,
-				9293BB7A2B19FCC400A85E86 /* WalkThroughSecondVC.xib in Resources */,
 				928AE1712B1D9EAB00B517F5 /* Barlow-ExtraLightItalic.ttf in Resources */,
 				928AE1682B1D9EAB00B517F5 /* Barlow-BoldItalic.ttf in Resources */,
 				928AE1762B1D9EAB00B517F5 /* Barlow-ExtraBold.ttf in Resources */,
@@ -331,7 +334,7 @@
 				9293BB552B19AA5100A85E86 /* LoginVC.xib in Resources */,
 				928AE1732B1D9EAB00B517F5 /* Barlow-LightItalic.ttf in Resources */,
 				928AE1752B1D9EAB00B517F5 /* Barlow-SemiBold.ttf in Resources */,
-				9293BB662B19EC1800A85E86 /* WalkThroughFirstVC.xib in Resources */,
+				9293BB662B19EC1800A85E86 /* WalkThroughVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,12 +345,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				928AE1842B1DC5BD00B517F5 /* WalkThroughCell.swift in Sources */,
 				9293BB5E2B19C8DE00A85E86 /* Constants.swift in Sources */,
+				928AE1872B1DED9400B517F5 /* WalkThroughVC + CollectionView.swift in Sources */,
 				9293BB3E2B199A5500A85E86 /* AppDelegate.swift in Sources */,
 				9293BB402B199A5500A85E86 /* SceneDelegate.swift in Sources */,
-				9293BB792B19FCC400A85E86 /* WalkThroughSecondVC.swift in Sources */,
 				9293BB542B19AA5100A85E86 /* LoginVC.swift in Sources */,
-				9293BB652B19EC1800A85E86 /* WalkThroughFirstVC.swift in Sources */,
+				9293BB652B19EC1800A85E86 /* WalkThroughVC.swift in Sources */,
 				9293BB5C2B19BBE900A85E86 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

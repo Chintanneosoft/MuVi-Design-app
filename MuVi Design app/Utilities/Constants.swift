@@ -11,12 +11,20 @@ import UIKit
 enum Constants:String{
     case primary1 = "primary1"
     case primary2 = "primary2"
+    
+    case walkThroughlbl1 = "Movie experience \n for every mood"
+    case walkThroughlbl2 = "Smooth & enjoyable \n Experience"
+     
+    case walkThroughbtn1 = "NEXT"
+    case walkThroughbtn2 = "GET STARTED"
+    
+    case lbl = "lbl"
+    case btn = "btn"
 }
 
 enum VCNames:String{
     case LoginVC = "LoginVC"
-    case WalkThroughFirstVC = "WalkThroughFirstVC"
-    case WalkThroughSecondVC2 = "WalkThroughSecondVC"
+    case WalkThroughVC = "WalkThroughVC"
 }
 
 enum Fonts: String{
@@ -24,8 +32,9 @@ enum Fonts: String{
     case barlowBold = "Barlow-Bold"
 }
 
-//enum CellNames:String{
-//}
+enum CellNames:String{
+    case WalkThroughCell = "WalkThroughCell"
+}
 
 struct AppColors{
     static var redColor = UIColor(red: 235.0/255.0, green: 48.0/255.0, blue: 91.0/255.0, alpha: 1.0)

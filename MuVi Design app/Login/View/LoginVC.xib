@@ -28,7 +28,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoImg" translatesAutoresizingMaskIntoConstraints="NO" id="OOB-Um-K6V">
-                            <rect key="frame" x="97.666666666666686" y="238.66666666666663" width="180" height="95"/>
+                            <rect key="frame" x="97.666666666666686" y="218.66666666666663" width="180" height="95"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="95" id="iRR-Bn-5dR"/>
                                 <constraint firstAttribute="width" constant="180" id="wae-ky-xJT"/>
@@ -41,19 +41,19 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SignUp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hG3-Ca-yqh">
-                            <rect key="frame" x="145.33333333333334" y="373.66666666666669" width="84.333333333333343" height="32.666666666666686"/>
+                            <rect key="frame" x="145.33333333333334" y="368.66666666666669" width="84.333333333333343" height="32.666666666666686"/>
                             <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="27"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's easier to sign in now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQC-BP-L24">
-                            <rect key="frame" x="96" y="416.33333333333331" width="183" height="21.666666666666686"/>
+                            <rect key="frame" x="96" y="411.33333333333331" width="183" height="21.666666666666686"/>
                             <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNO-uC-laa">
-                            <rect key="frame" x="52.666666666666657" y="468" width="270" height="40"/>
+                            <rect key="frame" x="52.666666666666657" y="473" width="270" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="270" id="TmL-sx-fKj"/>
                                 <constraint firstAttribute="height" constant="40" id="tkY-eg-vZ0"/>
@@ -72,7 +72,7 @@
                             </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="qzz-Gd-p4k">
-                            <rect key="frame" x="76.666666666666686" y="537" width="222" height="54"/>
+                            <rect key="frame" x="76.666666666666686" y="542" width="222" height="54"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RM-IK-sRa" userLabel="google">
                                     <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
@@ -104,7 +104,7 @@
                             </subviews>
                         </stackView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2j-Q6-E3D">
-                            <rect key="frame" x="37.666666666666657" y="641" width="300" height="0.33333333333337123"/>
+                            <rect key="frame" x="37.666666666666657" y="656" width="300" height="0.33333333333337123"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="0.5" id="GHB-rO-Deq"/>
@@ -112,7 +112,7 @@
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFi-u9-NoI">
-                            <rect key="frame" x="97" y="671.33333333333337" width="181" height="34"/>
+                            <rect key="frame" x="97" y="686.33333333333337" width="181" height="34"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Continue without login"/>
                         </button>
@@ -125,12 +125,12 @@
                         <constraint firstItem="qzz-Gd-p4k" firstAttribute="top" secondItem="cNO-uC-laa" secondAttribute="bottom" constant="29" id="HSO-GP-80W"/>
                         <constraint firstItem="d9e-j4-pf1" firstAttribute="top" secondItem="1xc-cR-wH5" secondAttribute="top" constant="-10" id="JCq-LO-Opg"/>
                         <constraint firstItem="hG3-Ca-yqh" firstAttribute="centerX" secondItem="1xc-cR-wH5" secondAttribute="centerX" id="LXk-3M-PVa"/>
-                        <constraint firstItem="OOB-Um-K6V" firstAttribute="centerY" secondItem="1xc-cR-wH5" secondAttribute="centerY" constant="-120" id="TLS-Wg-4Ej"/>
-                        <constraint firstItem="cNO-uC-laa" firstAttribute="top" secondItem="wQC-BP-L24" secondAttribute="bottom" constant="30" id="TZ1-TQ-gev"/>
+                        <constraint firstItem="OOB-Um-K6V" firstAttribute="centerY" secondItem="1xc-cR-wH5" secondAttribute="centerY" constant="-140" id="TLS-Wg-4Ej"/>
+                        <constraint firstItem="cNO-uC-laa" firstAttribute="top" secondItem="wQC-BP-L24" secondAttribute="bottom" constant="40" id="TZ1-TQ-gev"/>
                         <constraint firstItem="c2j-Q6-E3D" firstAttribute="centerX" secondItem="1xc-cR-wH5" secondAttribute="centerX" id="UOu-7I-8dQ"/>
                         <constraint firstItem="qzz-Gd-p4k" firstAttribute="centerX" secondItem="1xc-cR-wH5" secondAttribute="centerX" id="Uhy-FB-hGh"/>
-                        <constraint firstItem="c2j-Q6-E3D" firstAttribute="top" secondItem="qzz-Gd-p4k" secondAttribute="bottom" constant="50" id="UnK-lP-qVf"/>
-                        <constraint firstItem="hG3-Ca-yqh" firstAttribute="top" secondItem="OOB-Um-K6V" secondAttribute="bottom" constant="40" id="Vtd-lY-Led"/>
+                        <constraint firstItem="c2j-Q6-E3D" firstAttribute="top" secondItem="qzz-Gd-p4k" secondAttribute="bottom" constant="60" id="UnK-lP-qVf"/>
+                        <constraint firstItem="hG3-Ca-yqh" firstAttribute="top" secondItem="OOB-Um-K6V" secondAttribute="bottom" constant="55" id="Vtd-lY-Led"/>
                         <constraint firstItem="IFi-u9-NoI" firstAttribute="centerX" secondItem="1xc-cR-wH5" secondAttribute="centerX" id="cg9-kf-PT2"/>
                         <constraint firstItem="IFi-u9-NoI" firstAttribute="top" secondItem="c2j-Q6-E3D" secondAttribute="bottom" constant="30" id="euk-QD-FHw"/>
                         <constraint firstItem="wQC-BP-L24" firstAttribute="top" secondItem="hG3-Ca-yqh" secondAttribute="bottom" constant="10" id="i3P-OY-bjM"/>
