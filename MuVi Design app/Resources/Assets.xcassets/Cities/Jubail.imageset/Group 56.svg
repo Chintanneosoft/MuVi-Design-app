@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="82.668" height="66.5" viewBox="0 0 82.668 66.5">
+  <g id="Group_56" data-name="Group 56" transform="translate(-173.805 -583)">
+    <path id="Path_100" data-name="Path 100" d="M-289.1,635.48l2.029-21.037s12.068-10.6,36.93-9.352a118.488,118.488,0,0,1,36.973,7.68c2.4.943,3.067,2.285,4.09,3.8s0,2.262,0,2.262V633.84" transform="translate(464)" fill="none" stroke="#061ac7" stroke-linecap="round" stroke-width="2"/>
+    <path id="Path_101" data-name="Path 101" d="M-283.078,634.08l1.347-16.069s.666-5.945,4.468-6.269,4.631,4.49,4.631,4.49V634.08" transform="translate(464)" fill="none" stroke="#061ac7" stroke-width="2"/>
+    <path id="Path_105" data-name="Path 105" d="M-283.078,633.574l-1.073-17.444s1.544-4.062,4.57-4.378,4.818,4.378,4.818,4.378v17.444" transform="translate(523.959 1.506)" fill="none" stroke="#061ac7" stroke-width="2"/>
+    <path id="Path_102" data-name="Path 102" d="M-283.078,635.75l1.909-17.269s.943-6.389,6.332-6.737,6.563,4.825,6.563,4.825V635.75" transform="translate(474.446 -2.669)" fill="none" stroke="#061ac7" stroke-width="2"/>
+    <path id="Path_104" data-name="Path 104" d="M-283.078,635.75l1.208-19.181s1.137-5.342,6.513-5.42c5.388-.348,7.082,5.42,7.082,5.42l1.4,19.181" transform="translate(507.759 -0.669)" fill="none" stroke="#061ac7" stroke-width="2"/>
+    <path id="Path_103" data-name="Path 103" d="M-283.078,635.75l1.309-18.235s1.66-6.519,8.4-6.868,8.8,6.868,8.8,6.868V635.75" transform="translate(489.25 -2.669)" fill="none" stroke="#061ac7" stroke-width="2"/>
+    <line id="Line_29" data-name="Line 29" x2="65" y2="1" transform="translate(179.5 647.5)" fill="none" stroke="#061ac7" stroke-width="2"/>
+    <path id="Path_106" data-name="Path 106" d="M-208.617,618.325c-1.859,2.427-10.881,5.837-10.881,5.837v9.07" transform="translate(464)" fill="none" stroke="#061ac7" stroke-width="2"/>
+    <path id="Path_107" data-name="Path 107" d="M-285.594,633.08l1.131-12.354s-3.831-2.807-2.374-6.345" transform="translate(464)" fill="none" stroke="#061ac7" stroke-width="2"/>
+    <g id="Ellipse_79" data-name="Ellipse 79" transform="translate(222 583)" fill="#fff" stroke="#061ac7" stroke-width="2">
+      <circle cx="4" cy="4" r="4" stroke="none"/>
+      <circle cx="4" cy="4" r="3" fill="none"/>
+    </g>
+    <ellipse id="Ellipse_80" data-name="Ellipse 80" cx="3.5" cy="3" rx="3.5" ry="3" transform="translate(223 583)" fill="#fff"/>
+  </g>
+</svg>

@@ -17,6 +17,8 @@ class WalkThroughVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setCollectionView()
+        
+        navigationController?.navigationBar.isHidden = true
     }
     
     private func setCollectionView(){

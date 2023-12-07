@@ -38,9 +38,7 @@ class WalkThroughCell: UICollectionViewCell {
         btn.setTitle(btnTitle, for: .normal)
         
         btn.applyGradient(colours: [AppColors.redColor, AppColors.purpleColor], angle: -45)
-        btn.clipsToBounds = true
-        btn.layer.cornerRadius = 20
-        btn.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMinYCorner]
+        btn.setCornerRadius(cornerRadius: 20, maskedCorners: [.layerMaxXMaxYCorner, .layerMinXMinYCorner], borderWidth: 0)
     }
     
     func setDetails(lblText:String, pageNumber:Int, btnTitle: String){

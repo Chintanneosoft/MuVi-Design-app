@@ -16,11 +16,12 @@ class PreferencesCell: UICollectionViewCell {
     }
     
     func setUpUI(lblText: String){
-        lblGenre.setFont(font: Fonts.barlowBold.rawValue, size: 15)
+        lblGenre.setFont(font: Fonts.barlowRegular.rawValue, size: 18)
         lblGenre.text = lblText
-        lblGenre.layer.cornerRadius = 5
-        lblGenre.layer.borderWidth = 1
-        lblGenre.layer.borderColor = UIColor.black.cgColor
     }
-
+    
+    func setCellBorder(color: UIColor){
+        self.layer.borderColor = color.cgColor
+        lblGenre.textColor = color
+    }
 }

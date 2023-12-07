@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// For Gradient Background
 extension UIView {
     func applyGradient(colours: [UIColor], angle: Double = 0) {
         let gradient: CAGradientLayer = CAGradientLayer()
@@ -25,14 +26,25 @@ extension UIView {
     }
 }
 
+// For Font
 extension UILabel{
     func setFont(font: String, size: CGFloat){
         self.font = UIFont(name: font, size: size)
     }
 }
 
+// For Button
 extension UIButton{
     func setTitleFont(font: String, size: CGFloat){
         self.titleLabel?.setFont(font: font, size: size)
+    }
+    
+    func setCornerRadius(cornerRadius: CGFloat,maskedCorners: CACornerMask,borderColor: UIColor = AppColors.blackColor, borderWidth:CGFloat = 1.0){
+        
+        self.clipsToBounds = true
+        self.layer.cornerRadius = cornerRadius
+        self.layer.maskedCorners = maskedCorners
+        self.layer.borderColor = borderColor.cgColor
+        self.layer.borderWidth = borderWidth
     }
 }

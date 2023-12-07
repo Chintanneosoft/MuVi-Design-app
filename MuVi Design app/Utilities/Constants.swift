@@ -22,10 +22,16 @@ enum Constants:String{
     case btn = "btn"
 }
 
+enum ScreenText:String{
+    case btnProceed = "Proceed"
+}
+
 enum VCNames:String{
     case LoginVC = "LoginVC"
     case WalkThroughVC = "WalkThroughVC"
     case PreferencesVC = "PreferencesVC"
+    case CitySelectionVC = "CitySelectionVC"
+    case PreferedExperienceVC = "PreferedExperienceVC"
 }
 
 enum Fonts: String{
@@ -36,6 +42,9 @@ enum Fonts: String{
 enum CellNames:String{
     case WalkThroughCell = "WalkThroughCell"
     case PreferencesCell = "PreferencesCell"
+    case CitySelectionCell = "CitySelectionCell"
+    case FooterView = "FooterView"
+    case PreferedExperienceCell = "PreferedExperienceCell"
 }
 
 struct AppColors{
@@ -44,5 +53,10 @@ struct AppColors{
     static var primary = UIColor(red: 57.0/255.0, green: 7.0/255.0, blue: 128.0/255.0, alpha: 1.0)
     static var secondary = UIColor(red: 221.0/255.0, green: 47.0/255.0, blue: 128.0/255.0, alpha: 1.0)
     static var darkPurpleColor = UIColor(red: 57.0/255.0, green: 25.0/255.0, blue: 101.0/255.0, alpha: 1.0)
+    static var blackColor = UIColor(red: 36.0/255.0, green: 34.0/255.0, blue: 34.0/255.0, alpha: 1.0)
 }
 
+enum UserDefaultKeys:String{
+    case hasAppLauchedBefore = "hasAppLauchedBefore"
+    
+}

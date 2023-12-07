@@ -61,12 +61,8 @@
                             <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="18"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Register with Mobile">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
-                            <buttonConfiguration key="configuration" style="plain" title="Register with Mobile">
-                                <fontDescription key="titleFontDescription" name="Barlow-Regular" family="Barlow" pointSize="18"/>
-                                <color key="baseForegroundColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </buttonConfiguration>
                             <connections>
                                 <action selector="btnRegisterTapped:" destination="-1" eventType="touchUpInside" id="aal-Pu-BSh"/>
                             </connections>
@@ -115,6 +111,9 @@
                             <rect key="frame" x="97" y="686.33333333333337" width="181" height="34"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Continue without login"/>
+                            <connections>
+                                <action selector="btnContinueTapped:" destination="-1" eventType="touchUpInside" id="pjW-lH-Kl1"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

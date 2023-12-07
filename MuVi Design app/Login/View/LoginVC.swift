@@ -7,29 +7,31 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class LoginVC: BaseVC {
 
     @IBOutlet weak var btnRegister: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setUpUI()
-        
     }
     
     private func setUpUI(){
-        self.view.applyGradient(colours: [AppColors.primary, AppColors.darkPurpleColor])
+        navigationController?.navigationBar.isHidden = true
         
-        btnRegister.clipsToBounds = true
-        btnRegister.layer.cornerRadius = 20
-        btnRegister.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMinYCorner]
-        btnRegister.layer.borderColor = UIColor.black.cgColor
-        btnRegister.layer.borderWidth = 1
+        
+        setButton()
     }
 
+    private func setButton(){
+        btnRegister.setCornerRadius(cornerRadius: 20, maskedCorners: [.layerMaxXMaxYCorner, .layerMinXMinYCorner])
+    }
+    
     @IBAction func btnRegisterTapped(_ sender: UIButton) {
         
     }
     
-
+    @IBAction func btnContinueTapped(_ sender: UIButton) {
+    }
+    
 }
