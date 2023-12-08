@@ -20,6 +20,7 @@
             <connections>
                 <outlet property="btnAll" destination="KSC-gT-I7O" id="qSX-RU-oL4"/>
                 <outlet property="genreCollectionView" destination="j1P-OK-tAd" id="3cV-lD-lbd"/>
+                <outlet property="lblDoYouHavePreference" destination="8yP-Ym-wbB" id="Q5d-Qi-bll"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -41,7 +42,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHH-ST-560">
-                                    <rect key="frame" x="46.666666666666657" y="544.66666666666663" width="300" height="0.33333333333337123"/>
+                                    <rect key="frame" x="46.666666666666657" y="559.66666666666663" width="300" height="0.33333333333337123"/>
                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="0.5" id="33p-zK-i2a"/>
@@ -49,13 +50,13 @@
                                     </constraints>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I like all types of movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b36-D3-jhz">
-                                    <rect key="frame" x="46.666666666666671" y="565" width="201.66666666666663" height="24"/>
+                                    <rect key="frame" x="46.666666666666671" y="580" width="201.66666666666663" height="24"/>
                                     <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="20"/>
                                     <color key="textColor" red="0.14117647058823529" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSC-gT-I7O">
-                                    <rect key="frame" x="286.66666666666669" y="561" width="60" height="32"/>
+                                    <rect key="frame" x="286.66666666666669" y="576" width="60" height="32"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="60" id="cPD-zn-cVa"/>
                                     </constraints>
@@ -69,7 +70,7 @@
                                     </connections>
                                 </button>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-OK-tAd">
-                                    <rect key="frame" x="30" y="112.00000000000003" width="353" height="412.66666666666674"/>
+                                    <rect key="frame" x="30" y="112.00000000000003" width="353" height="427.66666666666674"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bEG-LX-bdz">
                                         <size key="itemSize" width="128" height="128"/>
@@ -81,7 +82,7 @@
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="bottom" secondItem="b36-D3-jhz" secondAttribute="bottom" constant="50" id="0RG-kI-1nD"/>
+                                <constraint firstAttribute="bottom" secondItem="b36-D3-jhz" secondAttribute="bottom" constant="35" id="0RG-kI-1nD"/>
                                 <constraint firstAttribute="trailing" secondItem="j1P-OK-tAd" secondAttribute="trailing" constant="10" id="5N7-Ov-rEr"/>
                                 <constraint firstItem="j1P-OK-tAd" firstAttribute="leading" secondItem="SBl-us-3gI" secondAttribute="leading" constant="30" id="6FC-ev-7gM"/>
                                 <constraint firstItem="b36-D3-jhz" firstAttribute="top" secondItem="WHH-ST-560" secondAttribute="bottom" constant="20" id="6j1-M3-IMH"/>

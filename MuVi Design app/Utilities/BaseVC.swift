@@ -11,11 +11,11 @@ class BaseVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setUpBaseUI()
     }
     
     func setUpBaseUI(){
+        //Apply gradient background
         self.view.applyGradient(colours: [AppColors.primary, AppColors.darkPurpleColor])
     }
 

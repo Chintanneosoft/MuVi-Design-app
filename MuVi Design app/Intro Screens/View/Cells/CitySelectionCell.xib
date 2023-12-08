@@ -23,7 +23,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CGq-ay-CWj">
-                        <rect key="frame" x="41" y="34" width="80" height="138"/>
+                        <rect key="frame" x="41" y="39" width="80" height="128"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySW-hn-5cB">
                                 <rect key="frame" x="0.0" y="10" width="80" height="80"/>
@@ -56,7 +56,7 @@
                             <constraint firstItem="ySW-hn-5cB" firstAttribute="leading" secondItem="CGq-ay-CWj" secondAttribute="leading" id="PHe-fL-SZt"/>
                             <constraint firstItem="ySW-hn-5cB" firstAttribute="top" secondItem="CGq-ay-CWj" secondAttribute="top" constant="10" id="TYC-Zh-uB9"/>
                             <constraint firstItem="eYf-u1-zCL" firstAttribute="top" secondItem="ySW-hn-5cB" secondAttribute="bottom" constant="10" id="gEr-pC-hVY"/>
-                            <constraint firstAttribute="bottom" secondItem="eYf-u1-zCL" secondAttribute="bottom" constant="20" id="iFw-77-IDm"/>
+                            <constraint firstAttribute="bottom" secondItem="eYf-u1-zCL" secondAttribute="bottom" constant="10" id="iFw-77-IDm"/>
                             <constraint firstAttribute="trailing" secondItem="ySW-hn-5cB" secondAttribute="trailing" id="rba-fX-KSB"/>
                             <constraint firstItem="eYf-u1-zCL" firstAttribute="centerX" secondItem="CGq-ay-CWj" secondAttribute="centerX" id="u2K-Yp-L19"/>
                         </constraints>

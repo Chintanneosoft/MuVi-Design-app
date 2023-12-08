@@ -8,7 +8,7 @@
 import UIKit
 
 //MARK: - WalkThroughVC
-class WalkThroughVC: UIViewController {
+class WalkThroughVC: BaseVC {
     
     @IBOutlet weak var walkThroughCollectionView: UICollectionView!
     

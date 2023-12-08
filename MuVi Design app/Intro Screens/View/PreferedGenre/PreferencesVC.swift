@@ -11,6 +11,7 @@ class PreferencesVC: BaseVC {
     
     @IBOutlet weak var btnAll: UIButton!
     @IBOutlet weak var genreCollectionView: UICollectionView!
+    @IBOutlet weak var lblDoYouHavePreference: UILabel!
     
     let preferencesViewModel = PreferencesViewModel()
     var isAllSelected = false
@@ -34,6 +35,7 @@ class PreferencesVC: BaseVC {
     private func setUpUI(){
         navigationController?.navigationBar.isHidden = true
         
+        lblDoYouHavePreference.setFont(font: Fonts.barlowRegular.rawValue, size: 30)
         
         setButton()
     }

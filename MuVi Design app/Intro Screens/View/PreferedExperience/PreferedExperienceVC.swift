@@ -11,6 +11,7 @@ class PreferedExperienceVC: BaseVC {
 
     @IBOutlet weak var btnProceed: UIButton!
     @IBOutlet weak var preferedExpCollectionView: UICollectionView!
+    @IBOutlet weak var lblWhatTypeOfExperience: UILabel!
     
     let preferedExperienceViewModel = PreferedExperienceViewModel()
     
@@ -29,6 +30,8 @@ class PreferedExperienceVC: BaseVC {
     
     private func setUpUI(){
         btnProceed.setCornerRadius(cornerRadius: 20, maskedCorners: [.layerMaxXMaxYCorner, .layerMinXMinYCorner])
+        
+        lblWhatTypeOfExperience.setFont(font: Fonts.barlowRegular.rawValue, size: 30)
     }
     
     private func goToNextVC(){

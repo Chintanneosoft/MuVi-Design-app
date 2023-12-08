@@ -28,6 +28,8 @@ enum ScreenText:String{
 
 enum VCNames:String{
     case LoginVC = "LoginVC"
+    case RegisterVC = "RegisterVC"
+    case OTPVerificationVC = "OTPVerificationVC"
     case WalkThroughVC = "WalkThroughVC"
     case PreferencesVC = "PreferencesVC"
     case CitySelectionVC = "CitySelectionVC"
@@ -58,5 +60,4 @@ struct AppColors{
 
 enum UserDefaultKeys:String{
     case hasAppLauchedBefore = "hasAppLauchedBefore"
-    
 }

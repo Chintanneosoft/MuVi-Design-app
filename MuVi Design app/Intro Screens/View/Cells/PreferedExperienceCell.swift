@@ -21,7 +21,7 @@ class PreferedExperienceCell: UICollectionViewCell {
 
     private func setUpUI(){
         btnChecked.applyGradient(colours: [AppColors.redColor, AppColors.purpleColor], angle: -45)
-        btnChecked.setCornerRadius(cornerRadius: 20, maskedCorners: [.layerMaxXMaxYCorner, .layerMinXMinYCorner])
+        btnChecked.setCornerRadius(cornerRadius: 10, maskedCorners: [.layerMaxXMaxYCorner, .layerMinXMinYCorner],borderWidth: 0)
         imgCinema.layer.cornerRadius = 15
     }
     

@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		785148CBB0B1EA19535B0963 /* Pods_MuVi_Design_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF9DF6ACB5ABB97CD7FDDF96 /* Pods_MuVi_Design_app.framework */; };
+		9218A4392B22D4E800CA476F /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9218A4372B22D4E800CA476F /* RegisterVC.swift */; };
+		9218A43A2B22D4E800CA476F /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9218A4382B22D4E800CA476F /* RegisterVC.xib */; };
 		923215762B21AB5B00B54FDC /* PreferedExperienceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923215742B21AB5B00B54FDC /* PreferedExperienceVC.swift */; };
 		923215772B21AB5B00B54FDC /* PreferedExperienceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 923215752B21AB5B00B54FDC /* PreferedExperienceVC.xib */; };
 		9232157A2B21B06400B54FDC /* PreferedExperienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923215782B21B06400B54FDC /* PreferedExperienceCell.swift */; };
 		9232157B2B21B06400B54FDC /* PreferedExperienceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 923215792B21B06400B54FDC /* PreferedExperienceCell.xib */; };
 		9232157D2B21BA8900B54FDC /* PreferedExperienceVC + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9232157C2B21BA8900B54FDC /* PreferedExperienceVC + CollectionView.swift */; };
 		9232157F2B21BAF600B54FDC /* PreferedExperienceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9232157E2B21BAF600B54FDC /* PreferedExperienceViewModel.swift */; };
+		9281A5F72B23453600BD13B5 /* OTPVerificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281A5F52B23453600BD13B5 /* OTPVerificationVC.swift */; };
+		9281A5F82B23453600BD13B5 /* OTPVerificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9281A5F62B23453600BD13B5 /* OTPVerificationVC.xib */; };
 		928AE1682B1D9EAB00B517F5 /* Barlow-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1562B1D9EA800B517F5 /* Barlow-BoldItalic.ttf */; };
 		928AE1692B1D9EAB00B517F5 /* Barlow-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1572B1D9EA800B517F5 /* Barlow-Italic.ttf */; };
 		928AE16A2B1D9EAB00B517F5 /* Barlow-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1582B1D9EA800B517F5 /* Barlow-BlackItalic.ttf */; };
@@ -62,12 +67,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9218A4372B22D4E800CA476F /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		9218A4382B22D4E800CA476F /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
 		923215742B21AB5B00B54FDC /* PreferedExperienceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferedExperienceVC.swift; sourceTree = "<group>"; };
 		923215752B21AB5B00B54FDC /* PreferedExperienceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferedExperienceVC.xib; sourceTree = "<group>"; };
 		923215782B21B06400B54FDC /* PreferedExperienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferedExperienceCell.swift; sourceTree = "<group>"; };
 		923215792B21B06400B54FDC /* PreferedExperienceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferedExperienceCell.xib; sourceTree = "<group>"; };
 		9232157C2B21BA8900B54FDC /* PreferedExperienceVC + CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreferedExperienceVC + CollectionView.swift"; sourceTree = "<group>"; };
 		9232157E2B21BAF600B54FDC /* PreferedExperienceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferedExperienceViewModel.swift; sourceTree = "<group>"; };
+		9281A5F52B23453600BD13B5 /* OTPVerificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerificationVC.swift; sourceTree = "<group>"; };
+		9281A5F62B23453600BD13B5 /* OTPVerificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVerificationVC.xib; sourceTree = "<group>"; };
 		928AE1562B1D9EA800B517F5 /* Barlow-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-BoldItalic.ttf"; sourceTree = "<group>"; };
 		928AE1572B1D9EA800B517F5 /* Barlow-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Italic.ttf"; sourceTree = "<group>"; };
 		928AE1582B1D9EA800B517F5 /* Barlow-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -116,6 +125,9 @@
 		9293BB5D2B19C8DE00A85E86 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9293BB632B19EC1800A85E86 /* WalkThroughVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkThroughVC.swift; sourceTree = "<group>"; };
 		9293BB642B19EC1800A85E86 /* WalkThroughVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkThroughVC.xib; sourceTree = "<group>"; };
+		9B2BADC336503F9A2A2F849F /* Pods-MuVi Design app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuVi Design app.release.xcconfig"; path = "Target Support Files/Pods-MuVi Design app/Pods-MuVi Design app.release.xcconfig"; sourceTree = "<group>"; };
+		B968DE390BB6BCD4059D0BB8 /* Pods-MuVi Design app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuVi Design app.debug.xcconfig"; path = "Target Support Files/Pods-MuVi Design app/Pods-MuVi Design app.debug.xcconfig"; sourceTree = "<group>"; };
+		EF9DF6ACB5ABB97CD7FDDF96 /* Pods_MuVi_Design_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuVi_Design_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,12 +135,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785148CBB0B1EA19535B0963 /* Pods_MuVi_Design_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D44DA493085173705ABDFE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B968DE390BB6BCD4059D0BB8 /* Pods-MuVi Design app.debug.xcconfig */,
+				9B2BADC336503F9A2A2F849F /* Pods-MuVi Design app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8318CFEB866069E1C859AB5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF9DF6ACB5ABB97CD7FDDF96 /* Pods_MuVi_Design_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9218A4352B22D42D00CA476F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9293BB522B19AA5100A85E86 /* LoginVC.swift */,
+				9293BB532B19AA5100A85E86 /* LoginVC.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9218A4362B22D46200CA476F /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				9218A4372B22D4E800CA476F /* RegisterVC.swift */,
+				9218A4382B22D4E800CA476F /* RegisterVC.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		923215732B21AAD500B54FDC /* PreferedExperience */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +185,15 @@
 				9232157C2B21BA8900B54FDC /* PreferedExperienceVC + CollectionView.swift */,
 			);
 			path = PreferedExperience;
+			sourceTree = "<group>";
+		};
+		9281A5F42B2344F800BD13B5 /* OTP Verification */ = {
+			isa = PBXGroup;
+			children = (
+				9281A5F52B23453600BD13B5 /* OTPVerificationVC.swift */,
+				9281A5F62B23453600BD13B5 /* OTPVerificationVC.xib */,
+			);
+			path = "OTP Verification";
 			sourceTree = "<group>";
 		};
 		928AE1552B1D9E8600B517F5 /* Fonts */ = {
@@ -204,6 +261,8 @@
 			children = (
 				9293BB3C2B199A5500A85E86 /* MuVi Design app */,
 				9293BB3B2B199A5500A85E86 /* Products */,
+				5D44DA493085173705ABDFE3 /* Pods */,
+				8318CFEB866069E1C859AB5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,7 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				9293BB672B19EE9800A85E86 /* Models */,
-				9293BB562B19AA6200A85E86 /* Login */,
+				9293BB562B19AA6200A85E86 /* Authentication */,
 				9293BB622B19EB9E00A85E86 /* Intro Screens */,
 				9293BB5A2B19BBC500A85E86 /* Utilities */,
 				9293BB592B19B43400A85E86 /* Resources */,
@@ -239,13 +298,13 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		9293BB562B19AA6200A85E86 /* Login */ = {
+		9293BB562B19AA6200A85E86 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				9293BB692B19EEB000A85E86 /* View */,
 				9293BB682B19EEA500A85E86 /* ViewModel */,
 			);
-			path = Login;
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		9293BB592B19B43400A85E86 /* Resources */ = {
@@ -295,8 +354,9 @@
 		9293BB692B19EEB000A85E86 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9293BB522B19AA5100A85E86 /* LoginVC.swift */,
-				9293BB532B19AA5100A85E86 /* LoginVC.xib */,
+				9281A5F42B2344F800BD13B5 /* OTP Verification */,
+				9218A4362B22D46200CA476F /* Register */,
+				9218A4352B22D42D00CA476F /* Login */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,9 +400,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9293BB4E2B199A5900A85E86 /* Build configuration list for PBXNativeTarget "MuVi Design app" */;
 			buildPhases = (
+				A75617A43F40B0E3C2F75BE4 /* [CP] Check Pods Manifest.lock */,
 				9293BB362B199A5500A85E86 /* Sources */,
 				9293BB372B199A5500A85E86 /* Frameworks */,
 				9293BB382B199A5500A85E86 /* Resources */,
+				7BBDB9AC1B535FB66DB658BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -400,12 +462,14 @@
 				928AE1852B1DC5BD00B517F5 /* WalkThroughCell.xib in Resources */,
 				928AE18B2B1DF5A600B517F5 /* PreferencesVC.xib in Resources */,
 				928AE16C2B1D9EAB00B517F5 /* Barlow-Black.ttf in Resources */,
+				9218A43A2B22D4E800CA476F /* RegisterVC.xib in Resources */,
 				928AE1782B1D9EAB00B517F5 /* Barlow-Regular.ttf in Resources */,
 				928AE16E2B1D9EAB00B517F5 /* Barlow-ThinItalic.ttf in Resources */,
 				928AE16F2B1D9EAB00B517F5 /* Barlow-ExtraBoldItalic.ttf in Resources */,
 				928AE1702B1D9EAB00B517F5 /* Barlow-MediumItalic.ttf in Resources */,
 				928AE16B2B1D9EAB00B517F5 /* Barlow-SemiBoldItalic.ttf in Resources */,
 				928AE16A2B1D9EAB00B517F5 /* Barlow-BlackItalic.ttf in Resources */,
+				9281A5F82B23453600BD13B5 /* OTPVerificationVC.xib in Resources */,
 				928AE1692B1D9EAB00B517F5 /* Barlow-Italic.ttf in Resources */,
 				928AE1712B1D9EAB00B517F5 /* Barlow-ExtraLightItalic.ttf in Resources */,
 				928AE1682B1D9EAB00B517F5 /* Barlow-BoldItalic.ttf in Resources */,
@@ -425,6 +489,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7BBDB9AC1B535FB66DB658BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MuVi Design app/Pods-MuVi Design app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MuVi Design app/Pods-MuVi Design app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MuVi Design app/Pods-MuVi Design app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A75617A43F40B0E3C2F75BE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MuVi Design app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9293BB362B199A5500A85E86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -436,9 +542,11 @@
 				928BA4832B20615800996AB8 /* CitySelectionVC + CollectionView.swift in Sources */,
 				928AE18E2B1DF98F00B517F5 /* PreferencesCell.swift in Sources */,
 				928AE18A2B1DF5A600B517F5 /* PreferencesVC.swift in Sources */,
+				9281A5F72B23453600BD13B5 /* OTPVerificationVC.swift in Sources */,
 				928BA47A2B204D0200996AB8 /* PreferencesViewModel.swift in Sources */,
 				928AE1842B1DC5BD00B517F5 /* WalkThroughCell.swift in Sources */,
 				923215762B21AB5B00B54FDC /* PreferedExperienceVC.swift in Sources */,
+				9218A4392B22D4E800CA476F /* RegisterVC.swift in Sources */,
 				928BA4782B204CD100996AB8 /* PreferencesModel.swift in Sources */,
 				9232157D2B21BA8900B54FDC /* PreferedExperienceVC + CollectionView.swift in Sources */,
 				9293BB5E2B19C8DE00A85E86 /* Constants.swift in Sources */,
@@ -586,6 +694,7 @@
 		};
 		9293BB4F2B199A5900A85E86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B968DE390BB6BCD4059D0BB8 /* Pods-MuVi Design app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -613,6 +722,7 @@
 		};
 		9293BB502B199A5900A85E86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B2BADC336503F9A2A2F849F /* Pods-MuVi Design app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

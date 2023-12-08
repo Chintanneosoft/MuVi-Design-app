@@ -20,6 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         let initailVC: UIViewController?
         let hasAppLauchedBefore = UserDefaults.standard.bool(forKey: "hasAppLauchedBefore")
+        
         if hasAppLauchedBefore {
             initailVC = LoginVC(nibName: VCNames.LoginVC.rawValue, bundle: nil)
         } else {

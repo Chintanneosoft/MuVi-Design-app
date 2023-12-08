@@ -30,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="62.333333333333343" width="291" height="352.66666666666663"/>
                                 <subviews>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="Zqw-kk-ADz">
-                                        <rect key="frame" x="15.000000000000007" y="276.66666666666669" width="98.666666666666686" height="26"/>
+                                        <rect key="frame" x="15.000000000000007" y="291.66666666666669" width="98.666666666666686" height="26"/>
                                         <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="currentPageIndicatorTintColor" name="customPink"/>
                                     </pageControl>
@@ -48,7 +48,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLm-Eu-hRl">
-                                        <rect key="frame" x="141" y="269.66666666666669" width="120" height="40"/>
+                                        <rect key="frame" x="141" y="284.66666666666669" width="120" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="6Te-Gv-OTy"/>
                                             <constraint firstAttribute="height" constant="40" id="uT2-So-eQ5"/>
@@ -68,7 +68,7 @@
                                     <constraint firstItem="7jV-vk-Eie" firstAttribute="centerY" secondItem="SSG-Cz-Ocm" secondAttribute="centerY" constant="-120" id="4he-On-dlx"/>
                                     <constraint firstItem="Zqw-kk-ADz" firstAttribute="leading" secondItem="SSG-Cz-Ocm" secondAttribute="leading" constant="15" id="Iqe-de-RZR"/>
                                     <constraint firstItem="lLm-Eu-hRl" firstAttribute="centerY" secondItem="Zqw-kk-ADz" secondAttribute="centerY" id="enX-6V-KRe"/>
-                                    <constraint firstAttribute="bottom" secondItem="Zqw-kk-ADz" secondAttribute="bottom" constant="50" id="q8q-EU-2mX"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zqw-kk-ADz" secondAttribute="bottom" constant="35" id="q8q-EU-2mX"/>
                                     <constraint firstItem="sLY-Sm-k3C" firstAttribute="centerY" secondItem="SSG-Cz-Ocm" secondAttribute="centerY" id="r3E-fW-431"/>
                                     <constraint firstAttribute="trailing" secondItem="lLm-Eu-hRl" secondAttribute="trailing" constant="30" id="sEO-ar-pPs"/>
                                 </constraints>

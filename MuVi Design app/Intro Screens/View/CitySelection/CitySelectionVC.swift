@@ -12,6 +12,7 @@ class CitySelectionVC: BaseVC {
     @IBOutlet weak var lblUserCity: UILabel!
     @IBOutlet weak var btnAllCities: UIButton!
     @IBOutlet weak var citiesCollectionView: UICollectionView!
+    @IBOutlet weak var lblWhichCity: UILabel!
     
     var citySelectionViewModel = CitySelectionViewModel()
     
@@ -35,6 +36,8 @@ class CitySelectionVC: BaseVC {
         setUserLocationLabel()
         
         btnAllCities.setCornerRadius(cornerRadius: 20, maskedCorners: [.layerMaxXMaxYCorner, .layerMinXMinYCorner])
+        
+        lblWhichCity.setFont(font: Fonts.barlowRegular.rawValue, size: 30)
     }
     
     private func setUserLocationLabel(){
