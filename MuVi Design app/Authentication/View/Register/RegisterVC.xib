@@ -42,13 +42,13 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGm-wY-mdp">
-                            <rect key="frame" x="40.000000000000014" y="228" width="179.33333333333337" height="37.333333333333314"/>
+                            <rect key="frame" x="40.000000000000014" y="208" width="179.33333333333337" height="37.333333333333343"/>
                             <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="31"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get the best experience with MuviCinemas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1An-gW-fpi">
-                            <rect key="frame" x="40" y="275.33333333333331" width="328.66666666666669" height="21.666666666666686"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get the best experience with MuviCinemas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1An-gW-fpi">
+                            <rect key="frame" x="40" y="255.33333333333334" width="328.66666666666669" height="21.666666666666657"/>
                             <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -71,13 +71,13 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MzS-HK-MSV">
-                            <rect key="frame" x="40.000000000000007" y="327" width="110.66666666666669" height="20"/>
+                            <rect key="frame" x="40.000000000000007" y="307" width="110.66666666666669" height="20"/>
                             <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="5XXXXXXX" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xRY-1I-WiU">
-                            <rect key="frame" x="40" y="357" width="313" height="66"/>
+                            <rect key="frame" x="40" y="337" width="313" height="66"/>
                             <color key="backgroundColor" white="0.0" alpha="0.10306938120860927" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="66" id="31w-Wt-wEb"/>
@@ -99,7 +99,7 @@
                         <constraint firstItem="Uta-I3-cfD" firstAttribute="leading" secondItem="dRK-os-xjA" secondAttribute="leading" id="PSj-Kf-Uer"/>
                         <constraint firstItem="Uta-I3-cfD" firstAttribute="top" secondItem="dRK-os-xjA" secondAttribute="top" constant="-10" id="YsI-Jf-kzO"/>
                         <constraint firstItem="MzS-HK-MSV" firstAttribute="top" secondItem="1An-gW-fpi" secondAttribute="bottom" constant="30" id="cCK-7K-GOo"/>
-                        <constraint firstItem="VGm-wY-mdp" firstAttribute="top" secondItem="Ti4-xG-CC8" secondAttribute="bottom" constant="40" id="cic-9J-yqb"/>
+                        <constraint firstItem="VGm-wY-mdp" firstAttribute="top" secondItem="Ti4-xG-CC8" secondAttribute="bottom" constant="20" id="cic-9J-yqb"/>
                         <constraint firstItem="1An-gW-fpi" firstAttribute="leading" secondItem="Ti4-xG-CC8" secondAttribute="leading" id="eNI-bC-r2c"/>
                         <constraint firstItem="67G-n0-Dyx" firstAttribute="centerX" secondItem="dRK-os-xjA" secondAttribute="centerX" id="fyg-mu-vhV"/>
                         <constraint firstItem="xRY-1I-WiU" firstAttribute="leading" secondItem="MzS-HK-MSV" secondAttribute="leading" id="hTF-Jb-DF5"/>

@@ -18,6 +18,8 @@
 		9232157F2B21BAF600B54FDC /* PreferedExperienceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9232157E2B21BAF600B54FDC /* PreferedExperienceViewModel.swift */; };
 		9281A5F72B23453600BD13B5 /* OTPVerificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281A5F52B23453600BD13B5 /* OTPVerificationVC.swift */; };
 		9281A5F82B23453600BD13B5 /* OTPVerificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9281A5F62B23453600BD13B5 /* OTPVerificationVC.xib */; };
+		9283E2602B28463D005CA2CA /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9283E25F2B28463D005CA2CA /* HomeTabBarController.swift */; };
+		9283E2642B286139005CA2CA /* HomeTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9283E2632B286139005CA2CA /* HomeTabBarViewModel.swift */; };
 		928AE1682B1D9EAB00B517F5 /* Barlow-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1562B1D9EA800B517F5 /* Barlow-BoldItalic.ttf */; };
 		928AE1692B1D9EAB00B517F5 /* Barlow-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1572B1D9EA800B517F5 /* Barlow-Italic.ttf */; };
 		928AE16A2B1D9EAB00B517F5 /* Barlow-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 928AE1582B1D9EA800B517F5 /* Barlow-BlackItalic.ttf */; };
@@ -77,6 +79,8 @@
 		9232157E2B21BAF600B54FDC /* PreferedExperienceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferedExperienceViewModel.swift; sourceTree = "<group>"; };
 		9281A5F52B23453600BD13B5 /* OTPVerificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerificationVC.swift; sourceTree = "<group>"; };
 		9281A5F62B23453600BD13B5 /* OTPVerificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVerificationVC.xib; sourceTree = "<group>"; };
+		9283E25F2B28463D005CA2CA /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		9283E2632B286139005CA2CA /* HomeTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewModel.swift; sourceTree = "<group>"; };
 		928AE1562B1D9EA800B517F5 /* Barlow-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-BoldItalic.ttf"; sourceTree = "<group>"; };
 		928AE1572B1D9EA800B517F5 /* Barlow-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Italic.ttf"; sourceTree = "<group>"; };
 		928AE1582B1D9EA800B517F5 /* Barlow-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -196,6 +200,39 @@
 			path = "OTP Verification";
 			sourceTree = "<group>";
 		};
+		9283E25D2B28430A005CA2CA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9283E2622B286119005CA2CA /* ViewModel */,
+				9283E2612B28610C005CA2CA /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9283E25E2B2843C5005CA2CA /* HomeTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				9283E25F2B28463D005CA2CA /* HomeTabBarController.swift */,
+			);
+			path = HomeTabBarController;
+			sourceTree = "<group>";
+		};
+		9283E2612B28610C005CA2CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9283E25E2B2843C5005CA2CA /* HomeTabBarController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9283E2622B286119005CA2CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9283E2632B286139005CA2CA /* HomeTabBarViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		928AE1552B1D9E8600B517F5 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +314,7 @@
 		9293BB3C2B199A5500A85E86 /* MuVi Design app */ = {
 			isa = PBXGroup;
 			children = (
+				9283E25D2B28430A005CA2CA /* Home */,
 				9293BB672B19EE9800A85E86 /* Models */,
 				9293BB562B19AA6200A85E86 /* Authentication */,
 				9293BB622B19EB9E00A85E86 /* Intro Screens */,
@@ -540,6 +578,8 @@
 				9232157A2B21B06400B54FDC /* PreferedExperienceCell.swift in Sources */,
 				928BA4862B20692500996AB8 /* CitySelectionCell.swift in Sources */,
 				928BA4832B20615800996AB8 /* CitySelectionVC + CollectionView.swift in Sources */,
+				9283E2602B28463D005CA2CA /* HomeTabBarController.swift in Sources */,
+				9283E2642B286139005CA2CA /* HomeTabBarViewModel.swift in Sources */,
 				928AE18E2B1DF98F00B517F5 /* PreferencesCell.swift in Sources */,
 				928AE18A2B1DF5A600B517F5 /* PreferencesVC.swift in Sources */,
 				9281A5F72B23453600BD13B5 /* OTPVerificationVC.swift in Sources */,
