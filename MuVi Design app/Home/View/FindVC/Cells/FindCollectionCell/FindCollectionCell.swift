@@ -10,7 +10,10 @@ import UIKit
 class FindCollectionCell: UITableViewCell {
 
     @IBOutlet weak var findCollectionView: UICollectionView!
+    
     let preferenceVM = PreferencesViewModel()
+    var currentSection = 0
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setCollectionView()
@@ -26,33 +29,12 @@ class FindCollectionCell: UITableViewCell {
         
         findCollectionView.register(UINib(nibName: CellNames.PreferencesCell.rawValue, bundle: nil), forCellWithReuseIdentifier: CellNames.PreferencesCell.rawValue)
         findCollectionView.register(UINib(nibName: CellNames.PreferedExperienceCell.rawValue, bundle: nil), forCellWithReuseIdentifier: CellNames.PreferedExperienceCell.rawValue)
+        
+        findCollectionView.isScrollEnabled = false
+        
+        if currentSection == 0{
+            findCollectionView.collectionViewLayout = LeftAlignedCollectionViewFlowLayout()
+        }
     }
     
-}
-
-extension FindCollectionCell: UICollectionViewDelegate, UICollectionViewDataSource{
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return genres.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellNames.PreferencesCell.rawValue, for: indexPath) as? PreferencesCell
-        cell?.setUpUI(lblText: genres["\(indexPath.row)"]?["genre"] as! String)
-        cell?.layer.cornerRadius = 20
-        cell?.layer.borderWidth = 1
-        return cell ?? UICollectionViewCell()
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath) as? PreferencesCell
-        cell?.setCellBorder(color: AppColors.secondary)
-        genres["\(indexPath.row)"]?["selected"] = true
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath) as? PreferencesCell
-        cell?.setCellBorder(color: AppColors.blackColor)
-        genres["\(indexPath.row)"]?["selected"] = false
-    }
 }

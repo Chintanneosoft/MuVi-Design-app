@@ -31,6 +31,9 @@ enum ScreenText:String{
     case lblFindMovies = "FindMovies @MuviCinemas"
     
     case txtSearchbyName = "Search by Name, Actor…"
+    
+    case findSection0 = "Browse By Genre"
+    case findSection1 = "Browse By Experience"
 }
 
 enum ImageNames:String{
@@ -64,7 +67,6 @@ enum CellNames:String{
     case CitySelectionCell = "CitySelectionCell"
     case FooterView = "FooterView"
     case PreferedExperienceCell = "PreferedExperienceCell"
-    case FindHeaderCell = "FindHeaderCell"
     case FindCollectionCell = "FindCollectionCell"
 }
 

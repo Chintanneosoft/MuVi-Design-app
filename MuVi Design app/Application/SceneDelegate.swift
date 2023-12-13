@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        }
         
 //        initailVC = HomeTabBarController()
-        
+        initailVC = FindVC(nibName: VCNames.FindVC.rawValue, bundle: nil)
         let navigationController = UINavigationController(rootViewController: initailVC ?? UIViewController())
         window.rootViewController = navigationController
         self.window = window
