@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-MuVi Design app/Pods-MuVi Design app-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/SKCountryPicker/SKCountryPicker.framework
+${BUILT_PRODUCTS_DIR}/WaveTab/WaveTab.framework

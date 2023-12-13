@@ -20,7 +20,7 @@ class RegisterVC: BaseVC {
     private func setUpUI(){
         
         txtPhoneNumber.delegate = self
-        txtPhoneNumber.setIcon(UIImage(named: "IndianFlag") ?? UIImage(), "+91", UIImage(systemName: "chevron.down")?.withTintColor(.white, renderingMode: .alwaysOriginal) ?? UIImage(), action: #selector(self.showCountryPicker), target: self)
+        txtPhoneNumber.setIconWithLabel(UIImage(named: "IndianFlag") ?? UIImage(), "+91", UIImage(systemName: "chevron.down")?.withTintColor(.white, renderingMode: .alwaysOriginal) ?? UIImage(), action: #selector(self.showCountryPicker), target: self)
         
         txtPhoneNumber.keyboardType = .numberPad
 

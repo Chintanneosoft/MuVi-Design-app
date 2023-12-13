@@ -56,13 +56,13 @@ class PreferencesVC: BaseVC {
             for i in 0..<genreCollectionView.numberOfItems(inSection: 0) {
                 let indexPath = IndexPath(item: i, section: 0)
                 genreCollectionView.selectItem(at: indexPath, animated: false, scrollPosition: [])
-                preferencesViewModel.genres["\(i)"]?["selected"] = true
+                genres["\(i)"]?["selected"] = true
             }
         } else {
             for i in 0..<genreCollectionView.numberOfItems(inSection: 0) {
                 let indexPath = IndexPath(item: i, section: 0)
                 genreCollectionView.deselectItem(at: indexPath, animated: false)
-                preferencesViewModel.genres["\(i)"]?["selected"] = false
+                genres["\(i)"]?["selected"] = false
             }
         }
         

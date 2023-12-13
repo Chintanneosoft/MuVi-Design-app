@@ -12,6 +12,11 @@ class BaseVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpBaseUI()
+        
+//        if let statusBarHeight = UIApplication.shared.windows.first?.windowScene?.statusBarManager?.statusBarFrame.height {
+//            view.frame = CGRect(x: 0, y: statusBarHeight, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - statusBarHeight)
+//        }
+
     }
     
     func setUpBaseUI(){

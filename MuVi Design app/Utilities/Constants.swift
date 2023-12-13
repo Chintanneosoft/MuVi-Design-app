@@ -24,6 +24,21 @@ enum Constants:String{
 
 enum ScreenText:String{
     case btnProceed = "Proceed"
+    case btnApply = "APPLY"
+    
+    case search = "Search"
+    
+    case lblFindMovies = "FindMovies @MuviCinemas"
+    
+    case txtSearchbyName = "Search by Name, Actor…"
+}
+
+enum ImageNames:String{
+    case discoverImg = "discoverIcon"
+    case moviesImg = "moviesIcon"
+    case foodDrinksImg = "food&drinksIcon"
+    case experienceImg  = "experienceIcon"
+    case findImg = "findIcon"
 }
 
 enum VCNames:String{
@@ -34,11 +49,13 @@ enum VCNames:String{
     case PreferencesVC = "PreferencesVC"
     case CitySelectionVC = "CitySelectionVC"
     case PreferedExperienceVC = "PreferedExperienceVC"
+    case FindVC = "FindVC"
 }
 
 enum Fonts: String{
     case barlowRegular = "Barlow-Regular"
     case barlowBold = "Barlow-Bold"
+    case barlowLight = "Barlow-Light"
 }
 
 enum CellNames:String{
@@ -47,6 +64,8 @@ enum CellNames:String{
     case CitySelectionCell = "CitySelectionCell"
     case FooterView = "FooterView"
     case PreferedExperienceCell = "PreferedExperienceCell"
+    case FindHeaderCell = "FindHeaderCell"
+    case FindCollectionCell = "FindCollectionCell"
 }
 
 struct AppColors{

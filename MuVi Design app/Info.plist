@@ -6,6 +6,7 @@
 	<array>
 		<string>Barlow-Regular.ttf</string>
 		<string>Barlow-Bold.ttf</string>
+		<string>Barlow-Light.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

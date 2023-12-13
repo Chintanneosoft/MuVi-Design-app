@@ -10,18 +10,18 @@ import UIKit
 
 extension PreferedExperienceVC: UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return preferedExperienceViewModel.cinemas.count
+        return cinemas.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellNames.PreferedExperienceCell.rawValue, for: indexPath) as? PreferedExperienceCell
-        cell?.setCellUI(img: UIImage(named: preferedExperienceViewModel.cinemas["\(indexPath.row)"]?["cinema"] ?? "") ?? UIImage() , lblText: preferedExperienceViewModel.cinemas["\(indexPath.row)"]?["cinema"] ?? "")
+        cell?.setCellUI(img: UIImage(named: cinemas["\(indexPath.row)"]?["cinema"] ?? "") ?? UIImage() , lblText: cinemas["\(indexPath.row)"]?["cinema"] ?? "")
         return cell ?? UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as? PreferedExperienceCell
-        preferedExperienceViewModel.selectedExperience = preferedExperienceViewModel.cinemas["\(indexPath.row)"]?["cinema"] ?? ""
+        preferedExperienceViewModel.selectedExperience = cinemas["\(indexPath.row)"]?["cinema"] ?? ""
         btnProceed.setTitle(ScreenText.btnProceed.rawValue, for: .normal)
         cell?.setbuttonVisibility()
     }

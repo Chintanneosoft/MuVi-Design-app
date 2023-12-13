@@ -34,12 +34,17 @@ class WalkThroughVC: BaseVC {
 
 //MARK: - ShowNextPageDelegate
 extension WalkThroughVC: ShowNextPageDelegate{
-    func showNextPage(pageNumber: Int) {
-        if pageNumber < walkThroughData.count - 1{
-            walkThroughCollectionView.scrollToItem(at: IndexPath(item: pageNumber + 1, section: 0), at: .centeredHorizontally, animated: true)
+    func showNextPage(pageNumber: Int, isPageControl: Bool) {
+        if isPageControl{
+            walkThroughCollectionView.scrollToItem(at: IndexPath(item: pageNumber, section: 0), at: .centeredHorizontally, animated: true)
+            walkThroughCollectionView.reloadData()
         } else {
-            let nextVC = PreferencesVC(nibName: VCNames.PreferencesVC.rawValue, bundle: nil)
-            navigationController?.pushViewController(nextVC, animated: true)
+            if pageNumber < walkThroughData.count - 1{
+                walkThroughCollectionView.scrollToItem(at: IndexPath(item: pageNumber + 1, section: 0), at: .centeredHorizontally, animated: true)
+            } else {
+                let nextVC = PreferencesVC(nibName: VCNames.PreferencesVC.rawValue, bundle: nil)
+                navigationController?.pushViewController(nextVC, animated: true)
+            }
         }
     }
 }

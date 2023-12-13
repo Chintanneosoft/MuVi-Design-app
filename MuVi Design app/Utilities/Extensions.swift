@@ -39,6 +39,17 @@ extension UIButton{
         self.titleLabel?.setFont(font: font, size: size)
     }
     
+    func setAttributedString(text: String,font:String,color:UIColor,size:CGFloat){
+        let paddedText = "     \(text)     "
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont.appFont(font: font,size: size),
+                .foregroundColor: color
+            ]
+        let attributedText = NSAttributedString(string: paddedText, attributes: attributes)
+        self.setAttributedTitle(attributedText, for: .normal)
+       
+    }
+    
     func setCornerRadius(cornerRadius: CGFloat,maskedCorners: CACornerMask,borderColor: UIColor = AppColors.blackColor, borderWidth:CGFloat = 1.0){
         
         self.clipsToBounds = true
@@ -65,7 +76,7 @@ extension UIFont {
 
 //for TextField
 extension UITextField {
-    func setIcon(_ image1: UIImage, _ labelText: String, _ image2: UIImage, action: Selector, target: Any) {
+    func setIconWithLabel(_ image1: UIImage, _ labelText: String, _ image2: UIImage, action: Selector, target: Any) {
         // Create the first ImageView
         let imageView1 = UIImageView(frame: CGRect(x: 10, y: 0, width: 30, height: 30))
         imageView1.image = image1
@@ -98,6 +109,34 @@ extension UITextField {
         
         leftView = iconContainerView
         leftViewMode = .always
+    }
+    
+    func setIcon(_ image: UIImage, action: Selector?, target: Any?){
+        let imageView = UIImageView(frame: CGRect(x: 5, y: 0, width: 25, height: 25))
+        imageView.image = image.withRenderingMode(.alwaysTemplate)
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = imageView.bounds.width/2
+        imageView.tintColor = .white
+        
+        if target != nil{
+            let tapGesture = UITapGestureRecognizer(target: target, action: action)
+            imageView.addGestureRecognizer(tapGesture)
+            imageView.isUserInteractionEnabled = true
+        }
+        
+        let iconView =  UIView(frame: CGRect(x: 0, y: 0, width: imageView.frame.width + 20, height: imageView.frame.height))
+        iconView.addSubview(imageView)
+        
+        leftView = iconView
+        
+        leftViewMode = .always
+    }
+    
+    func setAttributedPlaceholder(placeHolder: String, color: UIColor, font: String, size: CGFloat){
+        self.attributedPlaceholder = NSAttributedString(
+            string: placeHolder,
+            attributes: [NSAttributedString.Key.foregroundColor: color,NSAttributedString.Key.font: UIFont.appFont(font: font, size: size)]
+        )
     }
 }
 

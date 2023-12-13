@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        let initailVC: UIViewController?
+        var initailVC: UIViewController?
         let hasAppLauchedBefore = UserDefaults.standard.bool(forKey: "hasAppLauchedBefore")
         
 //        if hasAppLauchedBefore {
@@ -26,6 +26,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        } else {
             initailVC = WalkThroughVC(nibName: VCNames.WalkThroughVC.rawValue, bundle: nil)
 //        }
+        
+//        initailVC = HomeTabBarController()
+        
         let navigationController = UINavigationController(rootViewController: initailVC ?? UIViewController())
         window.rootViewController = navigationController
         self.window = window

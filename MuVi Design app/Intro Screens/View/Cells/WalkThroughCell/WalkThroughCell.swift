@@ -9,7 +9,7 @@ import UIKit
 
 //MARK: - ShowNextPageDelegate Protocol
 protocol ShowNextPageDelegate:NSObject{
-    func showNextPage(pageNumber: Int)
+    func showNextPage(pageNumber: Int, isPageControl: Bool)
 }
 
 class WalkThroughCell: UICollectionViewCell {
@@ -33,10 +33,9 @@ class WalkThroughCell: UICollectionViewCell {
     }
     
     private func setButton(btnTitle: String){
-        
-        btn.setTitleFont(font: Fonts.barlowBold.rawValue, size: 15)
-        btn.setTitle(btnTitle, for: .normal)
-        
+//        btn.setTitleFont(font: Fonts.barlowBold.rawValue, size: 15)
+//        btn.setTitle(btnTitle, for: .normal)
+        btn.setAttributedString(text: btnTitle, font: Fonts.barlowBold.rawValue, color: .white, size: 14)
         btn.applyGradient(colours: [AppColors.redColor, AppColors.purpleColor], angle: -45)
         btn.setCornerRadius(cornerRadius: 20, maskedCorners: [.layerMaxXMaxYCorner, .layerMinXMinYCorner], borderWidth: 0)
     }
@@ -48,6 +47,10 @@ class WalkThroughCell: UICollectionViewCell {
     }
     
     @IBAction func btnTapped(_ sender: UIButton) {
-        showNextPageDelegate?.showNextPage(pageNumber: pageControl.currentPage)
+        showNextPageDelegate?.showNextPage(pageNumber: pageControl.currentPage, isPageControl: false)
+    }
+    
+    @IBAction func pageControlTapped(_ sender: UIPageControl) {
+        showNextPageDelegate?.showNextPage(pageNumber: sender.currentPage, isPageControl: true)
     }
 }

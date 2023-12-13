@@ -29,26 +29,26 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoImg" translatesAutoresizingMaskIntoConstraints="NO" id="Ti4-xG-CC8">
-                            <rect key="frame" x="40" y="105" width="150" height="83"/>
+                            <rect key="frame" x="40" y="100" width="150" height="83"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="150" id="Ltj-xI-CRJ"/>
                                 <constraint firstAttribute="height" constant="83" id="QJ3-Ht-3mr"/>
                             </constraints>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topCurve" translatesAutoresizingMaskIntoConstraints="NO" id="Uta-I3-cfD">
-                            <rect key="frame" x="0.0" y="-10" width="393" height="155"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topCurve" translatesAutoresizingMaskIntoConstraints="NO" id="Uta-I3-cfD">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="140"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="155" id="x3M-h0-csi"/>
+                                <constraint firstAttribute="height" constant="140" id="x3M-h0-csi"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGm-wY-mdp">
-                            <rect key="frame" x="40.000000000000014" y="208" width="179.33333333333337" height="37.333333333333343"/>
+                            <rect key="frame" x="40.000000000000014" y="203" width="179.33333333333337" height="36.333333333333343"/>
                             <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="31"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get the best experience with MuviCinemas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1An-gW-fpi">
-                            <rect key="frame" x="40" y="255.33333333333334" width="328.66666666666669" height="21.666666666666657"/>
+                            <rect key="frame" x="40" y="249.33333333333334" width="328.66666666666669" height="21.666666666666657"/>
                             <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -71,13 +71,13 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MzS-HK-MSV">
-                            <rect key="frame" x="40.000000000000007" y="307" width="110.66666666666669" height="20"/>
+                            <rect key="frame" x="40.000000000000007" y="301" width="110.66666666666669" height="20"/>
                             <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="5XXXXXXX" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xRY-1I-WiU">
-                            <rect key="frame" x="40" y="337" width="313" height="66"/>
+                            <rect key="frame" x="40" y="331" width="313" height="66"/>
                             <color key="backgroundColor" white="0.0" alpha="0.10306938120860927" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="66" id="31w-Wt-wEb"/>
@@ -97,7 +97,7 @@
                         <constraint firstItem="MzS-HK-MSV" firstAttribute="leading" secondItem="VGm-wY-mdp" secondAttribute="leading" id="LmV-Ew-rcw"/>
                         <constraint firstItem="Ti4-xG-CC8" firstAttribute="leading" secondItem="dRK-os-xjA" secondAttribute="leading" constant="40" id="MkS-eQ-OaV"/>
                         <constraint firstItem="Uta-I3-cfD" firstAttribute="leading" secondItem="dRK-os-xjA" secondAttribute="leading" id="PSj-Kf-Uer"/>
-                        <constraint firstItem="Uta-I3-cfD" firstAttribute="top" secondItem="dRK-os-xjA" secondAttribute="top" constant="-10" id="YsI-Jf-kzO"/>
+                        <constraint firstItem="Uta-I3-cfD" firstAttribute="top" secondItem="dRK-os-xjA" secondAttribute="top" id="YsI-Jf-kzO"/>
                         <constraint firstItem="MzS-HK-MSV" firstAttribute="top" secondItem="1An-gW-fpi" secondAttribute="bottom" constant="30" id="cCK-7K-GOo"/>
                         <constraint firstItem="VGm-wY-mdp" firstAttribute="top" secondItem="Ti4-xG-CC8" secondAttribute="bottom" constant="20" id="cic-9J-yqb"/>
                         <constraint firstItem="1An-gW-fpi" firstAttribute="leading" secondItem="Ti4-xG-CC8" secondAttribute="leading" id="eNI-bC-r2c"/>

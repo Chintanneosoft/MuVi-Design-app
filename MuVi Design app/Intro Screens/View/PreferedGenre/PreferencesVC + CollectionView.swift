@@ -10,12 +10,12 @@ import UIKit
 
 extension PreferencesVC: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return preferencesViewModel.genres.count
+        return genres.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellNames.PreferencesCell.rawValue, for: indexPath) as? PreferencesCell
-        cell?.setUpUI(lblText: preferencesViewModel.genres["\(indexPath.row)"]?["genre"] as! String)
+        cell?.setUpUI(lblText: genres["\(indexPath.row)"]?["genre"] as! String)
         cell?.layer.cornerRadius = 20
         cell?.layer.borderWidth = 1
         cell?.setCellBorder(color: isAllSelected ? AppColors.secondary : AppColors.blackColor)
@@ -25,16 +25,14 @@ extension PreferencesVC: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as? PreferencesCell
         cell?.setCellBorder(color: AppColors.secondary)
-        preferencesViewModel.genres["\(indexPath.row)"]?["selected"] = true
+        genres["\(indexPath.row)"]?["selected"] = true
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as? PreferencesCell
         cell?.setCellBorder(color: AppColors.blackColor)
-        preferencesViewModel.genres["\(indexPath.row)"]?["selected"] = false
+        genres["\(indexPath.row)"]?["selected"] = false
     }
-    
-    
 }
 
 extension PreferencesVC: UICollectionViewDelegateFlowLayout{
@@ -48,7 +46,7 @@ extension PreferencesVC: UICollectionViewDelegateFlowLayout{
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let item = preferencesViewModel.genres["\(indexPath.row)"]?["genre"] ?? ""
+        let item = genres["\(indexPath.row)"]?["genre"] ?? ""
         let itemSize = (item as AnyObject).size(withAttributes: [
             NSAttributedString.Key.font : UIFont(name: Fonts.barlowRegular.rawValue, size: 18) as Any
            ])
