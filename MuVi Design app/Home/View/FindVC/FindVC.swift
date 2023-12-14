@@ -20,26 +20,25 @@ class FindVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         setTableView()
-        setUpUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
+        setUpUI()
         
-        self.view.applyGradient(colours: [AppColors.primary, AppColors.darkPurpleColor])
     }
     
     private func setTableView(){
         findTableView.delegate = self
         findTableView.dataSource = self
-    
-        findTableView.register(UINib(nibName: CellNames.FindCollectionCell.rawValue, bundle: nil), forCellReuseIdentifier: CellNames.FindCollectionCell.rawValue)
         
+        findTableView.register(UINib(nibName: CellIdentifiers.FindCollectionCell.rawValue, bundle: nil), forCellReuseIdentifier: CellIdentifiers.FindCollectionCell.rawValue)
     }
 
-    
     //Setting UI
     private func setUpUI(){
+        self.view.applyGradient(colours: [AppColors.primary, AppColors.darkPurpleColor])
         
         txtContainerView.clipsToBounds = true
         txtContainerView.layer.cornerRadius = 10
@@ -62,7 +61,7 @@ class FindVC: BaseVC {
     
     private func setTextField(){
         
-        let leftImage = UIImage(named: ImageNames.findImg.rawValue)
+        let leftImage = UIImage(systemName: ImageStrings.searchImg.rawValue)
         leftImage?.withRenderingMode(.alwaysTemplate)
         
         txtSearch.textColor = .white

@@ -11,47 +11,45 @@ import UIKit
 extension FindVC: UITableViewDelegate, UITableViewDataSource{
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return 5
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section{
         case 0:
             return 1
-        case 1:
-            return 1
         default:
-            return 2
+            return 1
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell =  UITableViewCell()
+        let findCollectionCell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.FindCollectionCell.rawValue, for: indexPath) as? FindCollectionCell
+        findCollectionCell?.currentSection = indexPath.section
         switch indexPath.section{
         case 0:
-            let sectionCell0 = tableView.dequeueReusableCell(withIdentifier: CellNames.FindCollectionCell.rawValue, for: indexPath) as? FindCollectionCell
-            sectionCell0?.currentSection = 0
-            return sectionCell0 ?? UITableViewCell()
-        case 1:
-            let sectionCell1 = tableView.dequeueReusableCell(withIdentifier: CellNames.FindCollectionCell.rawValue, for: indexPath) as? FindCollectionCell
-            sectionCell1?.currentSection = 1
-            return sectionCell1 ?? UITableViewCell()
+            findCollectionCell?.configureWithSection(indexPath.section)
+        case 2:
+            findCollectionCell?.backgroundColor = AppColors.opaqueBlackColor
         default:
-            print(cell)
+            print()
         }
-        return cell
+        return findCollectionCell ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section{
         case 0:
-            return UIScreen.main.bounds.width
+            return UIScreen.main.bounds.width + 30
         case 1:
-            return UIScreen.main.bounds.width
+            return UIScreen.main.bounds.width + 40
+        case 2:
+            return UIScreen.main.bounds.width/3
+        case 4:
+            return UIScreen.main.bounds.width/1.2
         default:
             return UITableView.automaticDimension
         }
-        return UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -67,7 +65,10 @@ extension FindVC: UITableViewDelegate, UITableViewDataSource{
         case 1:
             label.text = ScreenText.findSection1.rawValue
         case 2:
-            label.text = "Browse By Experience"
+            label.text = ScreenText.findSection2.rawValue
+            headerView.backgroundColor = AppColors.opaqueBlackColor
+        case 4:
+            label.text = ScreenText.findSection4.rawValue
         default:
             return UIView()
         }
@@ -77,15 +78,14 @@ extension FindVC: UITableViewDelegate, UITableViewDataSource{
         
         NSLayoutConstraint.activate([
             label.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 40),
-            label.centerYAnchor.constraint(equalTo: headerView.centerYAnchor)
-        ])
-        
+            label.centerYAnchor.constraint(equalTo: headerView.centerYAnchor, constant: 20)
+        ])        
         return headerView
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 30))
-        footerView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
+        footerView.backgroundColor = AppColors.opaqueBlackColor
         return footerView
     }
     

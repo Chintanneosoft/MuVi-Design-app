@@ -34,17 +34,21 @@ enum ScreenText:String{
     
     case findSection0 = "Browse By Genre"
     case findSection1 = "Browse By Experience"
+    case findSection2 = "Languages"
+    case findSection3 = "Popular Searches"
+    case findSection4 = "Popular Cast"
 }
 
-enum ImageNames:String{
+enum ImageStrings:String{
     case discoverImg = "discoverIcon"
     case moviesImg = "moviesIcon"
     case foodDrinksImg = "food&drinksIcon"
     case experienceImg  = "experienceIcon"
     case findImg = "findIcon"
+    case searchImg = "magnifyingglass"
 }
 
-enum VCNames:String{
+enum VCNibs:String{
     case LoginVC = "LoginVC"
     case RegisterVC = "RegisterVC"
     case OTPVerificationVC = "OTPVerificationVC"
@@ -61,13 +65,14 @@ enum Fonts: String{
     case barlowLight = "Barlow-Light"
 }
 
-enum CellNames:String{
+enum CellIdentifiers:String{
     case WalkThroughCell = "WalkThroughCell"
     case PreferencesCell = "PreferencesCell"
     case CitySelectionCell = "CitySelectionCell"
     case FooterView = "FooterView"
     case PreferedExperienceCell = "PreferedExperienceCell"
     case FindCollectionCell = "FindCollectionCell"
+    case LanguageCell = "LanguageCell"
 }
 
 struct AppColors{
@@ -77,6 +82,10 @@ struct AppColors{
     static var secondary = UIColor(red: 221.0/255.0, green: 47.0/255.0, blue: 128.0/255.0, alpha: 1.0)
     static var darkPurpleColor = UIColor(red: 57.0/255.0, green: 25.0/255.0, blue: 101.0/255.0, alpha: 1.0)
     static var blackColor = UIColor(red: 36.0/255.0, green: 34.0/255.0, blue: 34.0/255.0, alpha: 1.0)
+    static var blueColor = UIColor(red: 37.0/255.0, green: 76.0/255.0, blue: 163.0/255.0, alpha: 1.0)
+    static var orangeColor = UIColor(red: 239.0/255.0, green: 73.0/255.0, blue: 73.0/255.0, alpha: 1.0)
+    static var lightPurpleColor = UIColor(red: 159.0/255.0, green: 69.0/255.0, blue: 191.0/255.0, alpha: 1.0)
+    static var opaqueBlackColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
 }
 
 enum UserDefaultKeys:String{

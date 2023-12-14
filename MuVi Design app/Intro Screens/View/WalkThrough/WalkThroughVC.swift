@@ -27,7 +27,7 @@ class WalkThroughVC: BaseVC {
         walkThroughCollectionView.delegate = self
         walkThroughCollectionView.dataSource = self
         
-        walkThroughCollectionView.register(UINib(nibName: CellNames.WalkThroughCell.rawValue, bundle: nil), forCellWithReuseIdentifier: CellNames.WalkThroughCell.rawValue)
+        walkThroughCollectionView.register(UINib(nibName: CellIdentifiers.WalkThroughCell.rawValue, bundle: nil), forCellWithReuseIdentifier: CellIdentifiers.WalkThroughCell.rawValue)
     }
 
 }
@@ -42,7 +42,7 @@ extension WalkThroughVC: ShowNextPageDelegate{
             if pageNumber < walkThroughData.count - 1{
                 walkThroughCollectionView.scrollToItem(at: IndexPath(item: pageNumber + 1, section: 0), at: .centeredHorizontally, animated: true)
             } else {
-                let nextVC = PreferencesVC(nibName: VCNames.PreferencesVC.rawValue, bundle: nil)
+                let nextVC = PreferencesVC(nibName: VCNibs.PreferencesVC.rawValue, bundle: nil)
                 navigationController?.pushViewController(nextVC, animated: true)
             }
         }

@@ -25,7 +25,7 @@ class PreferedExperienceVC: BaseVC {
         preferedExpCollectionView.delegate = self
         preferedExpCollectionView.dataSource = self
         
-        preferedExpCollectionView.register(UINib(nibName: CellNames.PreferedExperienceCell.rawValue, bundle: nil), forCellWithReuseIdentifier: CellNames.PreferedExperienceCell.rawValue)
+        preferedExpCollectionView.register(UINib(nibName: CellIdentifiers.PreferedExperienceCell.rawValue, bundle: nil), forCellWithReuseIdentifier: CellIdentifiers.PreferedExperienceCell.rawValue)
     }
     
     private func setUpUI(){
@@ -35,7 +35,7 @@ class PreferedExperienceVC: BaseVC {
     }
     
     private func goToNextVC(){
-        let nextVC = LoginVC(nibName: VCNames.LoginVC.rawValue, bundle: nil)
+        let nextVC = LoginVC(nibName: VCNibs.LoginVC.rawValue, bundle: nil)
         navigationController?.pushViewController(nextVC, animated: true)
     }
     

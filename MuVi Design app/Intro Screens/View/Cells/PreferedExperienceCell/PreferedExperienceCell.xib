@@ -108,6 +108,7 @@
                 <outlet property="checkedView" destination="BYV-ra-Pgk" id="Kz4-YA-k1l"/>
                 <outlet property="imgCinema" destination="seO-WR-kwn" id="U5T-uw-HS8"/>
                 <outlet property="lblCinema" destination="uQS-gN-fpd" id="GXf-EI-2em"/>
+                <outlet property="lblProportionalWidth" destination="Y4p-Zx-H5B" id="0sW-j1-HgQ"/>
             </connections>
             <point key="canvasLocation" x="113.74045801526717" y="61.267605633802823"/>
         </collectionViewCell>

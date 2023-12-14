@@ -26,7 +26,7 @@ class LoginVC: BaseVC {
     }
     
     @IBAction func btnRegisterTapped(_ sender: UIButton) {
-        let nextVC = RegisterVC(nibName: VCNames.RegisterVC.rawValue, bundle: nil)
+        let nextVC = RegisterVC(nibName: VCNibs.RegisterVC.rawValue, bundle: nil)
         navigationController?.pushViewController(nextVC, animated: true)
     }
     

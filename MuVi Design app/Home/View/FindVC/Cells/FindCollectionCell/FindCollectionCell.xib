@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Sx4-1q-656">
-                        <rect key="frame" x="30" y="10" width="308" height="179"/>
+                        <rect key="frame" x="20" y="40" width="308" height="149"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="G4J-x3-60E">
                             <size key="itemSize" width="128" height="128"/>
@@ -29,10 +29,10 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="Sx4-1q-656" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="QZk-oh-zlH"/>
                     <constraint firstAttribute="bottom" secondItem="Sx4-1q-656" secondAttribute="bottom" constant="10" id="WY6-Ov-I4i"/>
-                    <constraint firstAttribute="trailing" secondItem="Sx4-1q-656" secondAttribute="trailing" constant="10" id="skK-1O-DhZ"/>
-                    <constraint firstItem="Sx4-1q-656" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="srF-rf-QY9"/>
+                    <constraint firstItem="Sx4-1q-656" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="qXN-0L-TDz"/>
+                    <constraint firstAttribute="trailing" secondItem="Sx4-1q-656" secondAttribute="trailing" constant="20" id="skK-1O-DhZ"/>
+                    <constraint firstItem="Sx4-1q-656" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="srF-rf-QY9"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

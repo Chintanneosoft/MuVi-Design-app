@@ -31,7 +31,7 @@ class HomeTabBarController: WaveTabBarController {
         experienceVC.view.backgroundColor = .orange
         experienceVC.tabBarItem = UITabBarItem(title: homeTabBarVM.tabItems["item3"]?["title"], image: UIImage(named:  (homeTabBarVM.tabItems["item3"]?["image"])!) ?? UIImage(systemName: "heart"), tag: 3)
         
-        let findVC = FindVC(nibName: VCNames.FindVC.rawValue, bundle: nil)
+        let findVC = FindVC(nibName: VCNibs.FindVC.rawValue, bundle: nil)
         findVC.tabBarItem = UITabBarItem(title: homeTabBarVM.tabItems["item4"]?["title"], image: UIImage(named:  (homeTabBarVM.tabItems["item4"]?["image"])!) ?? UIImage(systemName: "heart"), tag: 4)
         
         let tabBarList = [discoverVC, moviesVC, foodDrinksVC, experienceVC, findVC]

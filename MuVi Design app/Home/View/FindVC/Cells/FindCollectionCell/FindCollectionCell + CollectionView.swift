@@ -16,27 +16,39 @@ extension FindCollectionCell: UICollectionViewDelegate, UICollectionViewDataSour
             return genres.count
         case 1:
             return cinemas.count
+        case 2:
+            return languages.count
+        case 4:
+            return popularCast.count
         default:
             return 0
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell = UICollectionViewCell()
+        let cell = UICollectionViewCell()
         switch currentSection{
         case 0:
-            let cell0 = collectionView.dequeueReusableCell(withReuseIdentifier: CellNames.PreferencesCell.rawValue, for: indexPath) as? PreferencesCell ?? PreferencesCell()
-            cell0.setUpUI(lblText: genres["\(indexPath.row)"]?["genre"] as! String)
-            cell0.layer.cornerRadius = 20
-            cell0.layer.borderWidth = 1
-            cell0.setCellBorder(color: .white)
-            cell0.backgroundColor = AppColors.darkPurpleColor
-            return cell0
+            let preferencesCell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.PreferencesCell.rawValue, for: indexPath) as? PreferencesCell ?? PreferencesCell()
+            preferencesCell.setUpUI(lblText: genres["\(indexPath.row)"]?["genre"] as! String)
+            preferencesCell.layer.cornerRadius = 20
+            preferencesCell.layer.borderWidth = 1
+            preferencesCell.setCellBorder(color: .white)
+            preferencesCell.backgroundColor = AppColors.darkPurpleColor
+            return preferencesCell
         case 1:
-            let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: CellNames.PreferedExperienceCell.rawValue, for: indexPath) as? PreferedExperienceCell ?? PreferedExperienceCell()
-            cell1.setCellUI(img: UIImage(named: cinemas["\(indexPath.row)"]?["cinema"] ?? "") ?? UIImage() , lblText: cinemas["\(indexPath.row)"]?["cinema"] ?? "")
-            cell1.lblCinema.textColor = .white
-            return cell1
+            let preferedExperienceCell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.PreferedExperienceCell.rawValue, for: indexPath) as? PreferedExperienceCell ?? PreferedExperienceCell()
+            preferedExperienceCell.setCellUI(img: UIImage(named: cinemas["\(indexPath.row)"]?["cinema"] ?? "") ?? UIImage() , lblText: cinemas["\(indexPath.row)"]?["cinema"] ?? "")
+            preferedExperienceCell.lblCinema.textColor = .white
+            return preferedExperienceCell
+        case 2:
+            let languageCell = collectionView.getCell(indexPath: indexPath) as LanguageCell
+            languageCell.setCellDetails(language: languages["language\(indexPath.row)"] ?? [:])
+            return languageCell
+        case 4:
+            let preferedExperienceCell = collectionView.getCell(indexPath: indexPath) as PreferedExperienceCell
+            preferedExperienceCell.setCellForCast(cast: popularCast["cast\(indexPath.row)"] ?? [:])
+            return preferedExperienceCell
         default:
             print(cell)
         }
@@ -78,7 +90,7 @@ extension FindCollectionCell: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         switch currentSection{
         case 0:
-            return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+            return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 10)
         default:
             return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         }
@@ -90,6 +102,10 @@ extension FindCollectionCell: UICollectionViewDelegateFlowLayout{
         case 0:
             return 2
         case 1:
+            return 5
+        case 2:
+            return 10
+        case 4:
             return 5
         default:
             return 0
@@ -104,8 +120,14 @@ extension FindCollectionCell: UICollectionViewDelegateFlowLayout{
                 NSAttributedString.Key.font : UIFont(name: Fonts.barlowRegular.rawValue, size: 18) as Any
             ])
             return CGSize(width: itemSize.width + 35, height: itemSize.height + 20)
-        default:
+        case 1:
             return CGSize(width: collectionView.bounds.width/3.3, height: collectionView.bounds.width/2)
+        case 2:
+            return CGSize(width: collectionView.bounds.width/3.3, height: 64)
+        case 4:
+            return CGSize(width: collectionView.bounds.width/4.2, height: collectionView.bounds.width/2.3 )
+        default:
+            return CGSize()
         }
     }
 }

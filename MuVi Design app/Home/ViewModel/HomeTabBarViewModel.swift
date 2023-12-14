@@ -7,9 +7,9 @@
 
 import Foundation
 class HomeTabBarViewModel: NSObject{
-    var tabItems = ["item0":["title":"Discover","image":ImageNames.discoverImg.rawValue],
-                    "item1":["title":"Movies","image":ImageNames.moviesImg.rawValue],
-                    "item2":["title":"Food & Drinks","image":ImageNames.foodDrinksImg.rawValue],
-                    "item3":["title":"Experience","image":ImageNames.experienceImg.rawValue],
-                    "item4":["title":"Find","image":ImageNames.findImg.rawValue]]
+    var tabItems = ["item0":["title":"Discover","image":ImageStrings.discoverImg.rawValue],
+                    "item1":["title":"Movies","image":ImageStrings.moviesImg.rawValue],
+                    "item2":["title":"Food & Drinks","image":ImageStrings.foodDrinksImg.rawValue],
+                    "item3":["title":"Experience","image":ImageStrings.experienceImg.rawValue],
+                    "item4":["title":"Find","image":ImageStrings.findImg.rawValue]]
 }

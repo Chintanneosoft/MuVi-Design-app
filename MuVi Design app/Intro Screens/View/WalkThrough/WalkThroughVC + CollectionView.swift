@@ -15,7 +15,7 @@ extension WalkThroughVC: UICollectionViewDelegate, UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellNames.WalkThroughCell.rawValue, for: indexPath) as? WalkThroughCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.WalkThroughCell.rawValue, for: indexPath) as? WalkThroughCell
         cell?.showNextPageDelegate = self
         cell?.setDetails(lblText: walkThroughData["\(indexPath.row)"]?["\(Constants.lbl.rawValue)"] ?? "" , pageNumber: indexPath.row, btnTitle: walkThroughData["\(indexPath.row)"]?[Constants.btn.rawValue] ?? "")
         return cell ?? UICollectionViewCell()

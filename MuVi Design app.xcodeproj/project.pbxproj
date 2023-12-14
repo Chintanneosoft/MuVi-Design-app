@@ -21,6 +21,11 @@
 		923E37652B29B29B00B789D5 /* PreferedExperienceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923E37642B29B29A00B789D5 /* PreferedExperienceModel.swift */; };
 		9281A5F72B23453600BD13B5 /* OTPVerificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281A5F52B23453600BD13B5 /* OTPVerificationVC.swift */; };
 		9281A5F82B23453600BD13B5 /* OTPVerificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9281A5F62B23453600BD13B5 /* OTPVerificationVC.xib */; };
+		928396812B2ACDBA00D04A4A /* Extension + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928396802B2ACDBA00D04A4A /* Extension + TableView.swift */; };
+		928396832B2ACDEB00D04A4A /* Extension + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928396822B2ACDEB00D04A4A /* Extension + CollectionView.swift */; };
+		928396872B2AD01800D04A4A /* LanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928396852B2AD01800D04A4A /* LanguageCell.swift */; };
+		928396882B2AD01800D04A4A /* LanguageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928396862B2AD01800D04A4A /* LanguageCell.xib */; };
+		9283968A2B2AD1DD00D04A4A /* FindModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928396892B2AD1DD00D04A4A /* FindModel.swift */; };
 		9283E2602B28463D005CA2CA /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9283E25F2B28463D005CA2CA /* HomeTabBarController.swift */; };
 		9283E2642B286139005CA2CA /* HomeTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9283E2632B286139005CA2CA /* HomeTabBarViewModel.swift */; };
 		9283E2682B28A0BF005CA2CA /* FindVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9283E2662B28A0BF005CA2CA /* FindVC.swift */; };
@@ -89,6 +94,11 @@
 		923E37642B29B29A00B789D5 /* PreferedExperienceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferedExperienceModel.swift; sourceTree = "<group>"; };
 		9281A5F52B23453600BD13B5 /* OTPVerificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerificationVC.swift; sourceTree = "<group>"; };
 		9281A5F62B23453600BD13B5 /* OTPVerificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVerificationVC.xib; sourceTree = "<group>"; };
+		928396802B2ACDBA00D04A4A /* Extension + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + TableView.swift"; sourceTree = "<group>"; };
+		928396822B2ACDEB00D04A4A /* Extension + CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + CollectionView.swift"; sourceTree = "<group>"; };
+		928396852B2AD01800D04A4A /* LanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCell.swift; sourceTree = "<group>"; };
+		928396862B2AD01800D04A4A /* LanguageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageCell.xib; sourceTree = "<group>"; };
+		928396892B2AD1DD00D04A4A /* FindModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindModel.swift; sourceTree = "<group>"; };
 		9283E25F2B28463D005CA2CA /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		9283E2632B286139005CA2CA /* HomeTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewModel.swift; sourceTree = "<group>"; };
 		9283E2662B28A0BF005CA2CA /* FindVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindVC.swift; sourceTree = "<group>"; };
@@ -260,6 +270,15 @@
 			path = "OTP Verification";
 			sourceTree = "<group>";
 		};
+		928396842B2ACFF000D04A4A /* LanguageCell */ = {
+			isa = PBXGroup;
+			children = (
+				928396852B2AD01800D04A4A /* LanguageCell.swift */,
+				928396862B2AD01800D04A4A /* LanguageCell.xib */,
+			);
+			path = LanguageCell;
+			sourceTree = "<group>";
+		};
 		9283E25D2B28430A005CA2CA /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +327,7 @@
 		9286F5492B297A6C003585FD /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				928396842B2ACFF000D04A4A /* LanguageCell */,
 				923E375F2B29AFC500B789D5 /* FindCollectionCell */,
 			);
 			path = Cells;
@@ -437,6 +457,8 @@
 				9293BB5D2B19C8DE00A85E86 /* Constants.swift */,
 				928BA4752B2041A000996AB8 /* BaseVC.swift */,
 				928BA47B2B20560700996AB8 /* Helpers.swift */,
+				928396802B2ACDBA00D04A4A /* Extension + TableView.swift */,
+				928396822B2ACDEB00D04A4A /* Extension + CollectionView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -455,6 +477,7 @@
 			children = (
 				928BA4772B204CD100996AB8 /* PreferencesModel.swift */,
 				923E37642B29B29A00B789D5 /* PreferedExperienceModel.swift */,
+				928396892B2AD1DD00D04A4A /* FindModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -571,6 +594,7 @@
 				928AE1722B1D9EAB00B517F5 /* Barlow-Bold.ttf in Resources */,
 				9293BB4A2B199A5900A85E86 /* LaunchScreen.storyboard in Resources */,
 				928AE1742B1D9EAB00B517F5 /* Barlow-Thin.ttf in Resources */,
+				928396882B2AD01800D04A4A /* LanguageCell.xib in Resources */,
 				923215772B21AB5B00B54FDC /* PreferedExperienceVC.xib in Resources */,
 				928AE1792B1D9EAB00B517F5 /* Barlow-ExtraLight.ttf in Resources */,
 				9232157B2B21B06400B54FDC /* PreferedExperienceCell.xib in Resources */,
@@ -663,11 +687,13 @@
 				9283E2642B286139005CA2CA /* HomeTabBarViewModel.swift in Sources */,
 				928AE18E2B1DF98F00B517F5 /* PreferencesCell.swift in Sources */,
 				928AE18A2B1DF5A600B517F5 /* PreferencesVC.swift in Sources */,
+				928396832B2ACDEB00D04A4A /* Extension + CollectionView.swift in Sources */,
 				9281A5F72B23453600BD13B5 /* OTPVerificationVC.swift in Sources */,
 				928BA47A2B204D0200996AB8 /* PreferencesViewModel.swift in Sources */,
 				928AE1842B1DC5BD00B517F5 /* WalkThroughCell.swift in Sources */,
 				923215762B21AB5B00B54FDC /* PreferedExperienceVC.swift in Sources */,
 				9218A4392B22D4E800CA476F /* RegisterVC.swift in Sources */,
+				9283968A2B2AD1DD00D04A4A /* FindModel.swift in Sources */,
 				928BA4782B204CD100996AB8 /* PreferencesModel.swift in Sources */,
 				923E37622B29AFF500B789D5 /* FindCollectionCell.swift in Sources */,
 				9232157D2B21BA8900B54FDC /* PreferedExperienceVC + CollectionView.swift in Sources */,
@@ -679,11 +705,13 @@
 				928BA4892B20717F00996AB8 /* CitySelectionViewModel.swift in Sources */,
 				9232157F2B21BAF600B54FDC /* PreferedExperienceViewModel.swift in Sources */,
 				9293BB402B199A5500A85E86 /* SceneDelegate.swift in Sources */,
+				928396812B2ACDBA00D04A4A /* Extension + TableView.swift in Sources */,
 				9286F54F2B2987D9003585FD /* FindVC + TableView.swift in Sources */,
 				9293BB542B19AA5100A85E86 /* LoginVC.swift in Sources */,
 				9293BB652B19EC1800A85E86 /* WalkThroughVC.swift in Sources */,
 				928BA47C2B20560700996AB8 /* Helpers.swift in Sources */,
 				923E37652B29B29B00B789D5 /* PreferedExperienceModel.swift in Sources */,
+				928396872B2AD01800D04A4A /* LanguageCell.swift in Sources */,
 				9293BB5C2B19BBE900A85E86 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

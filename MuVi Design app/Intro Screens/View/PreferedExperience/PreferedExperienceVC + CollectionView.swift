@@ -14,7 +14,7 @@ extension PreferedExperienceVC: UICollectionViewDataSource, UICollectionViewDele
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellNames.PreferedExperienceCell.rawValue, for: indexPath) as? PreferedExperienceCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.PreferedExperienceCell.rawValue, for: indexPath) as? PreferedExperienceCell
         cell?.setCellUI(img: UIImage(named: cinemas["\(indexPath.row)"]?["cinema"] ?? "") ?? UIImage() , lblText: cinemas["\(indexPath.row)"]?["cinema"] ?? "")
         return cell ?? UICollectionViewCell()
     }

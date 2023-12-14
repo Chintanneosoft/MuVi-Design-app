@@ -878,7 +878,7 @@
 		9D085999C3FE525FF3630AE5B66444F8 /* MO.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = MO.png; path = CountryPicker/CountryPicker/CountryPickerController.bundle/MO.png; sourceTree = "<group>"; };
 		9D5A9EC36FDFAE87285757CBBDD02D30 /* HR@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "HR@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/HR@2x.png"; sourceTree = "<group>"; };
 		9D5AC087F3014E6632A945435A5785F9 /* IQ@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "IQ@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/IQ@2x.png"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E2957E6A21942A38902F701AF49EE60 /* MA@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "MA@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/MA@2x.png"; sourceTree = "<group>"; };
 		9FD067D783506C7995BE9D11E64B02AB /* MD@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "MD@2x.png"; path = "CountryPicker/CountryPicker/CountryPickerController.bundle/MD@2x.png"; sourceTree = "<group>"; };
 		A023B2E33553DF350E82B3BF7190A37D /* Pods-MuVi Design app-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MuVi Design app-Info.plist"; sourceTree = "<group>"; };
@@ -1265,7 +1265,6 @@
 				F14E1CCF6B5E05FF009F8EBA8155F58B /* Resources */,
 				14063D49524EB39CB88EE42164163D35 /* Support Files */,
 			);
-			name = SKCountryPicker;
 			path = SKCountryPicker;
 			sourceTree = "<group>";
 		};
@@ -1279,7 +1278,6 @@
 				D3B1A079E4127AFD7C1EA4503F31C5EF /* WaveTabBarProtocol.swift */,
 				CAF9831754DE0E608C8871EE3F377556 /* Support Files */,
 			);
-			name = WaveTab;
 			path = WaveTab;
 			sourceTree = "<group>";
 		};
@@ -1904,6 +1902,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					265C9D59E66139A9A1C7D5B44FB448C9 = {
+						LastSwiftMigration = "";
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 14.0";

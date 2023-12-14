@@ -24,7 +24,7 @@ extension CitySelectionVC: UICollectionViewDelegate, UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellNames.CitySelectionCell.rawValue, for: indexPath) as? CitySelectionCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.CitySelectionCell.rawValue, for: indexPath) as? CitySelectionCell
         print(indexPath.row)
         if indexPath.section == 0{
             cell?.setDetails(img: UIImage(named: citySelectionViewModel.nearByCities[indexPath.row]) ?? UIImage(), lblText: citySelectionViewModel.nearByCities[indexPath.row])
@@ -47,7 +47,7 @@ extension CitySelectionVC: UICollectionViewDelegate, UICollectionViewDataSource{
     //MARK: - Footer
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if kind == UICollectionView.elementKindSectionFooter {
-            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellNames.FooterView.rawValue, for: indexPath)
+            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CellIdentifiers.FooterView.rawValue, for: indexPath)
             footerView.backgroundColor = AppColors.blackColor
             return footerView
         }

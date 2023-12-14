@@ -53,7 +53,7 @@ class RegisterVC: BaseVC {
     }
     
     @IBAction func btnRegisterWithEmailTapped(_ sender: UIButton) {
-        let nextVC = OTPVerificationVC(nibName: VCNames.OTPVerificationVC.rawValue, bundle: nil)
+        let nextVC = OTPVerificationVC(nibName: VCNibs.OTPVerificationVC.rawValue, bundle: nil)
         navigationController?.pushViewController(nextVC, animated: true)
     }
     

@@ -14,7 +14,7 @@ extension PreferencesVC: UICollectionViewDelegate, UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellNames.PreferencesCell.rawValue, for: indexPath) as? PreferencesCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.PreferencesCell.rawValue, for: indexPath) as? PreferencesCell
         cell?.setUpUI(lblText: genres["\(indexPath.row)"]?["genre"] as! String)
         cell?.layer.cornerRadius = 20
         cell?.layer.borderWidth = 1

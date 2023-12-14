@@ -26,7 +26,7 @@ class PreferencesVC: BaseVC {
         genreCollectionView.delegate = self
         genreCollectionView.dataSource = self
         
-        genreCollectionView.register(UINib(nibName: CellNames.PreferencesCell.rawValue , bundle: nil), forCellWithReuseIdentifier: CellNames.PreferencesCell.rawValue)
+        genreCollectionView.register(UINib(nibName: CellIdentifiers.PreferencesCell.rawValue , bundle: nil), forCellWithReuseIdentifier: CellIdentifiers.PreferencesCell.rawValue)
         
         genreCollectionView.allowsMultipleSelection = true
         genreCollectionView.collectionViewLayout = LeftAlignedCollectionViewFlowLayout()
@@ -45,7 +45,7 @@ class PreferencesVC: BaseVC {
     }
     
     private func goToNextVC(){
-        let nextVC = CitySelectionVC(nibName: VCNames.CitySelectionVC.rawValue, bundle: nil)
+        let nextVC = CitySelectionVC(nibName: VCNibs.CitySelectionVC.rawValue, bundle: nil)
         navigationController?.pushViewController(nextVC, animated: true)
     }
     

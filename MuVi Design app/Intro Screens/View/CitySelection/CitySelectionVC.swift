@@ -27,8 +27,8 @@ class CitySelectionVC: BaseVC {
         citiesCollectionView.delegate = self
         citiesCollectionView.dataSource = self
         
-        citiesCollectionView.register(UINib(nibName: CellNames.CitySelectionCell.rawValue , bundle: nil), forCellWithReuseIdentifier: CellNames.CitySelectionCell.rawValue)
-        citiesCollectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: CellNames.FooterView.rawValue)
+        citiesCollectionView.register(UINib(nibName: CellIdentifiers.CitySelectionCell.rawValue , bundle: nil), forCellWithReuseIdentifier: CellIdentifiers.CitySelectionCell.rawValue)
+        citiesCollectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: CellIdentifiers.FooterView.rawValue)
     }
 
     private func setUpUI(){
@@ -52,7 +52,7 @@ class CitySelectionVC: BaseVC {
     }
     
     private func goToNextVC(){
-        let nextVC = PreferedExperienceVC(nibName: VCNames.PreferedExperienceVC.rawValue, bundle: nil)
+        let nextVC = PreferedExperienceVC(nibName: VCNibs.PreferedExperienceVC.rawValue, bundle: nil)
         navigationController?.pushViewController(nextVC, animated: true)
     }
     @IBAction func btnAllCities(_ sender: UIButton) {
