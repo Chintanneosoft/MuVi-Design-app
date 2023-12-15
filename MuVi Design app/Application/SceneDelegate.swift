@@ -21,13 +21,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         var initailVC: UIViewController?
         let hasAppLauchedBefore = UserDefaults.standard.bool(forKey: UserDefaultKeys.hasAppLauchedBefore.rawValue)
         
-//        if hasAppLauchedBefore {
-//            initailVC = LoginVC(nibName: VCNibs.LoginVC.rawValue, bundle: nil)
-//        } else {
+        if hasAppLauchedBefore {
+            initailVC = LoginVC(nibName: VCNibs.LoginVC.rawValue, bundle: nil)
+        } else {
             initailVC = WalkThroughVC(nibName: VCNibs.WalkThroughVC.rawValue, bundle: nil)
-//        }
+        }
         
-        initailVC = HomeTabBarController()
+//        initailVC = HomeTabBarController()
         let navigationController = UINavigationController(rootViewController: initailVC ?? UIViewController())
         window.rootViewController = navigationController
         self.window = window

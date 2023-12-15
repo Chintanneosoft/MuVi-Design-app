@@ -190,8 +190,8 @@
 		9218A4352B22D42D00CA476F /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				9293BB522B19AA5100A85E86 /* LoginVC.swift */,
-				9293BB532B19AA5100A85E86 /* LoginVC.xib */,
+				92A0FBD92B2C1C1B00BC94B4 /* ViewModel */,
+				92A0FBD72B2C1BF600BC94B4 /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -199,8 +199,8 @@
 		9218A4362B22D46200CA476F /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				9218A4372B22D4E800CA476F /* RegisterVC.swift */,
-				9218A4382B22D4E800CA476F /* RegisterVC.xib */,
+				92A0FBD82B2C1C1400BC94B4 /* ViewModel */,
+				92A0FBD62B2C1BEB00BC94B4 /* View */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -208,9 +208,10 @@
 		923215732B21AAD500B54FDC /* PreferedExperience */ = {
 			isa = PBXGroup;
 			children = (
-				923215742B21AB5B00B54FDC /* PreferedExperienceVC.swift */,
-				923215752B21AB5B00B54FDC /* PreferedExperienceVC.xib */,
-				9232157C2B21BA8900B54FDC /* PreferedExperienceVC + CollectionView.swift */,
+				92A0FBE12B2C200D00BC94B4 /* Model */,
+				92A0FBCD2B2C18D700BC94B4 /* ViewModel */,
+				92A0FBD12B2C191E00BC94B4 /* Cells */,
+				92A0FBCC2B2C18C900BC94B4 /* View */,
 			);
 			path = PreferedExperience;
 			sourceTree = "<group>";
@@ -264,8 +265,8 @@
 		9281A5F42B2344F800BD13B5 /* OTP Verification */ = {
 			isa = PBXGroup;
 			children = (
-				9281A5F52B23453600BD13B5 /* OTPVerificationVC.swift */,
-				9281A5F62B23453600BD13B5 /* OTPVerificationVC.xib */,
+				92A0FBD52B2C1BE200BC94B4 /* View */,
+				9293BB682B19EEA500A85E86 /* ViewModel */,
 			);
 			path = "OTP Verification";
 			sourceTree = "<group>";
@@ -282,8 +283,8 @@
 		9283E25D2B28430A005CA2CA /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				9283E2622B286119005CA2CA /* ViewModel */,
-				9283E2612B28610C005CA2CA /* View */,
+				9283E2652B28A095005CA2CA /* FindVC */,
+				9283E25E2B2843C5005CA2CA /* HomeTabBarController */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -291,18 +292,10 @@
 		9283E25E2B2843C5005CA2CA /* HomeTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				9283E25F2B28463D005CA2CA /* HomeTabBarController.swift */,
+				9283E2622B286119005CA2CA /* ViewModel */,
+				92A0FBD32B2C19CB00BC94B4 /* View */,
 			);
 			path = HomeTabBarController;
-			sourceTree = "<group>";
-		};
-		9283E2612B28610C005CA2CA /* View */ = {
-			isa = PBXGroup;
-			children = (
-				9283E2652B28A095005CA2CA /* FindVC */,
-				9283E25E2B2843C5005CA2CA /* HomeTabBarController */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		9283E2622B286119005CA2CA /* ViewModel */ = {
@@ -316,10 +309,10 @@
 		9283E2652B28A095005CA2CA /* FindVC */ = {
 			isa = PBXGroup;
 			children = (
+				92A0FBE32B2C204800BC94B4 /* Model */,
+				92A0FBD42B2C19EA00BC94B4 /* ViewModel */,
 				9286F5492B297A6C003585FD /* Cells */,
-				9283E2662B28A0BF005CA2CA /* FindVC.swift */,
-				9286F54E2B2987D9003585FD /* FindVC + TableView.swift */,
-				9283E2672B28A0BF005CA2CA /* FindVC.xib */,
+				92A0FBD22B2C19B300BC94B4 /* View */,
 			);
 			path = FindVC;
 			sourceTree = "<group>";
@@ -361,30 +354,20 @@
 		928AE17E2B1DC4EC00B517F5 /* PreferedGenre */ = {
 			isa = PBXGroup;
 			children = (
-				928AE1882B1DF5A600B517F5 /* PreferencesVC.swift */,
-				928AE1892B1DF5A600B517F5 /* PreferencesVC.xib */,
-				928AE1902B1E00AC00B517F5 /* PreferencesVC + CollectionView.swift */,
+				92A0FBE22B2C202D00BC94B4 /* Model */,
+				92A0FBC92B2C187C00BC94B4 /* ViewModel */,
+				92A0FBCF2B2C190700BC94B4 /* Cells */,
+				92A0FBC82B2C186E00BC94B4 /* View */,
 			);
 			path = PreferedGenre;
-			sourceTree = "<group>";
-		};
-		928AE17F2B1DC56300B517F5 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				923E375E2B29AF1F00B789D5 /* CitySelectionCell */,
-				923E375D2B29AF0600B789D5 /* PreferedExperienceCell */,
-				923E375C2B29AEF000B789D5 /* PreferencesCell */,
-				923E375B2B29AEDA00B789D5 /* WalkThroughCell */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		928BA47D2B205C1C00996AB8 /* CitySelection */ = {
 			isa = PBXGroup;
 			children = (
-				928BA47E2B205C5400996AB8 /* CitySelectionVC.swift */,
-				928BA47F2B205C5400996AB8 /* CitySelectionVC.xib */,
-				928BA4822B20615800996AB8 /* CitySelectionVC + CollectionView.swift */,
+				92A0FBCB2B2C18A600BC94B4 /* ViewModel */,
+				92A0FBD02B2C191000BC94B4 /* Cells */,
+				92A0FBCA2B2C189200BC94B4 /* View */,
 			);
 			path = CitySelection;
 			sourceTree = "<group>";
@@ -410,13 +393,10 @@
 		9293BB3C2B199A5500A85E86 /* MuVi Design app */ = {
 			isa = PBXGroup;
 			children = (
-				9283E25D2B28430A005CA2CA /* Home */,
-				9293BB672B19EE9800A85E86 /* Models */,
-				9293BB562B19AA6200A85E86 /* Authentication */,
-				9293BB622B19EB9E00A85E86 /* Intro Screens */,
+				9293BB512B199C7600A85E86 /* Application */,
+				92A0FBDF2B2C1F9B00BC94B4 /* Pages */,
 				9293BB5A2B19BBC500A85E86 /* Utilities */,
 				9293BB592B19B43400A85E86 /* Resources */,
-				9293BB512B199C7600A85E86 /* Application */,
 				9293BB482B199A5900A85E86 /* LaunchScreen.storyboard */,
 				9293BB4B2B199A5900A85E86 /* Info.plist */,
 			);
@@ -430,15 +410,6 @@
 				9293BB3F2B199A5500A85E86 /* SceneDelegate.swift */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		9293BB562B19AA6200A85E86 /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				9293BB692B19EEB000A85E86 /* View */,
-				9293BB682B19EEA500A85E86 /* ViewModel */,
-			);
-			path = Authentication;
 			sourceTree = "<group>";
 		};
 		9293BB592B19B43400A85E86 /* Resources */ = {
@@ -463,25 +434,6 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		9293BB622B19EB9E00A85E86 /* Intro Screens */ = {
-			isa = PBXGroup;
-			children = (
-				9293BB6B2B19EECC00A85E86 /* View */,
-				9293BB6A2B19EEC600A85E86 /* ViewModel */,
-			);
-			path = "Intro Screens";
-			sourceTree = "<group>";
-		};
-		9293BB672B19EE9800A85E86 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				928BA4772B204CD100996AB8 /* PreferencesModel.swift */,
-				923E37642B29B29A00B789D5 /* PreferedExperienceModel.swift */,
-				928396892B2AD1DD00D04A4A /* FindModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		9293BB682B19EEA500A85E86 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -489,46 +441,222 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		9293BB692B19EEB000A85E86 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				9281A5F42B2344F800BD13B5 /* OTP Verification */,
-				9218A4362B22D46200CA476F /* Register */,
-				9218A4352B22D42D00CA476F /* Login */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		9293BB6A2B19EEC600A85E86 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				928BA4792B204D0200996AB8 /* PreferencesViewModel.swift */,
-				928BA4882B20717F00996AB8 /* CitySelectionViewModel.swift */,
-				9232157E2B21BAF600B54FDC /* PreferedExperienceViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		9293BB6B2B19EECC00A85E86 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				928AE17F2B1DC56300B517F5 /* Cells */,
-				9293BB752B19FC7400A85E86 /* WalkThrough */,
-				928AE17E2B1DC4EC00B517F5 /* PreferedGenre */,
-				928BA47D2B205C1C00996AB8 /* CitySelection */,
-				923215732B21AAD500B54FDC /* PreferedExperience */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		9293BB752B19FC7400A85E86 /* WalkThrough */ = {
+			isa = PBXGroup;
+			children = (
+				92A0FBC72B2C185C00BC94B4 /* ViewModel */,
+				92A0FBCE2B2C18F000BC94B4 /* Cells */,
+				92A0FBC62B2C184500BC94B4 /* View */,
+			);
+			path = WalkThrough;
+			sourceTree = "<group>";
+		};
+		92A0FBC62B2C184500BC94B4 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				9293BB632B19EC1800A85E86 /* WalkThroughVC.swift */,
 				9293BB642B19EC1800A85E86 /* WalkThroughVC.xib */,
 				928AE1862B1DED9400B517F5 /* WalkThroughVC + CollectionView.swift */,
 			);
-			path = WalkThrough;
+			path = View;
+			sourceTree = "<group>";
+		};
+		92A0FBC72B2C185C00BC94B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		92A0FBC82B2C186E00BC94B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				928AE1882B1DF5A600B517F5 /* PreferencesVC.swift */,
+				928AE1892B1DF5A600B517F5 /* PreferencesVC.xib */,
+				928AE1902B1E00AC00B517F5 /* PreferencesVC + CollectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92A0FBC92B2C187C00BC94B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				928BA4792B204D0200996AB8 /* PreferencesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		92A0FBCA2B2C189200BC94B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				928BA47E2B205C5400996AB8 /* CitySelectionVC.swift */,
+				928BA47F2B205C5400996AB8 /* CitySelectionVC.xib */,
+				928BA4822B20615800996AB8 /* CitySelectionVC + CollectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92A0FBCB2B2C18A600BC94B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				928BA4882B20717F00996AB8 /* CitySelectionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		92A0FBCC2B2C18C900BC94B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				923215742B21AB5B00B54FDC /* PreferedExperienceVC.swift */,
+				923215752B21AB5B00B54FDC /* PreferedExperienceVC.xib */,
+				9232157C2B21BA8900B54FDC /* PreferedExperienceVC + CollectionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92A0FBCD2B2C18D700BC94B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9232157E2B21BAF600B54FDC /* PreferedExperienceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		92A0FBCE2B2C18F000BC94B4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				923E375B2B29AEDA00B789D5 /* WalkThroughCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		92A0FBCF2B2C190700BC94B4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				923E375C2B29AEF000B789D5 /* PreferencesCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		92A0FBD02B2C191000BC94B4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				923E375E2B29AF1F00B789D5 /* CitySelectionCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		92A0FBD12B2C191E00BC94B4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				923E375D2B29AF0600B789D5 /* PreferedExperienceCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		92A0FBD22B2C19B300BC94B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9283E2662B28A0BF005CA2CA /* FindVC.swift */,
+				9286F54E2B2987D9003585FD /* FindVC + TableView.swift */,
+				9283E2672B28A0BF005CA2CA /* FindVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92A0FBD32B2C19CB00BC94B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9283E25F2B28463D005CA2CA /* HomeTabBarController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92A0FBD42B2C19EA00BC94B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		92A0FBD52B2C1BE200BC94B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9281A5F52B23453600BD13B5 /* OTPVerificationVC.swift */,
+				9281A5F62B23453600BD13B5 /* OTPVerificationVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92A0FBD62B2C1BEB00BC94B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9218A4372B22D4E800CA476F /* RegisterVC.swift */,
+				9218A4382B22D4E800CA476F /* RegisterVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92A0FBD72B2C1BF600BC94B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9293BB522B19AA5100A85E86 /* LoginVC.swift */,
+				9293BB532B19AA5100A85E86 /* LoginVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92A0FBD82B2C1C1400BC94B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		92A0FBD92B2C1C1B00BC94B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		92A0FBDF2B2C1F9B00BC94B4 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				9283E25D2B28430A005CA2CA /* Home */,
+				9218A4352B22D42D00CA476F /* Login */,
+				9281A5F42B2344F800BD13B5 /* OTP Verification */,
+				9218A4362B22D46200CA476F /* Register */,
+				923215732B21AAD500B54FDC /* PreferedExperience */,
+				928BA47D2B205C1C00996AB8 /* CitySelection */,
+				928AE17E2B1DC4EC00B517F5 /* PreferedGenre */,
+				9293BB752B19FC7400A85E86 /* WalkThrough */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		92A0FBE12B2C200D00BC94B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				923E37642B29B29A00B789D5 /* PreferedExperienceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92A0FBE22B2C202D00BC94B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				928BA4772B204CD100996AB8 /* PreferencesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92A0FBE32B2C204800BC94B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				928396892B2AD1DD00D04A4A /* FindModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
