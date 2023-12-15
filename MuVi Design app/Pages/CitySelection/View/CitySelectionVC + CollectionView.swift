@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+//MARK: - CollectionView Delegate and Datasource
 extension CitySelectionVC: UICollectionViewDelegate, UICollectionViewDataSource{
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -25,9 +25,13 @@ extension CitySelectionVC: UICollectionViewDelegate, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.CitySelectionCell.rawValue, for: indexPath) as? CitySelectionCell
-        print(indexPath.row)
+        
         if indexPath.section == 0{
             cell?.setDetails(img: UIImage(named: citySelectionViewModel.nearByCities[indexPath.row]) ?? UIImage(), lblText: citySelectionViewModel.nearByCities[indexPath.row])
+            if ( (citySelectionViewModel.selectedCities == citySelectionViewModel.nearByCities[0]) && (indexPath.row == 0)) {
+                cell?.setBorderColor(color: AppColors.secondary)
+                print(indexPath.row)
+            }
         } else {
             cell?.setDetails(img: UIImage(named: citySelectionViewModel.remainingCities[indexPath.row]) ?? UIImage(), lblText: citySelectionViewModel.remainingCities[indexPath.row])
         }
@@ -36,6 +40,12 @@ extension CitySelectionVC: UICollectionViewDelegate, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as? CitySelectionCell
+        if indexPath.section == 0{
+            citySelectionViewModel.selectedCities = citySelectionViewModel.nearByCities[indexPath.row]
+        } else {
+            citySelectionViewModel.selectedCities = citySelectionViewModel.remainingCities[indexPath.row]
+        }
+        setUserLocationLabel(selectedCity:  citySelectionViewModel.selectedCities)
         cell?.setBorderColor(color: AppColors.secondary)
     }
     
@@ -56,6 +66,7 @@ extension CitySelectionVC: UICollectionViewDelegate, UICollectionViewDataSource{
 
 }
 
+//MARK: - CollectionView FlowLayout
 extension CitySelectionVC: UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

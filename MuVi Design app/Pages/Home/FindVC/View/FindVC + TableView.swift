@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+//MARK: - TableView Delegate and DataSource
 extension FindVC: UITableViewDelegate, UITableViewDataSource{
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -37,6 +38,7 @@ extension FindVC: UITableViewDelegate, UITableViewDataSource{
         return findCollectionCell ?? UITableViewCell()
     }
     
+    // For Row Height
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section{
         case 0:
@@ -45,13 +47,16 @@ extension FindVC: UITableViewDelegate, UITableViewDataSource{
             return UIScreen.main.bounds.width + 40
         case 2:
             return UIScreen.main.bounds.width/3
+        case 3:
+            return UIScreen.main.bounds.width/1.2
         case 4:
-            return UIScreen.main.bounds.width/1.1
+            return UIScreen.main.bounds.width/2
         default:
             return UITableView.automaticDimension
         }
     }
     
+    // For Header
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 30))
         
@@ -61,14 +66,16 @@ extension FindVC: UITableViewDelegate, UITableViewDataSource{
         
         switch section{
         case 0:
-            label.text = ScreenText.findSection0.rawValue
+            label.text = Constants.browseByGenre.rawValue
         case 1:
-            label.text = ScreenText.findSection1.rawValue
+            label.text = Constants.browseByExperience.rawValue
         case 2:
-            label.text = ScreenText.findSection2.rawValue
+            label.text = Constants.languages.rawValue
             headerView.backgroundColor = AppColors.opaqueBlackColor
+        case 3:
+            label.text = Constants.popularSearches.rawValue
         case 4:
-            label.text = ScreenText.findSection4.rawValue
+            label.text = Constants.popularCast.rawValue
         default:
             return UIView()
         }
@@ -83,6 +90,7 @@ extension FindVC: UITableViewDelegate, UITableViewDataSource{
         return headerView
     }
     
+    // For Footer
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 30))
         footerView.backgroundColor = AppColors.opaqueBlackColor

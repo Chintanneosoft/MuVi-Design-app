@@ -16,10 +16,10 @@ protocol ShowNextPageDelegate:NSObject{
 class WalkThroughCell: UICollectionViewCell {
     
     //MARK: - @IBOutlets
-    @IBOutlet weak var lbl: UILabel!
-    @IBOutlet weak var pageControl: UIPageControl!
-    @IBOutlet weak var btn: UIButton!
-    @IBOutlet weak var btnWidth: NSLayoutConstraint!
+    @IBOutlet weak var lblWalkThrough: UILabel!
+    @IBOutlet weak var walkThroughPageControl: UIPageControl!
+    @IBOutlet weak var btnWalkThrough: UIButton!
+    @IBOutlet weak var btnWalkThroughWidth: NSLayoutConstraint!
     
     //Delegate
     weak var showNextPageDelegate : ShowNextPageDelegate?
@@ -30,32 +30,31 @@ class WalkThroughCell: UICollectionViewCell {
     //MARK: - LifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         setUpUI()
     }
     
     //MARK: - Functions
     private func setUpUI(){
-        lbl.setFont(font: Fonts.barlowRegular.rawValue, size: 24)
+        lblWalkThrough.setFont(font: Fonts.barlowRegular.rawValue, size: 24)
     }
     
-    private func setButton(btnTitle: String){
-        btn.setAttributedString(text: btnTitle, font: Fonts.barlowBold.rawValue, color: .white, size: 14)
-        btn.applyGradient(colours: [AppColors.redColor, AppColors.purpleColor], angle: -45)
-        btn.setCornerRadius(cornerRadius: 20, maskedCorners: [.layerMaxXMaxYCorner, .layerMinXMinYCorner], borderWidth: 0)
+    private func setButton(btnWalkThroughTitle: String){
+        btnWalkThrough.setAttributedString(text: btnWalkThroughTitle, font: Fonts.barlowBold.rawValue, color: .white, size: 14)
+        btnWalkThrough.applyGradient(colours: [AppColors.redColor, AppColors.purpleColor], angle: -45)
+        btnWalkThrough.setCornerRadius(cornerRadius: 20, maskedCorners: [.layerMaxXMaxYCorner, .layerMinXMinYCorner], borderWidth: 0)
     }
     
-    func setDetails(lblText:String, pageNumber:Int, btnTitle: String){
-        lbl.text = lblText
-        pageControl.currentPage = pageNumber
-        setButton(btnTitle: btnTitle)
+    func setDetails(lblWalkThroughText:String, pageNumber:Int, btnWalkThroughTitle: String){
+        lblWalkThrough.text = lblWalkThroughText
+        walkThroughPageControl.currentPage = pageNumber
+        setButton(btnWalkThroughTitle: btnWalkThroughTitle)
         
-        btnWidth.constant = (pageNumber == 1) ? 130 : 100
+        btnWalkThroughWidth.constant = (pageNumber == 1) ? 130 : 100
     }
     
     //MARK: - @IBActions
-    @IBAction func btnTapped(_ sender: UIButton) {
-        showNextPageDelegate?.showNextPage(pageNumber: pageControl.currentPage, isPageControl: false)
+    @IBAction func btnWalkThroughTapped(_ sender: UIButton) {
+        showNextPageDelegate?.showNextPage(pageNumber: walkThroughPageControl.currentPage, isPageControl: false)
     }
     
     @IBAction func pageControlTapped(_ sender: UIPageControl) {

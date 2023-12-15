@@ -11,7 +11,7 @@ class CitySelectionCell: UICollectionViewCell {
     //MARK: - @IBOutlets
     @IBOutlet weak var cityImg: UIImageView!
     @IBOutlet weak var lblCity: UILabel!
-    @IBOutlet weak var imgContainerView: UIView!
+    @IBOutlet weak var cityImgContainerView: UIView!
     
     //MARK: - LifeCycle
     override func awakeFromNib() {
@@ -25,15 +25,15 @@ class CitySelectionCell: UICollectionViewCell {
     }
     
     func setBorderColor(color: UIColor){
-        imgContainerView.clipsToBounds = true
-        imgContainerView.layer.cornerRadius = imgContainerView.bounds.width/2
-        imgContainerView.layer.borderColor = color.cgColor
-        imgContainerView.layer.borderWidth = 1
+        cityImgContainerView.clipsToBounds = true
+        cityImgContainerView.layer.cornerRadius = cityImgContainerView.bounds.width/2
+        cityImgContainerView.layer.borderColor = color.cgColor
+        cityImgContainerView.layer.borderWidth = 1
         lblCity.textColor = color
     }
     
     func removeBorder(){
-        imgContainerView.layer.borderWidth = 0
+        cityImgContainerView.layer.borderWidth = 0
         lblCity.textColor = AppColors.blackColor
     }
 }

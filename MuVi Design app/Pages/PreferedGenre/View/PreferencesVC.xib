@@ -33,7 +33,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SBl-us-3gI">
-                            <rect key="frame" x="0.0" y="213" width="393" height="639"/>
+                            <rect key="frame" x="0.0" y="207" width="393" height="645"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have any  preference of movie?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yP-Ym-wbB">
                                     <rect key="frame" x="57" y="20" width="279.33333333333331" height="72"/>
@@ -42,7 +42,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHH-ST-560">
-                                    <rect key="frame" x="46.666666666666657" y="559.66666666666663" width="300" height="0.33333333333337123"/>
+                                    <rect key="frame" x="46.666666666666657" y="565.66666666666663" width="300" height="0.33333333333337123"/>
                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="0.5" id="33p-zK-i2a"/>
@@ -50,15 +50,15 @@
                                     </constraints>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I like all types of movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b36-D3-jhz">
-                                    <rect key="frame" x="46.666666666666671" y="580" width="201.66666666666663" height="24"/>
+                                    <rect key="frame" x="46.666666666666671" y="586" width="201.66666666666663" height="24"/>
                                     <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="20"/>
                                     <color key="textColor" red="0.14117647058823529" green="0.13333333333333333" blue="0.13333333333333333" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSC-gT-I7O">
-                                    <rect key="frame" x="286.66666666666669" y="576" width="60" height="32"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSC-gT-I7O">
+                                    <rect key="frame" x="266.66666666666669" y="582" width="80" height="32"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="60" id="cPD-zn-cVa"/>
+                                        <constraint firstAttribute="width" constant="80" id="cPD-zn-cVa"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Barlow-Bold" family="Barlow" pointSize="16"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -70,7 +70,7 @@
                                     </connections>
                                 </button>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="j1P-OK-tAd">
-                                    <rect key="frame" x="30" y="112.00000000000003" width="353" height="427.66666666666674"/>
+                                    <rect key="frame" x="30" y="112.00000000000003" width="353" height="433.66666666666674"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bEG-LX-bdz">
                                         <size key="itemSize" width="128" height="128"/>
@@ -90,7 +90,6 @@
                                 <constraint firstItem="j1P-OK-tAd" firstAttribute="top" secondItem="8yP-Ym-wbB" secondAttribute="bottom" constant="20" id="HgG-XX-mLL"/>
                                 <constraint firstItem="KSC-gT-I7O" firstAttribute="centerY" secondItem="b36-D3-jhz" secondAttribute="centerY" id="SF2-5U-QDY"/>
                                 <constraint firstItem="WHH-ST-560" firstAttribute="centerX" secondItem="SBl-us-3gI" secondAttribute="centerX" id="Sxi-es-5N3"/>
-                                <constraint firstItem="j1P-OK-tAd" firstAttribute="top" secondItem="SBl-us-3gI" secondAttribute="top" constant="112" id="fhu-ez-3ae"/>
                                 <constraint firstItem="b36-D3-jhz" firstAttribute="leading" secondItem="WHH-ST-560" secondAttribute="leading" id="kSz-VW-una"/>
                                 <constraint firstItem="8yP-Ym-wbB" firstAttribute="centerX" secondItem="SBl-us-3gI" secondAttribute="centerX" id="mC0-nZ-BXV"/>
                                 <constraint firstItem="WHH-ST-560" firstAttribute="top" secondItem="j1P-OK-tAd" secondAttribute="bottom" constant="20" id="sCC-cX-VhH"/>
@@ -114,7 +113,7 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="lRH-Dv-iVN" firstAttribute="top" secondItem="u7O-qd-rjj" secondAttribute="bottom" constant="30" id="0i0-qQ-aeC"/>
-                        <constraint firstItem="SBl-us-3gI" firstAttribute="top" secondItem="lRH-Dv-iVN" secondAttribute="bottom" constant="-5" id="Hbo-ge-Ald"/>
+                        <constraint firstItem="SBl-us-3gI" firstAttribute="top" secondItem="lRH-Dv-iVN" secondAttribute="bottom" multiplier="0.95" id="Hbo-ge-Ald"/>
                         <constraint firstItem="u7O-qd-rjj" firstAttribute="top" secondItem="E1l-zg-t0w" secondAttribute="top" constant="78" id="Ij3-rJ-Mfa"/>
                         <constraint firstItem="lRH-Dv-iVN" firstAttribute="leading" secondItem="E1l-zg-t0w" secondAttribute="leading" id="PDC-XJ-xJc"/>
                         <constraint firstAttribute="trailing" secondItem="lRH-Dv-iVN" secondAttribute="trailing" id="Yho-mm-k1A"/>

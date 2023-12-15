@@ -6,18 +6,24 @@
 //
 
 import UIKit
-
+//MARK: - LoginVC
 class LoginVC: BaseVC {
 
+    //MARK: - @IBOutlets
     @IBOutlet weak var btnRegister: UIButton!
+    
+    //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setUpUI()
     }
     
-    private func setUpUI(){
+    override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
+    }
+    
+    //MARK: - Functions
+    private func setUpUI(){
         setButton()
     }
 
@@ -25,6 +31,7 @@ class LoginVC: BaseVC {
         btnRegister.setCornerRadius(cornerRadius: 20, maskedCorners: [.layerMaxXMaxYCorner, .layerMinXMinYCorner])
     }
     
+    //MARK: - @IBActions
     @IBAction func btnRegisterTapped(_ sender: UIButton) {
         let nextVC = RegisterVC(nibName: VCNibs.RegisterVC.rawValue, bundle: nil)
         navigationController?.pushViewController(nextVC, animated: true)

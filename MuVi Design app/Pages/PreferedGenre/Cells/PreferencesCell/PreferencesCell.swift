@@ -19,7 +19,7 @@ class PreferencesCell: UICollectionViewCell {
     
     //Functions
     func setUpUI(lblText: String){
-        lblGenre.setFont(font: Fonts.barlowRegular.rawValue, size: 18)
+        lblGenre.setFont(font: Fonts.barlowRegular.rawValue, size: 16)
         lblGenre.text = lblText
     }
     

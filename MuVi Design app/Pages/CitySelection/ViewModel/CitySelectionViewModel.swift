@@ -22,5 +22,5 @@ class CitySelectionViewModel {
         }
     }
     
-    var selectedCities:[String] = []
+    var selectedCities:String = ""
 }

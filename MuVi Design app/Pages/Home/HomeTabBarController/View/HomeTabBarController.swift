@@ -8,13 +8,24 @@
 import UIKit
 import WaveTab
 
-
+//MARK: - HomeTabBarController
 class HomeTabBarController: WaveTabBarController {
-    
+    //Variable
     let homeTabBarVM = HomeTabBarViewModel()
+    
+    //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setVCs()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+    //MARK: - Functions
+    func setVCs(){
         let discoverVC = UIViewController()
         discoverVC.view.backgroundColor = .blue
         discoverVC.tabBarItem = UITabBarItem(title: homeTabBarVM.tabItems["item0"]?["title"], image: UIImage(named:  (homeTabBarVM.tabItems["item0"]?["image"])!) ?? UIImage(systemName: "heart"), tag: 0)
@@ -37,12 +48,5 @@ class HomeTabBarController: WaveTabBarController {
         let tabBarList = [discoverVC, moviesVC, foodDrinksVC, experienceVC, findVC]
         
         viewControllers = tabBarList.map { UINavigationController(rootViewController: $0) }
-        
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.navigationBar.isHidden = true
-    }
-    
 }

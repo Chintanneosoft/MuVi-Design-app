@@ -8,8 +8,6 @@
 import Foundation
 //MARK: - PreferedExperienceViewModel
 class PreferedExperienceViewModel {
-    
-
-    
+  
     var selectedExperience = ""
 }

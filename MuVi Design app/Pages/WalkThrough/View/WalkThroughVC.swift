@@ -13,7 +13,7 @@ class WalkThroughVC: BaseVC {
     @IBOutlet weak var walkThroughCollectionView: UICollectionView!
     
     // variables
-    var walkThroughData = ["0":[Constants.lbl.rawValue: Constants.walkThroughlbl1.rawValue,Constants.btn.rawValue:Constants.walkThroughbtn1.rawValue],"1":[Constants.lbl.rawValue:Constants.walkThroughlbl2.rawValue,Constants.btn.rawValue:Constants.walkThroughbtn2.rawValue]]
+    var walkThroughData = ["0":[Constants.lbl.rawValue: Constants.walkThroughlblMovie.rawValue,Constants.btn.rawValue:Constants.walkThroughbtnNext.rawValue],"1":[Constants.lbl.rawValue:Constants.walkThroughlblSmooth.rawValue,Constants.btn.rawValue:Constants.walkThroughbtnGetStarted.rawValue]]
     
     //MARK: - LifeCycle
     override func viewDidLoad() {

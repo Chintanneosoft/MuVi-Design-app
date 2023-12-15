@@ -8,21 +8,23 @@
 import UIKit
 //MARK: - OTPVerificationVC
 class OTPVerificationVC: BaseVC {
-
+    //MARK: - @IBOutlets
     @IBOutlet weak var btnVerifyOTP: UIButton!
     @IBOutlet var txtOTPCollection: [UITextField]!
     
+    //variables
     enum Direction { case left, right }
     var textFieldsIndexes:[UITextField:Int] = [:]
     
+    //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setTextFields()
         setButton()
     }
 
+    //MARK: - Functions
     private func setTextFields(){
-        
         for txt in txtOTPCollection{
             txt.delegate = self
             txt.textAlignment = .center
@@ -54,13 +56,14 @@ class OTPVerificationVC: BaseVC {
         }
     }
     
-    
+    //MARK: - @IBActions
     @IBAction func btnOTPTapped(_ sender: UIButton) {
         let nextVC = HomeTabBarController()
         navigationController?.pushViewController(nextVC, animated: true)
     }
 }
 
+//MARK: - TextField Delegate
 extension OTPVerificationVC: UITextFieldDelegate{
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+//MARK: - HomeTabBarViewModel
 class HomeTabBarViewModel: NSObject{
     var tabItems = ["item0":["title":"Discover","image":ImageStrings.discoverImg.rawValue],
                     "item1":["title":"Movies","image":ImageStrings.moviesImg.rawValue],

@@ -38,7 +38,7 @@
                                         </connections>
                                     </pageControl>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoImg" translatesAutoresizingMaskIntoConstraints="NO" id="7jV-vk-Eie">
-                                        <rect key="frame" x="85.666666666666686" y="26.333333333333336" width="120" height="60.000000000000007"/>
+                                        <rect key="frame" x="85.666666666666686" y="22.666666666666664" width="120" height="59.999999999999993"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="04P-M3-gbq"/>
                                             <constraint firstAttribute="height" constant="60" id="u2j-jO-gp0"/>
@@ -60,7 +60,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="  GET STARTED  "/>
                                         <connections>
-                                            <action selector="btnTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="cLI-3E-ibS"/>
+                                            <action selector="btnWalkThroughTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="m1f-XY-CFP"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -68,7 +68,7 @@
                                 <constraints>
                                     <constraint firstItem="7jV-vk-Eie" firstAttribute="centerX" secondItem="SSG-Cz-Ocm" secondAttribute="centerX" id="0GO-um-Wxr"/>
                                     <constraint firstItem="sLY-Sm-k3C" firstAttribute="centerX" secondItem="SSG-Cz-Ocm" secondAttribute="centerX" id="26I-fL-u3l"/>
-                                    <constraint firstItem="7jV-vk-Eie" firstAttribute="centerY" secondItem="SSG-Cz-Ocm" secondAttribute="centerY" constant="-120" id="4he-On-dlx"/>
+                                    <constraint firstItem="7jV-vk-Eie" firstAttribute="centerY" secondItem="SSG-Cz-Ocm" secondAttribute="centerY" multiplier="0.3" id="4he-On-dlx"/>
                                     <constraint firstItem="Zqw-kk-ADz" firstAttribute="leading" secondItem="SSG-Cz-Ocm" secondAttribute="leading" constant="15" id="Iqe-de-RZR"/>
                                     <constraint firstItem="lLm-Eu-hRl" firstAttribute="centerY" secondItem="Zqw-kk-ADz" secondAttribute="centerY" id="enX-6V-KRe"/>
                                     <constraint firstAttribute="bottom" secondItem="Zqw-kk-ADz" secondAttribute="bottom" constant="35" id="q8q-EU-2mX"/>
@@ -77,7 +77,7 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topViewArc" translatesAutoresizingMaskIntoConstraints="NO" id="7a0-Oy-b59">
-                                <rect key="frame" x="0.0" y="22.333333333333329" width="291" height="50"/>
+                                <rect key="frame" x="0.0" y="23.333333333333329" width="291" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="T4W-Rl-kgK"/>
                                 </constraints>
@@ -85,7 +85,7 @@
                         </subviews>
                         <color key="backgroundColor" name="primary1"/>
                         <constraints>
-                            <constraint firstItem="SSG-Cz-Ocm" firstAttribute="top" secondItem="7a0-Oy-b59" secondAttribute="bottom" constant="-10" id="ClZ-zs-LSi"/>
+                            <constraint firstItem="SSG-Cz-Ocm" firstAttribute="top" secondItem="7a0-Oy-b59" secondAttribute="bottom" multiplier="0.85" id="ClZ-zs-LSi"/>
                             <constraint firstItem="SSG-Cz-Ocm" firstAttribute="height" secondItem="gsP-aX-t6Q" secondAttribute="height" multiplier="0.85" id="EYO-Fz-LOg"/>
                             <constraint firstAttribute="trailing" secondItem="SSG-Cz-Ocm" secondAttribute="trailing" id="FLx-P8-6x6"/>
                             <constraint firstItem="SSG-Cz-Ocm" firstAttribute="width" secondItem="gsP-aX-t6Q" secondAttribute="width" id="Hnm-ED-3uM"/>
@@ -106,10 +106,10 @@
             </constraints>
             <size key="customSize" width="291" height="415"/>
             <connections>
-                <outlet property="btn" destination="lLm-Eu-hRl" id="jhs-N9-Isf"/>
-                <outlet property="btnWidth" destination="68R-Oc-qHd" id="Gqc-2y-XaN"/>
-                <outlet property="lbl" destination="sLY-Sm-k3C" id="37p-oQ-W43"/>
-                <outlet property="pageControl" destination="Zqw-kk-ADz" id="8Gk-Dz-bxO"/>
+                <outlet property="btnWalkThrough" destination="lLm-Eu-hRl" id="Q3u-m5-zTq"/>
+                <outlet property="btnWalkThroughWidth" destination="68R-Oc-qHd" id="4oS-ea-cBP"/>
+                <outlet property="lblWalkThrough" destination="sLY-Sm-k3C" id="ye8-9e-hR9"/>
+                <outlet property="walkThroughPageControl" destination="Zqw-kk-ADz" id="PD9-rt-gNt"/>
             </connections>
             <point key="canvasLocation" x="159.54198473282443" y="84.859154929577471"/>
         </collectionViewCell>

@@ -9,34 +9,36 @@ import Foundation
 import UIKit
 
 enum Constants:String{
-    case primary1 = "primary1"
-    case primary2 = "primary2"
     
-    case walkThroughlbl1 = "Movie experience \n for every mood"
-    case walkThroughlbl2 = "Smooth & enjoyable \n Experience"
+    case walkThroughlblMovie = "Movie experience \n for every mood"
+    case walkThroughlblSmooth = "Smooth & enjoyable \n Experience"
      
-    case walkThroughbtn1 = "NEXT"
-    case walkThroughbtn2 = "GET STARTED"
+    case walkThroughbtnNext = "NEXT"
+    case walkThroughbtnGetStarted = "GET STARTED"
     
     case lbl = "lbl"
     case btn = "btn"
-}
-
-enum ScreenText:String{
-    case btnProceed = "Proceed"
-    case btnApply = "APPLY"
+    
+    case proceedBtn = "Proceed"
+    case applyBtn = "APPLY"
     
     case search = "Search"
     
-    case lblFindMovies = "FindMovies @MuviCinemas"
+    case findMoviesLbl = "FindMovies @MuviCinemas"
     
-    case txtSearchbyName = "Search by Name, Actor…"
+    case searchbyNameTxt = "Search by Name, Actor…"
     
-    case findSection0 = "Browse By Genre"
-    case findSection1 = "Browse By Experience"
-    case findSection2 = "Languages"
-    case findSection3 = "Popular Searches"
-    case findSection4 = "Popular Cast"
+    case browseByGenre = "Browse By Genre"
+    case browseByExperience = "Browse By Experience"
+    case languages = "Languages"
+    case popularSearches = "Popular Searches"
+    case popularCast = "Popular Cast"
+    
+    case lastSurvivors = "Last Survivors"
+    case sciFiThriller = "SciFi/ Thriller"
+    case searchedBy = "Searched by"
+    case people = "people"
+    case duration = "Duration"
 }
 
 enum ImageStrings:String{
@@ -86,6 +88,7 @@ struct AppColors{
     static var orangeColor = UIColor(red: 239.0/255.0, green: 73.0/255.0, blue: 73.0/255.0, alpha: 1.0)
     static var lightPurpleColor = UIColor(red: 159.0/255.0, green: 69.0/255.0, blue: 191.0/255.0, alpha: 1.0)
     static var opaqueBlackColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
+    static var whiteColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
 }
 
 enum UserDefaultKeys:String{

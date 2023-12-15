@@ -6,15 +6,19 @@
 //
 
 import UIKit
-
+//MARK: - LanguageCell
 class LanguageCell: UICollectionViewCell {
 
+    //IBOutlet
     @IBOutlet weak var lblLanguage: UILabel!
+    
+    //Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
         setUpUI()
     }
     
+    //Functions
     private func setUpUI(){
         lblLanguage.textColor = .white
         lblLanguage.setFont(font: Fonts.barlowRegular.rawValue, size: 17)

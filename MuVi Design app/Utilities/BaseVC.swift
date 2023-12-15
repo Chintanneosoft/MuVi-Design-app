@@ -6,9 +6,10 @@
 //
 
 import UIKit
-
+//MARK: - BaseVC
 class BaseVC: UIViewController {
 
+    //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpBaseUI()

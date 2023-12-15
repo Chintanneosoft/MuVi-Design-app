@@ -22,7 +22,7 @@ extension PreferedExperienceVC: UICollectionViewDataSource, UICollectionViewDele
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as? PreferedExperienceCell
         preferedExperienceViewModel.selectedExperience = cinemas["\(indexPath.row)"]?["cinema"] ?? ""
-        btnProceed.setTitle(ScreenText.btnProceed.rawValue, for: .normal)
+        btnProceed.setTitle(Constants.proceedBtn.rawValue, for: .normal)
         cell?.setbuttonVisibility()
     }
     

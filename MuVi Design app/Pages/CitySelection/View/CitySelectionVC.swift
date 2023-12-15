@@ -36,20 +36,24 @@ class CitySelectionVC: BaseVC {
     
     //Setting UI
     private func setUpUI(){
-        setUserLocationLabel()
+        citySelectionViewModel.selectedCities = citySelectionViewModel.nearByCities[0]
+        setUserLocationLabel(selectedCity: citySelectionViewModel.nearByCities[0])
         btnAllCities.setCornerRadius(cornerRadius: 20, maskedCorners: [.layerMaxXMaxYCorner, .layerMinXMinYCorner])
         lblWhichCity.setFont(font: Fonts.barlowRegular.rawValue, size: 30)
     }
     
-    private func setUserLocationLabel(){
-        let labelText = "You are at \(citySelectionViewModel.nearByCities[0]) as of now"
-        let range = (labelText as NSString).range(of: "\(citySelectionViewModel.nearByCities[0])")
+    func setUserLocationLabel(selectedCity: String){
+        let labelText = "You are at \(selectedCity) as of now"
+        let range = (labelText as NSString).range(of: "\(selectedCity)")
 
         let attributedString = NSMutableAttributedString(string: labelText)
         attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: AppColors.blackColor, range: NSRange(location: 0, length: labelText.count))
         attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: AppColors.secondary, range: range)
 
         lblUserCity.attributedText = attributedString
+        if selectedCity == citySelectionViewModel.nearByCities[0]{
+            citiesCollectionView.selectItem(at: IndexPath(item: 0, section: 0), animated: true, scrollPosition: [])
+        }
     }
     
     // navigation

@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+//MARK: - CollectionView Delegate and DataSource
 extension FindCollectionCell: UICollectionViewDelegate, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -18,6 +18,8 @@ extension FindCollectionCell: UICollectionViewDelegate, UICollectionViewDataSour
             return cinemas.count
         case 2:
             return languages.count
+        case 3:
+            return popularSearchData.count
         case 4:
             return popularCast.count
         default:
@@ -25,6 +27,7 @@ extension FindCollectionCell: UICollectionViewDelegate, UICollectionViewDataSour
         }
     }
     
+    //MARK: - cellForItemAt
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = UICollectionViewCell()
         switch currentSection{
@@ -45,6 +48,10 @@ extension FindCollectionCell: UICollectionViewDelegate, UICollectionViewDataSour
             let languageCell = collectionView.getCell(indexPath: indexPath) as LanguageCell
             languageCell.setCellDetails(language: languages["language\(indexPath.row)"] ?? [:])
             return languageCell
+        case 3:
+            let popularSearchCell = collectionView.getCell(indexPath: indexPath) as PopularSearchCell
+            popularSearchCell.setCellDetails(movieDetails: popularSearchData["movie\(indexPath.row)"] ?? [:])
+            return popularSearchCell
         case 4:
             let preferedExperienceCell = collectionView.getCell(indexPath: indexPath) as PreferedExperienceCell
             preferedExperienceCell.setCellForCast(cast: popularCast["cast\(indexPath.row)"] ?? [:])
@@ -82,9 +89,9 @@ extension FindCollectionCell: UICollectionViewDelegate, UICollectionViewDataSour
             print(currentSection)
         }
     }
-    
 }
 
+//MARK: - CollectionView Flowlayout
 extension FindCollectionCell: UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -124,6 +131,8 @@ extension FindCollectionCell: UICollectionViewDelegateFlowLayout{
             return CGSize(width: collectionView.bounds.width/3.3, height: collectionView.bounds.width/2)
         case 2:
             return CGSize(width: collectionView.bounds.width/3.3, height: 64)
+        case 3:
+            return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.height/2)
         case 4:
             return CGSize(width: collectionView.bounds.width/4.2, height: collectionView.bounds.width/2.3 )
         default:
