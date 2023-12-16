@@ -33,26 +33,27 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoImg" translatesAutoresizingMaskIntoConstraints="NO" id="Ow2-J8-rft">
-                            <rect key="frame" x="40" y="100" width="150" height="83"/>
+                            <rect key="frame" x="40" y="80" width="150" height="83"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="150" id="Z3v-qX-FMG"/>
                                 <constraint firstAttribute="height" constant="83" id="m4y-Ew-vwk"/>
                             </constraints>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topCurve" translatesAutoresizingMaskIntoConstraints="NO" id="X0h-47-jpv">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="140"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clippedTopCurve" translatesAutoresizingMaskIntoConstraints="NO" id="X0h-47-jpv">
+                            <rect key="frame" x="163" y="0.0" width="230" height="80"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="140" id="dYa-Fg-8NA"/>
+                                <constraint firstAttribute="height" constant="80" id="dYa-Fg-8NA"/>
+                                <constraint firstAttribute="width" constant="230" id="u54-ei-ETz"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGA-BB-aVG">
-                            <rect key="frame" x="40" y="203" width="156.33333333333334" height="37.333333333333343"/>
+                            <rect key="frame" x="40" y="183" width="156.33333333333334" height="37.333333333333343"/>
                             <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="31"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify your number with the 6 Digit code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47l-xR-fG7">
-                            <rect key="frame" x="40" y="250.33333333333334" width="313" height="21.666666666666657"/>
+                            <rect key="frame" x="40" y="230.33333333333334" width="313" height="21.666666666666657"/>
                             <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -71,44 +72,44 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4X-Ru-Why">
-                            <rect key="frame" x="40.000000000000007" y="302" width="110.66666666666669" height="20.666666666666686"/>
+                            <rect key="frame" x="40.000000000000007" y="282" width="110.66666666666669" height="20.666666666666686"/>
                             <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="17"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ayN-by-FPI">
-                            <rect key="frame" x="40" y="337.66666666666669" width="313" height="66"/>
+                            <rect key="frame" x="40" y="317.66666666666669" width="313" height="55"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QO3-aS-Yjz">
-                                    <rect key="frame" x="0.0" y="0.0" width="53" height="66"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="53" height="55"/>
                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.19899370812422393" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="20"/>
                                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="chz-ua-1Ov">
-                                    <rect key="frame" x="65" y="0.0" width="53" height="66"/>
+                                    <rect key="frame" x="65" y="0.0" width="53" height="55"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.19785495783319537" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="20"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cXp-Ta-jwD">
-                                    <rect key="frame" x="130" y="0.0" width="53" height="66"/>
+                                    <rect key="frame" x="130" y="0.0" width="53" height="55"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.19785495780000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="20"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ll2-eD-pe2">
-                                    <rect key="frame" x="195" y="0.0" width="53" height="66"/>
+                                    <rect key="frame" x="195" y="0.0" width="53" height="55"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.19785495780000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="20"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FbM-kE-JQ7">
-                                    <rect key="frame" x="260" y="0.0" width="53" height="66"/>
+                                    <rect key="frame" x="260" y="0.0" width="53" height="55"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.19785495780000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="20"/>
@@ -116,11 +117,11 @@
                                 </textField>
                             </subviews>
                             <constraints>
-                                <constraint firstAttribute="height" constant="66" id="Zkd-V0-KAe"/>
+                                <constraint firstAttribute="height" constant="55" id="Zkd-V0-KAe"/>
                             </constraints>
                         </stackView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The received OTP is valid for 2 mins" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3R-tc-fZq">
-                            <rect key="frame" x="40" y="418.66666666666669" width="313" height="21.666666666666686"/>
+                            <rect key="frame" x="40" y="387.66666666666669" width="313" height="21.666666666666686"/>
                             <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -128,13 +129,12 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="X0h-47-jpv" firstAttribute="leading" secondItem="bH2-FV-WeF" secondAttribute="leading" id="56z-Zt-57A"/>
                         <constraint firstAttribute="trailing" secondItem="ayN-by-FPI" secondAttribute="trailing" constant="40" id="5cQ-dO-Thl"/>
                         <constraint firstItem="y3R-tc-fZq" firstAttribute="top" secondItem="ayN-by-FPI" secondAttribute="bottom" constant="15" id="7XH-5C-xdh"/>
                         <constraint firstItem="b4X-Ru-Why" firstAttribute="top" secondItem="47l-xR-fG7" secondAttribute="bottom" constant="30" id="Bv0-rq-N6H"/>
                         <constraint firstItem="ayN-by-FPI" firstAttribute="top" secondItem="b4X-Ru-Why" secondAttribute="bottom" constant="15" id="EZa-hb-1cM"/>
                         <constraint firstItem="SGA-BB-aVG" firstAttribute="leading" secondItem="Ow2-J8-rft" secondAttribute="leading" id="HlG-II-DcJ"/>
-                        <constraint firstItem="Ow2-J8-rft" firstAttribute="top" secondItem="X0h-47-jpv" secondAttribute="bottom" constant="-40" id="JxG-Lv-XPP"/>
+                        <constraint firstItem="Ow2-J8-rft" firstAttribute="top" secondItem="X0h-47-jpv" secondAttribute="bottom" id="JxG-Lv-XPP"/>
                         <constraint firstAttribute="bottom" secondItem="wI3-t7-24g" secondAttribute="bottom" constant="70" id="KfQ-3O-IZF"/>
                         <constraint firstAttribute="trailing" secondItem="47l-xR-fG7" secondAttribute="trailing" constant="40" id="RWC-xo-Xbc"/>
                         <constraint firstAttribute="trailing" secondItem="y3R-tc-fZq" secondAttribute="trailing" constant="40" id="XFN-Ad-ydy"/>
@@ -163,8 +163,8 @@
         </view>
     </objects>
     <resources>
+        <image name="clippedTopCurve" width="341" height="154"/>
         <image name="logoImg" width="117" height="62"/>
-        <image name="topCurve" width="428" height="156"/>
         <namedColor name="primary1">
             <color red="0.22400000691413879" green="0.027000000700354576" blue="0.50199997425079346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

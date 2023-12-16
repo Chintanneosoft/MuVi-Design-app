@@ -51,6 +51,7 @@ extension FindCollectionCell: UICollectionViewDelegate, UICollectionViewDataSour
         case 3:
             let popularSearchCell = collectionView.getCell(indexPath: indexPath) as PopularSearchCell
             popularSearchCell.setCellDetails(movieDetails: popularSearchData["movie\(indexPath.row)"] ?? [:])
+            popularSearchCell.setCellSeparator()
             return popularSearchCell
         case 4:
             let preferedExperienceCell = collectionView.getCell(indexPath: indexPath) as PreferedExperienceCell
@@ -134,7 +135,7 @@ extension FindCollectionCell: UICollectionViewDelegateFlowLayout{
         case 3:
             return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.height/2)
         case 4:
-            return CGSize(width: collectionView.bounds.width/4.2, height: collectionView.bounds.width/2.3 )
+            return CGSize(width: collectionView.bounds.width/4.2, height: collectionView.bounds.width/2.5 )
         default:
             return CGSize()
         }

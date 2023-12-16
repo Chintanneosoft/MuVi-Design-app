@@ -140,5 +140,11 @@ extension UITextField {
     }
 }
 
-
-
+extension UICollectionViewCell{
+    func setCellSeparator(){
+        let separatorView = UIView()
+        separatorView.backgroundColor = .gray
+        separatorView.frame = CGRect(x: 0, y: self.frame.height - 1, width: self.frame.width, height: 1)
+        self.addSubview(separatorView)
+    }
+}

@@ -34,12 +34,16 @@ class PopularSearchCell: UICollectionViewCell {
         lblSearchBy.textColor = AppColors.whiteColor
         lblSearchBy.setFont(font: Fonts.barlowLight.rawValue, size: 12)
         
+        lblRating.clipsToBounds = true
         lblRating.textColor = AppColors.darkPurpleColor
         lblRating.backgroundColor = AppColors.whiteColor
         lblRating.setFont(font: Fonts.barlowBold.rawValue, size: 10)
+        lblRating.layer.cornerRadius = 5
         
         lblDuration.textColor = AppColors.whiteColor
         lblDuration.setFont(font: Fonts.barlowRegular.rawValue, size: 13)
+        
+        
     }
     
     func setCellDetails(movieDetails: [String:String]){

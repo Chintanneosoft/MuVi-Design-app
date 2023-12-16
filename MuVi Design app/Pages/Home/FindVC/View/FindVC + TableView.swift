@@ -48,9 +48,9 @@ extension FindVC: UITableViewDelegate, UITableViewDataSource{
         case 2:
             return UIScreen.main.bounds.width/3
         case 3:
-            return UIScreen.main.bounds.width/1.2
+            return UIScreen.main.bounds.width/1.4
         case 4:
-            return UIScreen.main.bounds.width/2
+            return UIScreen.main.bounds.width
         default:
             return UITableView.automaticDimension
         }
@@ -58,7 +58,7 @@ extension FindVC: UITableViewDelegate, UITableViewDataSource{
     
     // For Header
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 30))
+        let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 40))
         
         let label = UILabel()
         label.setFont(font: Fonts.barlowRegular.rawValue, size: 22)

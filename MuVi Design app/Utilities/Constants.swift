@@ -39,6 +39,8 @@ enum Constants:String{
     case searchedBy = "Searched by"
     case people = "people"
     case duration = "Duration"
+    case discover = "Discover"
+    case whatsNew = "What’s New @MuviCinemas"
 }
 
 enum ImageStrings:String{
