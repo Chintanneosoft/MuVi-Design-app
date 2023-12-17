@@ -19,12 +19,13 @@ class DiscoverHeaderView: UIView {
     }
     
     private func setUpUIView(){
-        lblDiscover.text = Constants.discover.rawValue
         lblDiscover.textColor = AppColors.whiteColor
         lblDiscover.setFont(font: Fonts.barlowRegular.rawValue, size: 36)
+        lblDiscover.text = Constants.discover.rawValue
         
         lblWhatsNew.text = Constants.whatsNew.rawValue
         lblWhatsNew.textColor = AppColors.whiteColor
         lblWhatsNew.setFont(font: Fonts.barlowLight.rawValue, size: 16)
+        lblWhatsNew.alpha = 0.8
     }
 }

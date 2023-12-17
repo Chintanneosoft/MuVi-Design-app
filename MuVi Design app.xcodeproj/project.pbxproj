@@ -83,6 +83,8 @@
 		9293BB662B19EC1800A85E86 /* WalkThroughVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9293BB642B19EC1800A85E86 /* WalkThroughVC.xib */; };
 		92A0FBE72B2C50E400BC94B4 /* PopularSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A0FBE52B2C50E400BC94B4 /* PopularSearchCell.swift */; };
 		92A0FBE82B2C50E400BC94B4 /* PopularSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A0FBE62B2C50E400BC94B4 /* PopularSearchCell.xib */; };
+		92B9218F2B2F278500522081 /* DiscoverCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B9218D2B2F278500522081 /* DiscoverCarouselCell.swift */; };
+		92B921902B2F278500522081 /* DiscoverCarouselCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B9218E2B2F278500522081 /* DiscoverCarouselCell.xib */; };
 		92EF6CA22B29DCB90073A071 /* FindCollectionCell + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EF6CA12B29DCB90073A071 /* FindCollectionCell + CollectionView.swift */; };
 		92F0EAE92B2DE4B200A2C59B /* DiscoverHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92F0EAE82B2DE4B200A2C59B /* DiscoverHeaderView.xib */; };
 /* End PBXBuildFile section */
@@ -165,6 +167,8 @@
 		9293BB642B19EC1800A85E86 /* WalkThroughVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalkThroughVC.xib; sourceTree = "<group>"; };
 		92A0FBE52B2C50E400BC94B4 /* PopularSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSearchCell.swift; sourceTree = "<group>"; };
 		92A0FBE62B2C50E400BC94B4 /* PopularSearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularSearchCell.xib; sourceTree = "<group>"; };
+		92B9218D2B2F278500522081 /* DiscoverCarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCarouselCell.swift; sourceTree = "<group>"; };
+		92B9218E2B2F278500522081 /* DiscoverCarouselCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverCarouselCell.xib; sourceTree = "<group>"; };
 		92EF6CA12B29DCB90073A071 /* FindCollectionCell + CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FindCollectionCell + CollectionView.swift"; sourceTree = "<group>"; };
 		92F0EAE82B2DE4B200A2C59B /* DiscoverHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverHeaderView.xib; sourceTree = "<group>"; };
 		9B2BADC336503F9A2A2F849F /* Pods-MuVi Design app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuVi Design app.release.xcconfig"; path = "Target Support Files/Pods-MuVi Design app/Pods-MuVi Design app.release.xcconfig"; sourceTree = "<group>"; };
@@ -306,6 +310,7 @@
 		92805AB92B2DDD90001B1F52 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				92B9218C2B2F25AC00522081 /* DiscoverCarouselCell */,
 				92805ABE2B2DE455001B1F52 /* Discover Header View */,
 			);
 			path = Cells;
@@ -728,6 +733,15 @@
 			path = PopularSearchCell;
 			sourceTree = "<group>";
 		};
+		92B9218C2B2F25AC00522081 /* DiscoverCarouselCell */ = {
+			isa = PBXGroup;
+			children = (
+				92B9218D2B2F278500522081 /* DiscoverCarouselCell.swift */,
+				92B9218E2B2F278500522081 /* DiscoverCarouselCell.xib */,
+			);
+			path = DiscoverCarouselCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -806,6 +820,7 @@
 				928AE16F2B1D9EAB00B517F5 /* Barlow-ExtraBoldItalic.ttf in Resources */,
 				928AE1702B1D9EAB00B517F5 /* Barlow-MediumItalic.ttf in Resources */,
 				928AE16B2B1D9EAB00B517F5 /* Barlow-SemiBoldItalic.ttf in Resources */,
+				92B921902B2F278500522081 /* DiscoverCarouselCell.xib in Resources */,
 				928AE16A2B1D9EAB00B517F5 /* Barlow-BlackItalic.ttf in Resources */,
 				9281A5F82B23453600BD13B5 /* OTPVerificationVC.xib in Resources */,
 				928AE1692B1D9EAB00B517F5 /* Barlow-Italic.ttf in Resources */,
@@ -913,6 +928,7 @@
 				9286F54F2B2987D9003585FD /* FindVC + TableView.swift in Sources */,
 				9293BB542B19AA5100A85E86 /* LoginVC.swift in Sources */,
 				9293BB652B19EC1800A85E86 /* WalkThroughVC.swift in Sources */,
+				92B9218F2B2F278500522081 /* DiscoverCarouselCell.swift in Sources */,
 				928BA47C2B20560700996AB8 /* Helpers.swift in Sources */,
 				923E37652B29B29B00B789D5 /* Cinemas.swift in Sources */,
 				928396872B2AD01800D04A4A /* LanguageCell.swift in Sources */,

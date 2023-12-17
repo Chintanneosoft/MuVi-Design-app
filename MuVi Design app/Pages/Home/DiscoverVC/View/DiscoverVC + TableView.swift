@@ -18,4 +18,7 @@ extension DiscoverVC: UITableViewDelegate, UITableViewDataSource{
         return findCollectionCell
     }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 150
+    }
 }

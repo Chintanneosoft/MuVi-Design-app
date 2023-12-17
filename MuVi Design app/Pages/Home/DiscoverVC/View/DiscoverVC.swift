@@ -7,7 +7,7 @@
 
 import UIKit
 //MARK: - DiscoverVC
-class DiscoverVC: BaseVC {
+class DiscoverVC: UIViewController {
     //MARK: - @IBOutlets
     @IBOutlet weak var discoverTableView: UITableView!
     
@@ -16,13 +16,29 @@ class DiscoverVC: BaseVC {
         super.viewDidLoad()
         setUpTableView()
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setUpUI()
+    }
+    
     private func setUpTableView(){
         discoverTableView.delegate = self
         discoverTableView.dataSource = self
         
         discoverTableView.registerNib(of: FindCollectionCell.self)
         
-        discoverTableView.tableHeaderView = DiscoverHeaderView(frame: CGRect(x: 0, y: 0, width: Int(discoverTableView.bounds.width), height: 70))
+        
+        let nib = UINib(nibName: CellIdentifiers.DiscoverHeaderView.rawValue, bundle: nil)
+        if let headerView = nib.instantiate(withOwner: self, options: nil).first as? DiscoverHeaderView {
+            headerView.frame = CGRect(x: 0, y: 0, width: Int(discoverTableView.bounds.width), height: 50)
+            discoverTableView.tableHeaderView = headerView
+        }
+        
+        discoverTableView.layoutIfNeeded()
+    }
+    
+    private func setUpUI(){
+        self.view.applyGradient(colours: [AppColors.blackishPurleColor,AppColors.darkPurpleColor])
     }
 }

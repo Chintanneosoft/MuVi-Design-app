@@ -26,8 +26,7 @@ class HomeTabBarController: WaveTabBarController {
     
     //MARK: - Functions
     func setVCs(){
-        let discoverVC = UIViewController()
-        discoverVC.view.backgroundColor = .blue
+        let discoverVC = DiscoverVC(nibName: VCNibs.DiscoverVC.rawValue, bundle: nil)
         discoverVC.tabBarItem = UITabBarItem(title: homeTabBarVM.tabItems["item0"]?["title"], image: UIImage(named:  (homeTabBarVM.tabItems["item0"]?["image"])!) ?? UIImage(systemName: "heart"), tag: 0)
         
         let moviesVC = UIViewController()

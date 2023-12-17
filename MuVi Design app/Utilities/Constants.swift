@@ -61,6 +61,7 @@ enum VCNibs:String{
     case CitySelectionVC = "CitySelectionVC"
     case PreferedExperienceVC = "PreferedExperienceVC"
     case FindVC = "FindVC"
+    case DiscoverVC = "DiscoverVC"
 }
 
 enum Fonts: String{
@@ -77,6 +78,7 @@ enum CellIdentifiers:String{
     case PreferedExperienceCell = "PreferedExperienceCell"
     case FindCollectionCell = "FindCollectionCell"
     case LanguageCell = "LanguageCell"
+    case DiscoverHeaderView = "DiscoverHeaderView"
 }
 
 struct AppColors{
@@ -91,6 +93,7 @@ struct AppColors{
     static var lightPurpleColor = UIColor(red: 159.0/255.0, green: 69.0/255.0, blue: 191.0/255.0, alpha: 1.0)
     static var opaqueBlackColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
     static var whiteColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+    static var blackishPurleColor = UIColor(red: 32.0/255.0, green: 12.0/255.0, blue: 64.0/255.0, alpha: 1.0)
 }
 
 enum UserDefaultKeys:String{
