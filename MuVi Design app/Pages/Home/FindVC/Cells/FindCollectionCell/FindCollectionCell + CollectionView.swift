@@ -50,7 +50,7 @@ extension FindCollectionCell: UICollectionViewDelegate, UICollectionViewDataSour
             return languageCell
         case 3:
             let popularSearchCell = collectionView.getCell(indexPath: indexPath) as PopularSearchCell
-            popularSearchCell.setCellDetails(movieDetails: popularSearchData["movie\(indexPath.row)"] ?? [:])
+            popularSearchCell.setCellDetails(movieDetails: popularSearchData["movie\(indexPath.row)"] ?? MovieDetails())
             popularSearchCell.setCellSeparator()
             return popularSearchCell
         case 4:

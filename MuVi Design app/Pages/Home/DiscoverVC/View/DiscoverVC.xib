@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,16 +18,14 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tpq-7t-oYo">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" pagingEnabled="YES" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JtF-ll-4dj">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" bouncesZoom="NO" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JtF-ll-4dj">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clippedTopCurve" translatesAutoresizingMaskIntoConstraints="NO" id="rdm-JZ-0SC">
                     <rect key="frame" x="193" y="0.0" width="200" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="80" id="CNF-6q-u4X"/>
                         <constraint firstAttribute="width" constant="200" id="iIr-E9-cS6"/>
@@ -36,16 +33,12 @@
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="JtF-ll-4dj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1Sg-jz-FNu"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tpq-7t-oYo" secondAttribute="trailing" id="2Xv-Of-pNp"/>
-                <constraint firstItem="tpq-7t-oYo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LzV-3S-ZFj"/>
-                <constraint firstItem="tpq-7t-oYo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PSd-YS-3rc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JtF-ll-4dj" secondAttribute="trailing" id="W6A-Jg-dc5"/>
                 <constraint firstAttribute="bottom" secondItem="JtF-ll-4dj" secondAttribute="bottom" id="aTR-Zq-p1J"/>
                 <constraint firstItem="rdm-JZ-0SC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fQu-Ll-PGw"/>
-                <constraint firstAttribute="bottom" secondItem="tpq-7t-oYo" secondAttribute="bottom" id="gGj-OH-dhe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rdm-JZ-0SC" secondAttribute="trailing" id="r1X-TK-smn"/>
                 <constraint firstItem="JtF-ll-4dj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vWz-AC-VET"/>
             </constraints>
@@ -54,8 +47,5 @@
     </objects>
     <resources>
         <image name="clippedTopCurve" width="341" height="154"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

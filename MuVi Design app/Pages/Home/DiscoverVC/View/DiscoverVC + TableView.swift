@@ -10,15 +10,25 @@ import UIKit
 //MARK: - TableView Delegate and DataSource
 extension DiscoverVC: UITableViewDelegate, UITableViewDataSource{
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 5
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let findCollectionCell = tableView.getCell() as FindCollectionCell
-        return findCollectionCell
+        let discoverCollectionCell = tableView.getCell() as DiscoverCollectionCell
+        return discoverCollectionCell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return tableView.frame.width/1.3
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 150
+        return 80
     }
+
 }

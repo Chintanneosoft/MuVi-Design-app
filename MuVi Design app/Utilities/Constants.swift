@@ -79,6 +79,8 @@ enum CellIdentifiers:String{
     case FindCollectionCell = "FindCollectionCell"
     case LanguageCell = "LanguageCell"
     case DiscoverHeaderView = "DiscoverHeaderView"
+    case DiscoverCollectionCell = "DiscoverCollectionCell"
+    case DiscoverSliderCell = "DiscoverSliderCell"
 }
 
 struct AppColors{

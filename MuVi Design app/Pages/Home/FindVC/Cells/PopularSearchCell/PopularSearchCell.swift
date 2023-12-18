@@ -43,15 +43,14 @@ class PopularSearchCell: UICollectionViewCell {
         lblDuration.textColor = AppColors.whiteColor
         lblDuration.setFont(font: Fonts.barlowRegular.rawValue, size: 13)
         
-        
     }
     
-    func setCellDetails(movieDetails: [String:String]){
-        lblMovieName.text = movieDetails["name"]
-        lblGenre.text = movieDetails["genre"]
-        lblRating.text = movieDetails["rating"]
-        lblSearchBy.text = "\(Constants.searchedBy.rawValue) \((movieDetails["searchCount"] ?? "")) \(Constants.people.rawValue)"
-        lblDuration.text = "\(Constants.duration.rawValue) \n \(movieDetails["duration"] ?? "")"
-        popularSearchImg.image = UIImage(named: movieDetails["image"] ?? "")
+    func setCellDetails(movieDetails: MovieDetails){
+        lblMovieName.text = movieDetails.name
+        lblGenre.text = movieDetails.genre
+        lblRating.text = movieDetails.rating
+        lblSearchBy.text = "\(Constants.searchedBy.rawValue) \((movieDetails.searchCount ?? "")) \(Constants.people.rawValue)"
+        lblDuration.text = "\(Constants.duration.rawValue) \n \(movieDetails.duration ?? "")"
+        popularSearchImg.image = UIImage(named: movieDetails.image ?? "")
     }
 }
