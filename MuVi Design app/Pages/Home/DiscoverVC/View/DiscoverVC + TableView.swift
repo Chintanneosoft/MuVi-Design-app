@@ -11,7 +11,7 @@ import UIKit
 extension DiscoverVC: UITableViewDelegate, UITableViewDataSource{
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return 6
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,7 +26,10 @@ extension DiscoverVC: UITableViewDelegate, UITableViewDataSource{
             return bestExperienceCell ?? UITableViewCell()
         default:
             let discoverCollectionCell = tableView.getCell() as DiscoverCollectionCell
-            discoverCollectionCell.currentSection = indexPath.section
+            discoverCollectionCell.configureWithSection(indexPath.section)
+            if indexPath.section == 4{
+                discoverCollectionCell.backgroundColor = AppColors.opaqueBlackColor
+            }
             return discoverCollectionCell
         }
     }
@@ -35,9 +38,11 @@ extension DiscoverVC: UITableViewDelegate, UITableViewDataSource{
         switch indexPath.section{
         case 0:
             return tableView.frame.width/1.3
-        case 1:
+        case 1,3,5:
             return tableView.frame.width/1.5
         case 2:
+            return tableView.frame.width/2.8
+        case 4:
             return tableView.frame.width/3
         default:
             return tableView.frame.width
@@ -54,22 +59,22 @@ extension DiscoverVC: UITableViewDelegate, UITableViewDataSource{
                 view.backgroundColor = .clear
                 headerView = view
             }
-        case 1:
+        case 1,3,5:
             let nib = UINib(nibName: CellIdentifiers.DiscoverSectionHeaderView.rawValue, bundle: nil)
             if let view = nib.instantiate(withOwner: self, options: nil).first as? DiscoverSectionHeaderView {
                 view.frame = CGRect(x: 0, y: 0, width: Int(tableView.bounds.width), height: 0)
                 view.backgroundColor = .clear
-                view.setHeaderView(sectionHeading: Constants.RecommendedForYou.rawValue, btnTitle: Constants.ViewAll.rawValue)
+                if section == 1{
+                    view.setHeaderView(sectionHeading: Constants.RecommendedForYou.rawValue, btnTitle: Constants.ViewAll.rawValue)
+                } else if section == 3 {
+                    view.setHeaderView(sectionHeading: Constants.PopularMovies.rawValue, btnTitle: Constants.ViewAll.rawValue)
+                } else {
+                    view.setHeaderView(sectionHeading: Constants.UpcomingMovies.rawValue, btnTitle: Constants.ViewAll.rawValue)
+                }
                 headerView = view
             }
-        case 2:
-            headerView = UIView()
         default:
-            let nib = UINib(nibName: CellIdentifiers.DiscoverSectionHeaderView.rawValue, bundle: nil)
-            if let view = nib.instantiate(withOwner: self, options: nil).first as? DiscoverSectionHeaderView {
-                view.frame = CGRect(x: 0, y: 0, width: Int(tableView.bounds.width), height: 0)
-                headerView = view
-            }
+            headerView = UIView()
         }
         return headerView
     }
@@ -77,11 +82,11 @@ extension DiscoverVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         switch section{
         case 0:
-            return 100
-        case 2:
-            return 0
+            return 110
+        case 1,3,5:
+            return 60
         default:
-            return 40
+            return 0
         }
     }
 }

@@ -11,6 +11,7 @@ class LanguageCell: UICollectionViewCell {
 
     //IBOutlet
     @IBOutlet weak var lblLanguage: UILabel!
+    @IBOutlet weak var lblMovieCount: UILabel!
     
     //Lifecycle
     override func awakeFromNib() {
@@ -25,8 +26,15 @@ class LanguageCell: UICollectionViewCell {
         self.layer.cornerRadius = 10
     }
     
-    func setCellDetails(language: [String:Any]){
-        lblLanguage.text = "\(String(describing: language["language"] ?? ""))"
-        self.backgroundColor = language["color"] as? UIColor ?? .black
+    func setCellDetails(language: LanguageDetails){
+        lblLanguage.text = "\(language.langauge ?? "")"
+        self.backgroundColor = language.color ?? .black
+    }
+    
+    func setMovieCount(language: LanguageDetails){
+        lblMovieCount.isHidden = false
+        lblMovieCount.textColor = AppColors.whiteColor
+        lblMovieCount.setFont(font: Fonts.barlowBold.rawValue, size: 16)
+        lblMovieCount.text = "\(language.movieCount ?? 0) Movies"
     }
 }

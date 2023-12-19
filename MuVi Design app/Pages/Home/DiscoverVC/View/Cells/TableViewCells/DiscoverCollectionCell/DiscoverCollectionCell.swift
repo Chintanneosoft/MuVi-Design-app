@@ -33,6 +33,8 @@ class DiscoverCollectionCell: UITableViewCell {
           
         discoverCollectionView.register(UINib(nibName: CellIdentifiers.DiscoverRecommendationCell.rawValue, bundle: nil), forCellWithReuseIdentifier: CellIdentifiers.DiscoverRecommendationCell.rawValue)
         discoverCollectionView.register(UINib(nibName: CellIdentifiers.DiscoverSliderCell.rawValue, bundle: nil), forCellWithReuseIdentifier: CellIdentifiers.DiscoverSliderCell.rawValue)
+        discoverCollectionView.register(UINib(nibName: CellIdentifiers.LanguageCell.rawValue, bundle: nil), forCellWithReuseIdentifier: CellIdentifiers.LanguageCell.rawValue)
+        discoverCollectionView.register(UINib(nibName: CellIdentifiers.PreferencesCell.rawValue, bundle: nil), forCellWithReuseIdentifier: CellIdentifiers.PreferencesCell.rawValue)
     }
     
     private func setPageControl(){
@@ -42,7 +44,9 @@ class DiscoverCollectionCell: UITableViewCell {
     
     func configureWithSection(_ section: Int) {
         currentSection = section
-        discoverPageControl.isHidden = !(section == 0)
+        if section == 0{
+            discoverPageControl.isHidden = false
+        }
     }
     
     //MARK: - @IBActions

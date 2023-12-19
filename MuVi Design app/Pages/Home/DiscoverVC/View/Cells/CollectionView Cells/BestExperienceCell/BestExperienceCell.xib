@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="138" id="X4Q-bf-fz2" customClass="BestExperienceCell" customModule="MuVi_Design_app" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="138" id="X4Q-bf-fz2" customClass="BestExperienceCell" customModule="MuVi_Design_app" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="393" height="138"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X4Q-bf-fz2" id="gZB-5A-a9M">
@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbf-7B-OED">
-                                <rect key="frame" x="20" y="41" width="42" height="47"/>
+                                <rect key="frame" x="20" y="41" width="42" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,7 +36,7 @@
                             <constraint firstItem="9SW-Kp-Mvr" firstAttribute="leading" secondItem="x4i-pv-98F" secondAttribute="leading" constant="20" id="8cG-7k-whr"/>
                             <constraint firstItem="9SW-Kp-Mvr" firstAttribute="top" secondItem="x4i-pv-98F" secondAttribute="top" constant="20" id="G8R-dR-Kd1"/>
                             <constraint firstItem="bbf-7B-OED" firstAttribute="top" secondItem="9SW-Kp-Mvr" secondAttribute="bottom" id="MT0-MF-zpc"/>
-                            <constraint firstAttribute="bottom" secondItem="bbf-7B-OED" secondAttribute="bottom" constant="10" id="fJc-a7-vxy"/>
+                            <constraint firstAttribute="bottom" secondItem="bbf-7B-OED" secondAttribute="bottom" constant="20" id="fJc-a7-vxy"/>
                             <constraint firstItem="bbf-7B-OED" firstAttribute="leading" secondItem="9SW-Kp-Mvr" secondAttribute="leading" id="vVq-0i-pHg"/>
                         </constraints>
                     </view>

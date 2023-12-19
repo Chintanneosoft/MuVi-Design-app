@@ -80,7 +80,7 @@ enum CellIdentifiers:String{
     case FindCollectionCell = "FindCollectionCell"
     case LanguageCell = "LanguageCell"
     case DiscoverCollectionCell = "DiscoverCollectionCell"
-    case DiscoverSliderCell = "DiscoverSliderCell"
+    case DiscoverSliderCell = "DiscoverSliderCell" 
     case DiscoverRecommendationCell = "DiscoverRecommendationCell"
     case BestExperienceCell = "BestExperienceCell"
     

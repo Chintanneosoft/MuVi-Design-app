@@ -46,7 +46,7 @@ extension FindCollectionCell: UICollectionViewDelegate, UICollectionViewDataSour
             return preferedExperienceCell
         case 2:
             let languageCell = collectionView.getCell(indexPath: indexPath) as LanguageCell
-            languageCell.setCellDetails(language: languages["language\(indexPath.row)"] ?? [:])
+            languageCell.setCellDetails(language: languages["language\(indexPath.row)"] ?? LanguageDetails(name: "", langauge: "", color: UIColor(), movieCount: 0))
             return languageCell
         case 3:
             let popularSearchCell = collectionView.getCell(indexPath: indexPath) as PopularSearchCell

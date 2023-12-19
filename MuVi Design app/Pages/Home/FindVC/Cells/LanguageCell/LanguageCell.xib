@@ -25,11 +25,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh0-37-Ijc">
+                                <rect key="frame" x="15" y="39" width="42" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bYg-vF-o3Q" firstAttribute="top" secondItem="vhB-cX-Ak5" secondAttribute="top" constant="13" id="FGC-fk-BLC"/>
+                            <constraint firstItem="Fh0-37-Ijc" firstAttribute="leading" secondItem="bYg-vF-o3Q" secondAttribute="leading" id="gXK-cu-TB6"/>
+                            <constraint firstItem="Fh0-37-Ijc" firstAttribute="top" secondItem="bYg-vF-o3Q" secondAttribute="bottom" constant="5" id="iFR-r5-y7N"/>
                             <constraint firstItem="bYg-vF-o3Q" firstAttribute="leading" secondItem="vhB-cX-Ak5" secondAttribute="leading" constant="15" id="vEw-Dk-ONN"/>
+                            <constraint firstAttribute="bottom" secondItem="Fh0-37-Ijc" secondAttribute="bottom" constant="10" id="w3Y-Uf-R6m"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -44,8 +53,9 @@
             <size key="customSize" width="177" height="100"/>
             <connections>
                 <outlet property="lblLanguage" destination="bYg-vF-o3Q" id="Bxi-oC-cLl"/>
+                <outlet property="lblMovieCount" destination="Fh0-37-Ijc" id="CUe-dm-Hpj"/>
             </connections>
-            <point key="canvasLocation" x="72.51908396946564" y="37.323943661971832"/>
+            <point key="canvasLocation" x="70.992366412213741" y="37.323943661971832"/>
         </collectionViewCell>
     </objects>
 </document>

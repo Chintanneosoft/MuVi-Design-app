@@ -27,4 +27,10 @@ class PreferencesCell: UICollectionViewCell {
         self.layer.borderColor = color.cgColor
         lblGenre.textColor = color
     }
+    
+    func setLabelStyle(text:String,font: String, size: CGFloat, color:UIColor){
+        lblGenre.text = text
+        lblGenre.setFont(font: font, size: size)
+        lblGenre.textColor = color
+    }
 }

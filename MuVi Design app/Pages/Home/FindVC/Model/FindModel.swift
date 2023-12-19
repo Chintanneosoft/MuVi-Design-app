@@ -6,10 +6,19 @@
 //
 
 import Foundation
+import UIKit
 
-var languages = ["language0":["languagueName":"Arab","language":"عربى","color":AppColors.blueColor],
-                 "language1":["languagueName":"English","language":"English","color":AppColors.orangeColor],
-                 "language2":["languagueName":"Hindi","language":"हिन्दी","color":AppColors.lightPurpleColor]]
+struct LanguageDetails{
+    let name: String?
+    let langauge: String?
+    let color: UIColor?
+    let movieCount: Int?
+}
+
+var languages = ["language0":
+                LanguageDetails(name: "Arab", langauge: "عربى", color: AppColors.blueColor, movieCount: 10),
+                 "language1": LanguageDetails(name: "English", langauge: "English", color: AppColors.orangeColor, movieCount: 13),
+                 "language2": LanguageDetails(name: "Hindi", langauge: "हिन्दी", color: AppColors.lightPurpleColor, movieCount: 1)]
 
 var popularCast = ["cast0":["name":"Mark \nFamiglietti","image":"Mark Famiglietti"],
                    "cast1":["name":"Tom \nHolland","image":"Tom Holland"],
