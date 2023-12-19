@@ -6,13 +6,15 @@
 //
 
 import UIKit
-
+//MARK: - DiscoverHeaderView
 class DiscoverHeaderView: UIView {
 
+    //MARK: - @IBOutlets
     @IBOutlet weak var lblDiscover: UILabel!
     @IBOutlet weak var lblWhatsNew: UILabel!
     @IBOutlet weak var btnProfilePic: UIButton!
     
+    //MARK: - LifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
         setUpUIView()

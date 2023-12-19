@@ -33,7 +33,7 @@ class FindCollectionCell: UITableViewCell {
             NSLayoutConstraint.activate([
                 self.findCollectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30)
             ])
-        }
+        } 
     }
     
     private func setCollectionView(){

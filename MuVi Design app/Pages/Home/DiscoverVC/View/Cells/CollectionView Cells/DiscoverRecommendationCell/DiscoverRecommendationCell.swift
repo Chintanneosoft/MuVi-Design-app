@@ -25,10 +25,10 @@ class DiscoverRecommendationCell: UICollectionViewCell {
     }
     
     private func setUpUI(){
-        
-            lblRating.setFont(font: Fonts.barlowBold.rawValue, size: 14)
-            lblRating.backgroundColor = AppColors.whiteColor
-            lblRating.layer.cornerRadius = 2
+        lblRating.clipsToBounds = true
+        lblRating.setFont(font: Fonts.barlowBold.rawValue, size: 13)
+        lblRating.backgroundColor = AppColors.whiteColor
+        lblRating.layer.cornerRadius = 2
         
         lblMovieName.setFont(font: Fonts.barlowRegular.rawValue, size: 16)
         lblMovieName.textColor = AppColors.whiteColor
@@ -37,8 +37,21 @@ class DiscoverRecommendationCell: UICollectionViewCell {
         lblMovieCategory.textColor = AppColors.whiteColor
         lblMovieCategory.alpha = 0.7
         
-        im
+        imgMovie.clipsToBounds = true
+        imgMovie.layer.cornerRadius = 10
+        imgMovie.contentMode = .scaleAspectFill
     }
-
-
+    
+    func setCellDetails(movieDetail: MovieDetails){
+        lblMovieName.text = movieDetail.name ?? ""
+        lblMovieCategory.text = movieDetail.genre ?? ""
+        lblRating.text = " \(movieDetail.rating ?? "") "
+        imgMovie.image = UIImage(named: movieDetail.image ?? "")
+    }
+    
+    func setRatingConstrains(topConstraint: CGFloat, trailingConstraint: CGFloat){
+        lblRatingTop.constant = topConstraint
+        lblRatingTrailing.constant = trailingConstraint
+    }
+    
 }

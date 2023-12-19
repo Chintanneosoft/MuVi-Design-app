@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="DiscoverSectionHeaderView" id="zHp-I0-NGE" customClass="DiscoverSectionHeaderView" customModule="MuVi_Design_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="222"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="psk-iy-v4N">
+                    <rect key="frame" x="0.0" y="59" width="393" height="163"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdp-NB-744">
+                            <rect key="frame" x="20" y="71" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDr-5q-XIy">
+                            <rect key="frame" x="343" y="64.666666666666671" width="30" height="34"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="eDr-5q-XIy" firstAttribute="centerY" secondItem="pdp-NB-744" secondAttribute="centerY" id="6QP-RJ-jHq"/>
+                        <constraint firstItem="pdp-NB-744" firstAttribute="centerY" secondItem="psk-iy-v4N" secondAttribute="centerY" id="8TA-jn-2gq"/>
+                        <constraint firstItem="pdp-NB-744" firstAttribute="leading" secondItem="psk-iy-v4N" secondAttribute="leading" constant="20" id="fC7-JQ-2o3"/>
+                        <constraint firstAttribute="trailing" secondItem="eDr-5q-XIy" secondAttribute="trailing" constant="20" id="g8H-vu-fNc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="M2r-rU-btH"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="M2r-rU-btH" firstAttribute="bottom" secondItem="psk-iy-v4N" secondAttribute="bottom" id="Kus-2v-tZu"/>
+                <constraint firstItem="M2r-rU-btH" firstAttribute="trailing" secondItem="psk-iy-v4N" secondAttribute="trailing" id="NAE-uV-UY4"/>
+                <constraint firstItem="psk-iy-v4N" firstAttribute="top" secondItem="M2r-rU-btH" secondAttribute="top" id="Ubl-hz-q0o"/>
+                <constraint firstItem="psk-iy-v4N" firstAttribute="leading" secondItem="M2r-rU-btH" secondAttribute="leading" id="pZC-dq-RvP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnViewAll" destination="eDr-5q-XIy" id="4hG-Yh-hoS"/>
+                <outlet property="lblSectionHeading" destination="pdp-NB-744" id="m8E-Tl-Yu2"/>
+            </connections>
+            <point key="canvasLocation" x="159.54198473282443" y="-504.92957746478874"/>
+        </view>
+    </objects>
+</document>

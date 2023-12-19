@@ -27,6 +27,7 @@ class DiscoverSliderCell: UICollectionViewCell {
     }
     
     private func setUpUI(){
+        lblRating.clipsToBounds = true
         lblRating.setFont(font: Fonts.barlowBold.rawValue, size: 16)
         lblRating.backgroundColor = AppColors.whiteColor
         lblRating.layer.cornerRadius = 2
@@ -38,7 +39,7 @@ class DiscoverSliderCell: UICollectionViewCell {
         lblGenre.setFont(font: Fonts.barlowBold.rawValue, size: 12)
         lblGenre.textColor = AppColors.whiteColor
         lblGenre.layer.borderColor = AppColors.whiteColor.cgColor
-        lblGenre.layer.borderWidth = 2
+        lblGenre.layer.borderWidth = 1
         lblGenre.layer.cornerRadius = 2
         
         btnPreBook.applyGradient(colours: [AppColors.redColor, AppColors.purpleColor], angle: -45)
@@ -46,9 +47,8 @@ class DiscoverSliderCell: UICollectionViewCell {
         btnPreBook.setTitleFont(font: Fonts.barlowBold.rawValue, size: 14)
         btnPreBook.titleLabel?.textColor = AppColors.whiteColor
         
-        imgComingSoon.image = UIImage(named: "ComingSoon")
+        imgComingSoon.image = UIImage(named: ImageStrings.comingSoon.rawValue)
         imgMovie.contentMode = .scaleAspectFill
-        
     }
     
     func setLauchDate(date: String){
@@ -67,7 +67,6 @@ class DiscoverSliderCell: UICollectionViewCell {
         let attributedDate = NSMutableAttributedString(string: dayString, attributes: [NSAttributedString.Key.font: UIFont(name: Fonts.barlowRegular.rawValue, size: 30) ?? UIFont(),NSAttributedString.Key.foregroundColor: AppColors.whiteColor])
         let attributedMonth = NSAttributedString(string: "\(monthString) \n\(yearString)", attributes: [NSAttributedString.Key.font: UIFont(name: Fonts.barlowBold.rawValue, size: 12) ?? UIFont(),NSAttributedString.Key.foregroundColor: AppColors.whiteColor])
         
-        // Set the label's attributed text
         lblDate.attributedText = attributedDate
         lblLaunchMonth.attributedText = attributedMonth
     }
@@ -78,7 +77,7 @@ class DiscoverSliderCell: UICollectionViewCell {
         lblRating.text = "  \(movieDetails.rating ?? "")  "
         imgComingSoon.isHidden = !(movieDetails.isComingSoon ?? true)
         imgMovie.image = UIImage(named: movieDetails.image ?? "")
-        btnPreBook.setTitle((movieDetails.isComingSoon ?? true) ? "PRE-BOOK":"WATCH", for: .normal)
+        btnPreBook.setTitle((movieDetails.isComingSoon ?? true) ? Constants.prebook.rawValue:Constants.watch.rawValue, for: .normal)
         setLauchDate(date: movieDetails.launchDate ?? "")
     }
 }

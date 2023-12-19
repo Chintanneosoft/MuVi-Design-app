@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="202" height="272"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zNB-aI-Rfy">
-                                <rect key="frame" x="10" y="10" width="182" height="195"/>
+                                <rect key="frame" x="0.0" y="0.0" width="202" height="204"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoD-BI-OY3">
                                 <rect key="frame" x="160" y="0.0" width="42" height="21"/>
@@ -29,20 +28,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxf-P3-0Fr">
-                                <rect key="frame" x="10" y="215" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dxf-P3-0Fr">
+                                <rect key="frame" x="0.0" y="209" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxa-yt-8sJ">
-                                <rect key="frame" x="10" y="241" width="42" height="21"/>
+                                <rect key="frame" x="0.0" y="235" width="42" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gs-Id-tne">
-                                <rect key="frame" x="144.33333333333334" y="156.66666666666666" width="40" height="40"/>
+                                <rect key="frame" x="154" y="156" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="AdZ-46-lud"/>
                                     <constraint firstAttribute="width" constant="40" id="h7I-O1-IVw"/>
@@ -51,19 +50,19 @@
                                 <state key="normal" image="playIcon"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9gs-Id-tne" firstAttribute="trailing" secondItem="zNB-aI-Rfy" secondAttribute="trailing" multiplier="0.96" id="0kd-vm-1hV"/>
                             <constraint firstItem="Dxf-P3-0Fr" firstAttribute="leading" secondItem="zNB-aI-Rfy" secondAttribute="leading" id="2gW-gU-0YN"/>
                             <constraint firstAttribute="bottom" secondItem="cxa-yt-8sJ" secondAttribute="bottom" constant="10" id="67z-hW-lix"/>
+                            <constraint firstItem="9gs-Id-tne" firstAttribute="bottom" secondItem="zNB-aI-Rfy" secondAttribute="bottom" multiplier="0.96" id="9U4-dM-Rl0"/>
                             <constraint firstItem="CoD-BI-OY3" firstAttribute="top" secondItem="HU3-zg-IbN" secondAttribute="top" id="F9M-P4-5Jx"/>
-                            <constraint firstItem="9gs-Id-tne" firstAttribute="bottom" secondItem="zNB-aI-Rfy" secondAttribute="bottom" multiplier="0.96" id="H8T-pH-fbn"/>
-                            <constraint firstItem="zNB-aI-Rfy" firstAttribute="top" secondItem="HU3-zg-IbN" secondAttribute="top" constant="10" id="MPs-ya-NXl"/>
+                            <constraint firstItem="zNB-aI-Rfy" firstAttribute="top" secondItem="HU3-zg-IbN" secondAttribute="top" id="MPs-ya-NXl"/>
                             <constraint firstItem="cxa-yt-8sJ" firstAttribute="top" secondItem="Dxf-P3-0Fr" secondAttribute="bottom" constant="5" id="c34-7v-q55"/>
-                            <constraint firstItem="zNB-aI-Rfy" firstAttribute="leading" secondItem="HU3-zg-IbN" secondAttribute="leading" constant="10" id="cVh-Rg-sbE"/>
                             <constraint firstAttribute="trailing" secondItem="CoD-BI-OY3" secondAttribute="trailing" id="h64-7n-mai"/>
-                            <constraint firstItem="Dxf-P3-0Fr" firstAttribute="top" secondItem="zNB-aI-Rfy" secondAttribute="bottom" constant="10" id="o32-bL-8Yb"/>
-                            <constraint firstAttribute="trailing" secondItem="zNB-aI-Rfy" secondAttribute="trailing" constant="10" id="y2b-fR-OuQ"/>
+                            <constraint firstItem="Dxf-P3-0Fr" firstAttribute="top" secondItem="zNB-aI-Rfy" secondAttribute="bottom" constant="5" id="o32-bL-8Yb"/>
+                            <constraint firstItem="zNB-aI-Rfy" firstAttribute="leading" secondItem="HU3-zg-IbN" secondAttribute="leading" id="s3q-A3-yLw"/>
+                            <constraint firstAttribute="trailing" secondItem="zNB-aI-Rfy" secondAttribute="trailing" id="y2b-fR-OuQ"/>
                             <constraint firstItem="cxa-yt-8sJ" firstAttribute="leading" secondItem="zNB-aI-Rfy" secondAttribute="leading" id="yiA-Z9-rEO"/>
                         </constraints>
                     </view>
@@ -71,6 +70,7 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
+                <constraint firstItem="zNB-aI-Rfy" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.75" id="8vt-Co-fjB"/>
                 <constraint firstAttribute="bottom" secondItem="HU3-zg-IbN" secondAttribute="bottom" id="PDi-5Z-FNt"/>
                 <constraint firstItem="HU3-zg-IbN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jgl-Kf-Ab4"/>
                 <constraint firstItem="HU3-zg-IbN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rhS-tV-BhB"/>
@@ -91,8 +91,5 @@
     </objects>
     <resources>
         <image name="playIcon" width="58" height="55"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

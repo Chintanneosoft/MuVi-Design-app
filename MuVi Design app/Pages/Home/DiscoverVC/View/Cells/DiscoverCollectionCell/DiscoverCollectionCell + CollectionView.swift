@@ -15,17 +15,29 @@ extension DiscoverCollectionCell: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let carouselCell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.DiscoverSliderCell.rawValue, for: indexPath) as? DiscoverSliderCell
+        switch currentSection{
+        case 0:
+            let carouselCell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.DiscoverSliderCell.rawValue, for: indexPath) as? DiscoverSliderCell
+            carouselCell?.setCellDetails(movieDetails: newMovies["movie\(indexPath.row)"] ?? MovieDetails())
+            return carouselCell ?? UICollectionViewCell()
+        case 1:
+            let recommendationCell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.DiscoverRecommendationCell.rawValue, for: indexPath) as? DiscoverRecommendationCell
+            recommendationCell?.setCellDetails(movieDetail: recommendedMovies["movie\(indexPath.row)"] ?? MovieDetails())
+            recommendationCell?.setRatingConstrains(topConstraint: 10, trailingConstraint: 10)
+            return recommendationCell ?? UICollectionViewCell()
+        default:
+            let recommendationCell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.DiscoverRecommendationCell.rawValue, for: indexPath) as? DiscoverRecommendationCell
+            recommendationCell?.setCellDetails(movieDetail: recommendedMovies["movie\(indexPath.row)"] ?? MovieDetails())
+            return recommendationCell ?? UICollectionViewCell()
+        }
         
-        carouselCell?.setCellDetails(movieDetails: newMovies["movie\(indexPath.row)"] ?? MovieDetails())
-        return carouselCell ?? UICollectionViewCell()
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let currentPage = Int(scrollView.contentOffset.x / scrollView.frame.width)
-        discoverPageControl.currentPage = currentPage
-        discoverCollectionView.scrollToItem(at: IndexPath(item: currentPage, section: 0), at: .centeredHorizontally, animated: true)
-    }
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        let currentPage = Int(scrollView.contentOffset.x / scrollView.frame.width)
+//        discoverPageControl.currentPage = currentPage
+//        discoverCollectionView.scrollToItem(at: IndexPath(item: currentPage, section: 0), at: .centeredHorizontally, animated: true)
+//    }
 }
 //MARK: - CollectionView FlowLayout
 extension DiscoverCollectionCell: UICollectionViewDelegateFlowLayout{
@@ -43,9 +55,11 @@ extension DiscoverCollectionCell: UICollectionViewDelegateFlowLayout{
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        switch cellSection{
+        switch currentSection{
         case 0:
             return CGSize(width: collectionView.bounds.width/1.3, height: collectionView.bounds.height)
+        case 1:
+            return CGSize(width: collectionView.bounds.width/2.8, height: collectionView.bounds.height)
         default:
             return CGSize(width: collectionView.bounds.width/1.3, height: collectionView.bounds.height)
         }

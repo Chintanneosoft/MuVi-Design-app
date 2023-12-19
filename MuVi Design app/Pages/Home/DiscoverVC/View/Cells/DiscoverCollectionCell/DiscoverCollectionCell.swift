@@ -13,7 +13,7 @@ class DiscoverCollectionCell: UITableViewCell {
     @IBOutlet weak var discoverPageControl: UIPageControl!
     
     //variable
-    var cellSection = 0
+    var currentSection = 0
     
     //MARK: - LifeCycle
     override func awakeFromNib() {
@@ -31,15 +31,18 @@ class DiscoverCollectionCell: UITableViewCell {
         discoverCollectionView.delegate = self
         discoverCollectionView.dataSource = self
           
+        discoverCollectionView.register(UINib(nibName: CellIdentifiers.DiscoverRecommendationCell.rawValue, bundle: nil), forCellWithReuseIdentifier: CellIdentifiers.DiscoverRecommendationCell.rawValue)
         discoverCollectionView.register(UINib(nibName: CellIdentifiers.DiscoverSliderCell.rawValue, bundle: nil), forCellWithReuseIdentifier: CellIdentifiers.DiscoverSliderCell.rawValue)
     }
     
     private func setPageControl(){
         discoverPageControl.numberOfPages = newMovies.count
         discoverPageControl.currentPage = 0
-        if cellSection == 0{
-            discoverPageControl.isHidden = false
-        }
+    }
+    
+    func configureWithSection(_ section: Int) {
+        currentSection = section
+        discoverPageControl.isHidden = !(section == 0)
     }
     
     //MARK: - @IBActions

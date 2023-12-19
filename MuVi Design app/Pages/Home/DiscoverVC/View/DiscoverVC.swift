@@ -26,18 +26,12 @@ class DiscoverVC: UIViewController {
         discoverTableView.delegate = self
         discoverTableView.dataSource = self
         
+        discoverTableView.registerNib(of: BestExperienceCell.self)
         discoverTableView.registerNib(of: DiscoverCollectionCell.self)
-        
-        let nib = UINib(nibName: CellIdentifiers.DiscoverHeaderView.rawValue, bundle: nil)
-        if let headerView = nib.instantiate(withOwner: self, options: nil).first as? DiscoverHeaderView {
-            headerView.frame = CGRect(x: 0, y: 0, width: Int(discoverTableView.bounds.width), height: 0)
-            discoverTableView.tableHeaderView = headerView
-        }
-        
-        discoverTableView.layoutIfNeeded()
     }
     
     private func setUpUI(){
+        navigationController?.navigationBar.isHidden = true
         self.view.applyGradient(colours: [AppColors.blackishPurleColor,AppColors.darkPurpleColor])
     }
 }

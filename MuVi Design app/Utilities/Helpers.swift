@@ -25,3 +25,14 @@ class LeftAlignedCollectionViewFlowLayout: UICollectionViewFlowLayout {
         return attributes
     }
 }
+
+class LeftAlignedSectionHeaderFlowLayout: UICollectionViewFlowLayout
+{
+    let customHeaderWidth:CGFloat = 150.0
+    
+    required init?(coder aDecoder: NSCoder) {
+        
+        super.init(coder: aDecoder)
+        sectionInset.left = customHeaderWidth
+    }
+}

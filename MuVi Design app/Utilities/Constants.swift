@@ -9,31 +9,22 @@ import Foundation
 import UIKit
 
 enum Constants:String{
-    
     case walkThroughlblMovie = "Movie experience \n for every mood"
     case walkThroughlblSmooth = "Smooth & enjoyable \n Experience"
-     
     case walkThroughbtnNext = "NEXT"
     case walkThroughbtnGetStarted = "GET STARTED"
-    
     case lbl = "lbl"
     case btn = "btn"
-    
     case proceedBtn = "Proceed"
     case applyBtn = "APPLY"
-    
     case search = "Search"
-    
     case findMoviesLbl = "FindMovies @MuviCinemas"
-    
     case searchbyNameTxt = "Search by Name, Actor…"
-    
     case browseByGenre = "Browse By Genre"
     case browseByExperience = "Browse By Experience"
     case languages = "Languages"
     case popularSearches = "Popular Searches"
     case popularCast = "Popular Cast"
-    
     case lastSurvivors = "Last Survivors"
     case sciFiThriller = "SciFi/ Thriller"
     case searchedBy = "Searched by"
@@ -41,6 +32,15 @@ enum Constants:String{
     case duration = "Duration"
     case discover = "Discover"
     case whatsNew = "What’s New @MuviCinemas"
+    case RecommendedForYou = "Recommended For You"
+    case PopularMovies = "Popular Movies"
+    case FilterbyLanguage = "Filter by \nLanguage"
+    case UpcomingMovies = "Upcoming Movies"
+    case ViewAll = "View All"
+    case prebook = "PRE-BOOK"
+    case watch = "WATCH"
+    case GetTheBest = "Get the Best Experience"
+    case muviCinemas = "@MuviCinmeas"
 }
 
 enum ImageStrings:String{
@@ -50,6 +50,7 @@ enum ImageStrings:String{
     case experienceImg  = "experienceIcon"
     case findImg = "findIcon"
     case searchImg = "magnifyingglass"
+    case comingSoon = "ComingSoon"
 }
 
 enum VCNibs:String{
@@ -78,9 +79,13 @@ enum CellIdentifiers:String{
     case PreferedExperienceCell = "PreferedExperienceCell"
     case FindCollectionCell = "FindCollectionCell"
     case LanguageCell = "LanguageCell"
-    case DiscoverHeaderView = "DiscoverHeaderView"
     case DiscoverCollectionCell = "DiscoverCollectionCell"
     case DiscoverSliderCell = "DiscoverSliderCell"
+    case DiscoverRecommendationCell = "DiscoverRecommendationCell"
+    case BestExperienceCell = "BestExperienceCell"
+    
+    case DiscoverHeaderView = "DiscoverHeaderView"
+    case DiscoverSectionHeaderView = "DiscoverSectionHeaderView"
 }
 
 struct AppColors{
