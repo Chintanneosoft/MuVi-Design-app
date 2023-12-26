@@ -34,7 +34,7 @@ class FindVC: BaseVC {
         findTableView.delegate = self
         findTableView.dataSource = self
         
-        findTableView.register(UINib(nibName: CellIdentifiers.FindCollectionCell.rawValue, bundle: nil), forCellReuseIdentifier: CellIdentifiers.FindCollectionCell.rawValue)
+        findTableView.register(UINib(nibName: CellIdentifiers.FindCollectionTableViewCell.rawValue, bundle: nil), forCellReuseIdentifier: CellIdentifiers.FindCollectionTableViewCell.rawValue)
     }
 
     //Setting UI

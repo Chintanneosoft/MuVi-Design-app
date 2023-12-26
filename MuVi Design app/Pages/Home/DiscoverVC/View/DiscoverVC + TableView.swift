@@ -11,7 +11,7 @@ import UIKit
 extension DiscoverVC: UITableViewDelegate, UITableViewDataSource{
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 6
+        return 7
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -25,10 +25,12 @@ extension DiscoverVC: UITableViewDelegate, UITableViewDataSource{
             bestExperienceCell?.backgroundColor = AppColors.opaqueBlackColor
             return bestExperienceCell ?? UITableViewCell()
         default:
-            let discoverCollectionCell = tableView.getCell() as DiscoverCollectionCell
+            let discoverCollectionCell = tableView.getCell() as DiscoverCollectionTableViewCell
             discoverCollectionCell.configureWithSection(indexPath.section)
             if indexPath.section == 4{
                 discoverCollectionCell.backgroundColor = AppColors.opaqueBlackColor
+            } else if indexPath.section == 0{
+                discoverCollectionCell.discoverCollectionCellDelegate = self
             }
             return discoverCollectionCell
         }
@@ -38,7 +40,7 @@ extension DiscoverVC: UITableViewDelegate, UITableViewDataSource{
         switch indexPath.section{
         case 0:
             return tableView.frame.width/1.3
-        case 1,3,5:
+        case 1,3,6:
             return tableView.frame.width/1.5
         case 2:
             return tableView.frame.width/2.8
@@ -59,7 +61,7 @@ extension DiscoverVC: UITableViewDelegate, UITableViewDataSource{
                 view.backgroundColor = .clear
                 headerView = view
             }
-        case 1,3,5:
+        case 1,3,6:
             let nib = UINib(nibName: CellIdentifiers.DiscoverSectionHeaderView.rawValue, bundle: nil)
             if let view = nib.instantiate(withOwner: self, options: nil).first as? DiscoverSectionHeaderView {
                 view.frame = CGRect(x: 0, y: 0, width: Int(tableView.bounds.width), height: 0)
@@ -83,7 +85,7 @@ extension DiscoverVC: UITableViewDelegate, UITableViewDataSource{
         switch section{
         case 0:
             return 110
-        case 1,3,5:
+        case 1,3,6:
             return 60
         default:
             return 0

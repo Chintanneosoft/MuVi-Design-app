@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 //MARK: - CollectionView Delegate and DataSource
-extension FindCollectionCell: UICollectionViewDelegate, UICollectionViewDataSource{
+extension FindCollectionTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch currentSection{
@@ -93,7 +93,7 @@ extension FindCollectionCell: UICollectionViewDelegate, UICollectionViewDataSour
 }
 
 //MARK: - CollectionView Flowlayout
-extension FindCollectionCell: UICollectionViewDelegateFlowLayout{
+extension FindCollectionTableViewCell: UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         switch currentSection{

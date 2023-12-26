@@ -6,13 +6,19 @@
 //
 
 import UIKit
+//MARK: - DiscoverCollectionCellDelegate
+protocol DiscoverCollectionCellDelegate:NSObject{
+    func goToMovieDetails(movieDetail: MovieDetails)
+}
+
 //MARK: - DiscoverCollectionCell
-class DiscoverCollectionCell: UITableViewCell {
+class DiscoverCollectionTableViewCell: UITableViewCell {
     //MARK: - @IBOutlets
     @IBOutlet weak var discoverCollectionView: UICollectionView!
     @IBOutlet weak var discoverPageControl: UIPageControl!
     
     //variable
+    weak var discoverCollectionCellDelegate:DiscoverCollectionCellDelegate?
     var currentSection = 0
     
     //MARK: - LifeCycle
@@ -35,6 +41,7 @@ class DiscoverCollectionCell: UITableViewCell {
         discoverCollectionView.register(UINib(nibName: CellIdentifiers.DiscoverSliderCell.rawValue, bundle: nil), forCellWithReuseIdentifier: CellIdentifiers.DiscoverSliderCell.rawValue)
         discoverCollectionView.register(UINib(nibName: CellIdentifiers.LanguageCell.rawValue, bundle: nil), forCellWithReuseIdentifier: CellIdentifiers.LanguageCell.rawValue)
         discoverCollectionView.register(UINib(nibName: CellIdentifiers.PreferencesCell.rawValue, bundle: nil), forCellWithReuseIdentifier: CellIdentifiers.PreferencesCell.rawValue)
+        discoverCollectionView.register(UINib(nibName: CellIdentifiers.FoodAdCell.rawValue, bundle: nil), forCellWithReuseIdentifier: CellIdentifiers.FoodAdCell.rawValue)
     }
     
     private func setPageControl(){
@@ -54,5 +61,12 @@ class DiscoverCollectionCell: UITableViewCell {
         discoverCollectionView.isScrollEnabled = true
         discoverCollectionView.isPagingEnabled = true
         discoverCollectionView.scrollToItem(at: IndexPath(item: sender.currentPage, section: 0), at: .centeredHorizontally, animated: true)
+    }
+}
+
+//MARK: - DiscoverSliderCellDelegate
+extension DiscoverCollectionTableViewCell: DiscoverSliderCellDelegate{
+    func goToMovieDetails(movieDetail: MovieDetails) {
+        self.discoverCollectionCellDelegate?.goToMovieDetails(movieDetail: movieDetail)
     }
 }

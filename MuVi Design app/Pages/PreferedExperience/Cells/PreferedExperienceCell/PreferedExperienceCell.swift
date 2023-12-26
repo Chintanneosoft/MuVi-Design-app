@@ -39,8 +39,8 @@ class PreferedExperienceCell: UICollectionViewCell {
     }
     
     // For FindVC
-    func setCellForCast(cast:[String:String]) {
-        setCellUI(img: UIImage(named: cast["image"] ?? "") ?? UIImage(), lblText: cast["name"] ?? "")
+    func setCellForCast(cast:Cast) {
+        setCellUI(img: UIImage(named: cast.image ?? "") ?? UIImage(), lblText: cast.name ?? "")
         
         imgCinema.translatesAutoresizingMaskIntoConstraints = false
            NSLayoutConstraint.activate([

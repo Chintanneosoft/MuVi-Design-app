@@ -7,7 +7,7 @@
 
 import UIKit
 //MARK: - FindCollectionCell
-class FindCollectionCell: UITableViewCell {
+class FindCollectionTableViewCell: UITableViewCell {
     //MARK: - @IBOutlets
     @IBOutlet weak var findCollectionView: UICollectionView!
     

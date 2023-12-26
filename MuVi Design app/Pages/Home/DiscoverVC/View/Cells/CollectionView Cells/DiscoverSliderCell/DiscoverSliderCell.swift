@@ -7,6 +7,11 @@
 
 
 import UIKit
+//MARK: - DiscoverSliderCellDelegate
+protocol DiscoverSliderCellDelegate:NSObject{
+    func goToMovieDetails(movieDetail:MovieDetails)
+}
+
 //MARK: - DiscoverSliderCell
 class DiscoverSliderCell: UICollectionViewCell {
     
@@ -20,6 +25,10 @@ class DiscoverSliderCell: UICollectionViewCell {
     @IBOutlet weak var btnInfo: UIButton!
     @IBOutlet weak var imgMovie: UIImageView!
     @IBOutlet weak var lblDate: UILabel!
+    
+    //variable
+    weak var discoverSliderCellDelegate: DiscoverSliderCellDelegate?
+    var movieDetails: MovieDetails?
     //MARK: - LifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -79,5 +88,10 @@ class DiscoverSliderCell: UICollectionViewCell {
         imgMovie.image = UIImage(named: movieDetails.image ?? "")
         btnPreBook.setTitle((movieDetails.isComingSoon ?? true) ? Constants.prebook.rawValue:Constants.watch.rawValue, for: .normal)
         setLauchDate(date: movieDetails.launchDate ?? "")
+        self.movieDetails = movieDetails
+    }
+    
+    @IBAction func btnPreBookTapped(_ sender: UIButton) {
+        self.discoverSliderCellDelegate?.goToMovieDetails(movieDetail: movieDetails ?? MovieDetails())
     }
 }

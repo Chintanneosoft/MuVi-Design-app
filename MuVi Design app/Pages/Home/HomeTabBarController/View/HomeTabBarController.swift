@@ -28,6 +28,7 @@ class HomeTabBarController: WaveTabBarController {
     func setVCs(){
         let discoverVC = DiscoverVC(nibName: VCNibs.DiscoverVC.rawValue, bundle: nil)
         discoverVC.tabBarItem = UITabBarItem(title: homeTabBarVM.tabItems["item0"]?["title"], image: UIImage(named:  (homeTabBarVM.tabItems["item0"]?["image"])!) ?? UIImage(systemName: "heart"), tag: 0)
+        discoverVC.discoverVCDelegate = self
         
         let moviesVC = UIViewController()
         moviesVC.view.backgroundColor = .red
@@ -47,5 +48,12 @@ class HomeTabBarController: WaveTabBarController {
         let tabBarList = [discoverVC, moviesVC, foodDrinksVC, experienceVC, findVC]
         
         viewControllers = tabBarList.map { UINavigationController(rootViewController: $0) }
+    }
+}
+
+extension HomeTabBarController:DiscoverVCDelegate{
+    func goToMovieDetails(movieDetail: MovieDetails) {
+        let nextVC = MovieInfoVC(nibName: VCNibs.MovieInfoVC.rawValue, bundle: nil)
+        navigationController?.pushViewController(nextVC, animated: true)
     }
 }

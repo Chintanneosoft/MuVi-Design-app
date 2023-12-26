@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 //MARK: - CollectionView Delegate and Datasource
-extension DiscoverCollectionCell: UICollectionViewDelegate, UICollectionViewDataSource{
+extension DiscoverCollectionTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch currentSection{
@@ -21,11 +21,12 @@ extension DiscoverCollectionCell: UICollectionViewDelegate, UICollectionViewData
         case 4:
             return (languages.count + 1)
         case 5:
+            return 2
+        case 6:
             return upcomingMovies.count
         default:
             return 0
         }
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -33,6 +34,7 @@ extension DiscoverCollectionCell: UICollectionViewDelegate, UICollectionViewData
         case discoverSectionIndics["slider"]:
             let carouselCell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.DiscoverSliderCell.rawValue, for: indexPath) as? DiscoverSliderCell
             carouselCell?.setCellDetails(movieDetails: newMovies["movie\(indexPath.row)"] ?? MovieDetails())
+            carouselCell?.discoverSliderCellDelegate = self
             return carouselCell ?? UICollectionViewCell()
         case discoverSectionIndics["recommended"]:
             let recommendationCell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.DiscoverRecommendationCell.rawValue, for: indexPath) as? DiscoverRecommendationCell
@@ -55,7 +57,16 @@ extension DiscoverCollectionCell: UICollectionViewDelegate, UICollectionViewData
                 languageCell?.setMovieCount(language: languages["language\(indexPath.row - 1)"] ?? LanguageDetails(name: "", langauge: "", color: UIColor(), movieCount: 0))
                 return languageCell ?? UICollectionViewCell()
             }
-        case discoverSectionIndics["upcomingMovies"]:
+        case discoverSectionIndics["grabPopcorn"]:
+            let foodCell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.FoodAdCell.rawValue, for: indexPath) as? FoodAdCell
+            if indexPath.row == 0{
+                foodCell?.configureCell(discount: 20, image: nil)
+            } else {
+                foodCell?.configureCell(discount: nil, image: UIImage(named: ImageStrings.movieFood.rawValue))
+            }
+            foodCell?.containerView.layer.cornerRadius = 50
+            return foodCell ?? UICollectionViewCell()
+        case discoverSectionIndics["upcoming"]:
             let upcomingMoviesCell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.DiscoverRecommendationCell.rawValue, for: indexPath) as? DiscoverRecommendationCell
             upcomingMoviesCell?.setCellDetails(movieDetail: upcomingMovies["movie\(indexPath.row)"] ?? MovieDetails())
             upcomingMoviesCell?.setRatingConstrains(topConstraint: 0, trailingConstraint: 0)
@@ -68,21 +79,31 @@ extension DiscoverCollectionCell: UICollectionViewDelegate, UICollectionViewData
         
     }
     
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        let currentPage = Int(scrollView.contentOffset.x / scrollView.frame.width)
-//        discoverPageControl.currentPage = currentPage
-//        discoverCollectionView.scrollToItem(at: IndexPath(item: currentPage, section: 0), at: .centeredHorizontally, animated: true)
-//    }
+    //    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    //        let currentPage = Int(scrollView.contentOffset.x / scrollView.frame.width)
+    //        discoverPageControl.currentPage = currentPage
+    //        discoverCollectionView.scrollToItem(at: IndexPath(item: currentPage, section: 0), at: .centeredHorizontally, animated: true)
+    //    }
 }
 //MARK: - CollectionView FlowLayout
-extension DiscoverCollectionCell: UICollectionViewDelegateFlowLayout{
+extension DiscoverCollectionTableViewCell: UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        switch currentSection{
+        case 0,1,3,6:
+            return 20
+        default:
+            return 10
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        switch currentSection{
+        case 1,3,6:
+            return 100
+        default:
+            return 10
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -93,10 +114,12 @@ extension DiscoverCollectionCell: UICollectionViewDelegateFlowLayout{
         switch currentSection{
         case 0:
             return CGSize(width: collectionView.bounds.width/1.3, height: collectionView.bounds.height)
-        case 1,3,5:
-            return CGSize(width: collectionView.bounds.width/2.8, height: collectionView.bounds.height)
+        case 1,3,6:
+            return CGSize(width: collectionView.bounds.width/2.6, height: collectionView.bounds.height)
         case 4:
             return CGSize(width: collectionView.bounds.width/3.3, height: 64)
+        case 5:
+            return CGSize(width: collectionView.bounds.width/1.3, height: collectionView.bounds.width/1.3)
         default:
             return CGSize(width: collectionView.bounds.width/1.3, height: collectionView.bounds.height)
         }

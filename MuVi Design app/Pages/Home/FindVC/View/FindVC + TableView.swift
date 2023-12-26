@@ -25,7 +25,7 @@ extension FindVC: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let findCollectionCell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.FindCollectionCell.rawValue, for: indexPath) as? FindCollectionCell
+        let findCollectionCell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.FindCollectionTableViewCell.rawValue, for: indexPath) as? FindCollectionTableViewCell
         findCollectionCell?.currentSection = indexPath.section
         switch indexPath.section{
         case 0:

@@ -41,6 +41,15 @@ enum Constants:String{
     case watch = "WATCH"
     case GetTheBest = "Get the Best Experience"
     case muviCinemas = "@MuviCinmeas"
+    case GrabTub = "Grab a tub of"
+    case popcorn = "Popcorn"
+    case GrabNow = "GRAB NOW"
+    case youMightAlsoLike = "You might also like"
+    case director = "Director"
+    case description = "Description"
+    case movieCast = "Movie \nCast"
+    case reviews = "Reviews"
+    case movieInfo = "Movie Info"
 }
 
 enum ImageStrings:String{
@@ -51,6 +60,8 @@ enum ImageStrings:String{
     case findImg = "findIcon"
     case searchImg = "magnifyingglass"
     case comingSoon = "ComingSoon"
+    case bookMark = "Bookmark"
+    case movieFood = "movieFood"
 }
 
 enum VCNibs:String{
@@ -63,6 +74,7 @@ enum VCNibs:String{
     case PreferedExperienceVC = "PreferedExperienceVC"
     case FindVC = "FindVC"
     case DiscoverVC = "DiscoverVC"
+    case MovieInfoVC = "MovieInfoVC"
 }
 
 enum Fonts: String{
@@ -77,13 +89,14 @@ enum CellIdentifiers:String{
     case CitySelectionCell = "CitySelectionCell"
     case FooterView = "FooterView"
     case PreferedExperienceCell = "PreferedExperienceCell"
-    case FindCollectionCell = "FindCollectionCell"
+    case FindCollectionTableViewCell = "FindCollectionTableViewCell"
     case LanguageCell = "LanguageCell"
-    case DiscoverCollectionCell = "DiscoverCollectionCell"
+    case DiscoverCollectionTableViewCell = "DiscoverCollectionTableViewCell"
     case DiscoverSliderCell = "DiscoverSliderCell" 
     case DiscoverRecommendationCell = "DiscoverRecommendationCell"
     case BestExperienceCell = "BestExperienceCell"
-    
+    case FoodAdCell = "FoodAdCell"
+    case MovieInfoTableViewCell = "MovieInfoTableViewCell"
     case DiscoverHeaderView = "DiscoverHeaderView"
     case DiscoverSectionHeaderView = "DiscoverSectionHeaderView"
 }
@@ -101,6 +114,7 @@ struct AppColors{
     static var opaqueBlackColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
     static var whiteColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
     static var blackishPurleColor = UIColor(red: 32.0/255.0, green: 12.0/255.0, blue: 64.0/255.0, alpha: 1.0)
+    static var grayColor = UIColor(red: 213.0/255.0, green: 213.0/255.0, blue: 213.0/255.0, alpha: 1.0)
 }
 
 enum UserDefaultKeys:String{
