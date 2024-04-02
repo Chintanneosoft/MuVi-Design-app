@@ -30,6 +30,7 @@ extension DiscoverCollectionTableViewCell: UICollectionViewDelegate, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        //print("collection",currentSection,discoverSectionIndics["upcoming"])
         switch currentSection{
         case discoverSectionIndics["slider"]:
             let carouselCell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.DiscoverSliderCell.rawValue, for: indexPath) as? DiscoverSliderCell
@@ -72,9 +73,10 @@ extension DiscoverCollectionTableViewCell: UICollectionViewDelegate, UICollectio
             upcomingMoviesCell?.setRatingConstrains(topConstraint: 0, trailingConstraint: 0)
             return upcomingMoviesCell ?? UICollectionViewCell()
         default:
-            let recommendationCell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.DiscoverRecommendationCell.rawValue, for: indexPath) as? DiscoverRecommendationCell
-            recommendationCell?.setCellDetails(movieDetail: recommendedMovies["movie\(indexPath.row)"] ?? MovieDetails())
-            return recommendationCell ?? UICollectionViewCell()
+            let upcomingMoviesCell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.DiscoverRecommendationCell.rawValue, for: indexPath) as? DiscoverRecommendationCell
+            upcomingMoviesCell?.setCellDetails(movieDetail: upcomingMovies["movie\(indexPath.row)"] ?? MovieDetails())
+            upcomingMoviesCell?.setRatingConstrains(topConstraint: 0, trailingConstraint: 0)
+            return upcomingMoviesCell ?? UICollectionViewCell()
         }
         
     }
@@ -119,7 +121,7 @@ extension DiscoverCollectionTableViewCell: UICollectionViewDelegateFlowLayout{
         case 4:
             return CGSize(width: collectionView.bounds.width/3.3, height: 64)
         case 5:
-            return CGSize(width: collectionView.bounds.width/1.3, height: collectionView.bounds.width/1.3)
+            return CGSize(width: collectionView.bounds.height, height: collectionView.bounds.height)
         default:
             return CGSize(width: collectionView.bounds.width/1.3, height: collectionView.bounds.height)
         }

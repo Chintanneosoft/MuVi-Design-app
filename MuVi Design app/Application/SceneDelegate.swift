@@ -26,7 +26,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //            initailVC = WalkThroughVC(nibName: VCNibs.WalkThroughVC.rawValue, bundle: nil)
 //        }
         
-        initailVC = HomeTabBarController()
+        initailVC = WalkThroughVC(nibName: VCNibs.WalkThroughVC.rawValue, bundle: nil)
+        initailVC?.tabBarController?.selectedIndex = 0
         let navigationController = UINavigationController(rootViewController: initailVC ?? UIViewController())
         window.rootViewController = navigationController
         self.window = window

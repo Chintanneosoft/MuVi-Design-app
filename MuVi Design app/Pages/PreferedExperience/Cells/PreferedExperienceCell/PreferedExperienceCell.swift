@@ -42,14 +42,15 @@ class PreferedExperienceCell: UICollectionViewCell {
     func setCellForCast(cast:Cast) {
         setCellUI(img: UIImage(named: cast.image ?? "") ?? UIImage(), lblText: cast.name ?? "")
         
-        imgCinema.translatesAutoresizingMaskIntoConstraints = false
-           NSLayoutConstraint.activate([
-               imgCinema.widthAnchor.constraint(equalToConstant: 78),
-               imgCinema.heightAnchor.constraint(equalToConstant: 78)
-           ])
-           
-        imgCinema.layer.cornerRadius = 39
-        lblProportionalWidth.constant = 76
+//        imgCinema.translatesAutoresizingMaskIntoConstraints = false
+//           NSLayoutConstraint.activate([
+//               imgCinema.widthAnchor.constraint(equalToConstant: 78),
+//               imgCinema.heightAnchor.constraint(equalToConstant: 78)
+//           ])
+        imgCinema.layoutIfNeeded()
+        imgCinema.layer.cornerRadius = imgCinema.frame.height/2
+        //imgCinema.layer.masksToBounds = true
+//        lblProportionalWidth.constant = 76
         lblCinema.textAlignment = .center
         lblCinema.textColor = .white
         lblCinema.setFont(font: Fonts.barlowRegular.rawValue, size: 12)

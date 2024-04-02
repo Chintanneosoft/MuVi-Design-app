@@ -7,6 +7,6 @@ target 'MuVi Design app' do
 
   # Pods for MuVi Design app
   pod 'SKCountryPicker', '~> 2.0'
-  pod 'WaveTab'
+#  pod 'WaveTab'
   
 end

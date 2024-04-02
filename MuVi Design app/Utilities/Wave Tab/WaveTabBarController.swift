@@ -24,7 +24,7 @@ open class WaveTabBarController: UITabBarController, WaveTabBarProtocol {
     private var presenter: WaveTabBarPresenter!
     private var circle: UIView?
     private var imageView: UIImageView?
-    
+    private var isLoadedBefore = false
     private var safeSelectedIndex: Int {
         return selectedIndex < tabBarItems.count ? selectedIndex : tabBarItems.count - 1
     }
@@ -51,8 +51,10 @@ open class WaveTabBarController: UITabBarController, WaveTabBarProtocol {
     
     open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        presenter.viewDidAppear(portrait: UIDevice.current.orientation.isPortrait)
+        if !isLoadedBefore {
+            isLoadedBefore = true
+            presenter.viewDidAppear(portrait: UIDevice.current.orientation.isPortrait)
+        }
     }
     
     // MARK: - Overridden functions
@@ -219,22 +221,4 @@ open class WaveTabBarController: UITabBarController, WaveTabBarProtocol {
         }
     }
     
-}
-
-
-extension UIView {
-    func applyGradient(colours: [UIColor], angle: Double = 0) {
-        let gradient: CAGradientLayer = CAGradientLayer()
-        gradient.frame = self.bounds
-        gradient.colors = colours.map { $0.cgColor }
-        gradient.locations = [0.0,1.0]
-        
-        let x: Double = cos(angle + .pi / 2)
-        let y: Double = sin(angle + .pi / 2)
-        
-        gradient.startPoint = CGPoint(x: 0.5 - x/2, y: 0.5 - y/2)
-        gradient.endPoint = CGPoint(x: 0.5 + x/2, y: 0.5 + y/2)
-        
-        self.layer.insertSublayer(gradient, at: 0)
-    }
 }

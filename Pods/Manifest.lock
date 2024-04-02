@@ -1,20 +1,16 @@
 PODS:
   - SKCountryPicker (2.0.2)
-  - WaveTab (1.1.0)
 
 DEPENDENCIES:
   - SKCountryPicker (~> 2.0)
-  - WaveTab
 
 SPEC REPOS:
   trunk:
     - SKCountryPicker
-    - WaveTab
 
 SPEC CHECKSUMS:
   SKCountryPicker: f4882c36fa432d6450099a3e07da60eceda0a8f0
-  WaveTab: ae1db4f50d09513107bfb223cdd06131eb9befd7
 
-PODFILE CHECKSUM: a78dc5c82af48433f54759d80de839bc7a10ee2c
+PODFILE CHECKSUM: 619cfe84d458c2d9d747d41406a85964b6964cae
 
-COCOAPODS: 1.13.0
+COCOAPODS: 1.15.2

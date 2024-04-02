@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import WaveTab
 
 //MARK: - HomeTabBarController
 class HomeTabBarController: WaveTabBarController {
@@ -54,6 +53,7 @@ class HomeTabBarController: WaveTabBarController {
 extension HomeTabBarController:DiscoverVCDelegate{
     func goToMovieDetails(movieDetail: MovieDetails) {
         let nextVC = MovieInfoVC(nibName: VCNibs.MovieInfoVC.rawValue, bundle: nil)
+        nextVC.movieDetails = movieDetail
         navigationController?.pushViewController(nextVC, animated: true)
     }
 }

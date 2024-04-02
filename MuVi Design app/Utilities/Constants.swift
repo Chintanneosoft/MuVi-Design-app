@@ -50,6 +50,7 @@ enum Constants:String{
     case movieCast = "Movie \nCast"
     case reviews = "Reviews"
     case movieInfo = "Movie Info"
+    case playTrailer = "PLAY TRAILER"
 }
 
 enum ImageStrings:String{

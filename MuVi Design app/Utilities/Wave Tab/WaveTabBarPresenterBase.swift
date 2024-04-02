@@ -12,7 +12,7 @@ class WaveTabBarPresenterBase: WaveTabBarPresenter {
     private struct Constants {
     
         static let smallRadius: Float = 25
-        static let bigRadius: Float = 50
+        static let bigRadius: Float = 30
         static let smallCircle: Float = 47
         static let bigCircle: Float = 57
         static let circleAnimationDuration: TimeInterval = 0.2

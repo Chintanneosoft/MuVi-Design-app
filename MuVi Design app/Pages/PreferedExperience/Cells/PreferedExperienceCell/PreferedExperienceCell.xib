@@ -17,33 +17,32 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PreferedExperienceCell" customModule="MuVi_Design_app" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="231" height="168"/>
+            <rect key="frame" x="0.0" y="0.0" width="112" height="195"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="231" height="168"/>
+                <rect key="frame" x="0.0" y="0.0" width="112" height="195"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3U-SM-kjz">
-                        <rect key="frame" x="0.0" y="0.0" width="231" height="168"/>
+                        <rect key="frame" x="0.0" y="0.0" width="112" height="195"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="seO-WR-kwn">
-                                <rect key="frame" x="65.666666666666671" y="10" width="100.00000000000001" height="100"/>
+                                <rect key="frame" x="5" y="5" width="102" height="102"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="PG4-4h-L7Q"/>
-                                    <constraint firstAttribute="height" constant="100" id="drK-OE-Uv2"/>
+                                    <constraint firstAttribute="width" secondItem="seO-WR-kwn" secondAttribute="height" multiplier="1:1" id="cFw-Ip-omn"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Samsung Onyx" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQS-gN-fpd">
-                                <rect key="frame" x="75.666666666666671" y="115" width="80.000000000000014" height="43"/>
+                                <rect key="frame" x="12.666666666666664" y="109" width="86.666666666666686" height="81"/>
                                 <fontDescription key="fontDescription" name="Barlow-Regular" family="Barlow" pointSize="16"/>
                                 <color key="textColor" red="0.10196078431372549" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYV-ra-Pgk">
-                                <rect key="frame" x="98.666666666666671" y="45" width="33.666666666666671" height="30.333333333333329"/>
+                                <rect key="frame" x="39.333333333333343" y="41" width="33.666666666666657" height="30.333333333333329"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYu-3U-6cS">
-                                        <rect key="frame" x="-3" y="-5" width="40" height="40"/>
+                                        <rect key="frame" x="-3.3333333333333357" y="-5" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="40" id="9Ex-Gf-XjI"/>
                                             <constraint firstAttribute="height" constant="40" id="fC3-WX-ACa"/>
@@ -84,13 +83,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="seO-WR-kwn" firstAttribute="centerX" secondItem="S3U-SM-kjz" secondAttribute="centerX" id="1I1-qY-YcZ"/>
-                            <constraint firstItem="seO-WR-kwn" firstAttribute="top" secondItem="S3U-SM-kjz" secondAttribute="top" constant="10" id="3im-FD-KQ4"/>
-                            <constraint firstAttribute="bottom" secondItem="uQS-gN-fpd" secondAttribute="bottom" constant="10" id="EBg-u8-E7v"/>
+                            <constraint firstItem="seO-WR-kwn" firstAttribute="top" secondItem="S3U-SM-kjz" secondAttribute="top" constant="5" id="3im-FD-KQ4"/>
+                            <constraint firstAttribute="bottom" secondItem="uQS-gN-fpd" secondAttribute="bottom" constant="5" id="EBg-u8-E7v"/>
                             <constraint firstItem="BYV-ra-Pgk" firstAttribute="centerY" secondItem="seO-WR-kwn" secondAttribute="centerY" id="FpF-B7-4Zw"/>
                             <constraint firstItem="BYV-ra-Pgk" firstAttribute="centerX" secondItem="seO-WR-kwn" secondAttribute="centerX" id="KST-uL-84L"/>
-                            <constraint firstItem="uQS-gN-fpd" firstAttribute="top" secondItem="seO-WR-kwn" secondAttribute="bottom" constant="5" id="Rwt-qa-vk8"/>
-                            <constraint firstItem="uQS-gN-fpd" firstAttribute="width" secondItem="seO-WR-kwn" secondAttribute="width" multiplier="0.8" id="Y4p-Zx-H5B"/>
+                            <constraint firstItem="uQS-gN-fpd" firstAttribute="top" secondItem="seO-WR-kwn" secondAttribute="bottom" constant="2" id="Rwt-qa-vk8"/>
+                            <constraint firstItem="uQS-gN-fpd" firstAttribute="width" secondItem="seO-WR-kwn" secondAttribute="width" multiplier="0.85" id="Y4p-Zx-H5B"/>
+                            <constraint firstItem="seO-WR-kwn" firstAttribute="leading" secondItem="S3U-SM-kjz" secondAttribute="leading" constant="5" id="bBy-KD-Xob"/>
                             <constraint firstItem="uQS-gN-fpd" firstAttribute="centerX" secondItem="S3U-SM-kjz" secondAttribute="centerX" id="eQJ-Pz-sfs"/>
+                            <constraint firstAttribute="trailing" secondItem="seO-WR-kwn" secondAttribute="trailing" constant="5" id="ycE-o0-Vih"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -102,7 +103,7 @@
                 <constraint firstAttribute="trailing" secondItem="S3U-SM-kjz" secondAttribute="trailing" id="Hum-du-tjX"/>
                 <constraint firstItem="S3U-SM-kjz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ztx-3A-cdS"/>
             </constraints>
-            <size key="customSize" width="231" height="168"/>
+            <size key="customSize" width="112" height="195"/>
             <connections>
                 <outlet property="btnChecked" destination="mYu-3U-6cS" id="X2L-BJ-Zkb"/>
                 <outlet property="checkedView" destination="BYV-ra-Pgk" id="Kz4-YA-k1l"/>
@@ -110,7 +111,7 @@
                 <outlet property="lblCinema" destination="uQS-gN-fpd" id="GXf-EI-2em"/>
                 <outlet property="lblProportionalWidth" destination="Y4p-Zx-H5B" id="0sW-j1-HgQ"/>
             </connections>
-            <point key="canvasLocation" x="113.74045801526717" y="61.267605633802823"/>
+            <point key="canvasLocation" x="204.58015267175571" y="70.774647887323951"/>
         </collectionViewCell>
     </objects>
     <resources>

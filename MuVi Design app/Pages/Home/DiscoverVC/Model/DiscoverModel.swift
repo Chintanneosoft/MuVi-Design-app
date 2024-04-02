@@ -20,6 +20,7 @@ struct MovieDetails {
     var description: String?
     var review: String?
     var director: String?
+    var language: LanguageDetails?
 }
 
 struct Cast{
@@ -32,7 +33,7 @@ var allMovies = [
         name: "My Sweet Monster",
         image: "My Sweet Monster",
         genre: "ANIMATION",
-        rating: "PG",
+        duration: "02h 10m", rating: "PG",
         launchDate: "28 April 2022",
         isComingSoon: false,
         cast: [
@@ -42,13 +43,14 @@ var allMovies = [
         ],
         description: "My Sweet Monster is a 2021 Russian animated musical film directed by Viktor Glukhushin and Maksim Volkov. The film was released in Russia on April 28, 2022[^1^][9].",
         review: "No Reviews added yet.",
-        director: "Viktor Glukhushin and Maksim Volkov" // Added by Bing
+        director: "Viktor Glukhushin and Maksim Volkov",
+        language: languages["language1"]
     ),
     "movie1": MovieDetails(
         name: "Scream",
         image: "Scream",
         genre: "HORROR",
-        rating: "R",
+        duration: "02h 10m", rating: "R",
         launchDate: "20 December 1996",
         isComingSoon: false,
         cast: [
@@ -58,13 +60,14 @@ var allMovies = [
         ],
         description: "Scream is a 1996 American slasher film directed by Wes Craven and written by Kevin Williamson. The film follows the character of Sidney Prescott (Campbell), a high school student in the fictional town of Woodsboro, California, who becomes the target of a mysterious killer in a Halloween costume known as Ghostface[^2^][2].",
         review: "No Reviews added yet.",
-        director: "Wes Craven"
+        director: "Wes Craven",
+        language: languages["language0"]
     ),
     "movie2": MovieDetails(
         name: "Game Of Thrones",
         image: "GOT",
         genre: "FANTASY",
-        rating: "TV-MA",
+        duration: "02h 10m", rating: "TV-MA",
         launchDate: "17 April 2011",
         isComingSoon: false,
         cast: [
@@ -74,13 +77,14 @@ var allMovies = [
         ],
         description: "Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is an adaptation of A Song of Ice and Fire, a series of fantasy novels by George R. R. Martin, the first of which is A Game of Thrones[^3^][14].",
         review: "No Reviews added yet.",
-        director: "David Benioff and D. B. Weiss"
+        director: "David Benioff and D. B. Weiss",
+        language: languages["language1"]
     ),
     "movie3": MovieDetails(
         name: "Last Survivors",
         image: "Last Survivors",
         genre: "THRILLER",
-        rating: "R",
+        duration: "02h 10m", rating: "R",
         launchDate: "4 February 2022",
         isComingSoon: false,
         cast: [
@@ -90,13 +94,14 @@ var allMovies = [
         ],
         description: "Last Survivors is a 2021 American thriller film directed by Drew Mylrea and starring Drew Van Acker, Alicia Silverstone and Stephen Moyer. It takes place in a post-apocalyptic world where for the past twenty years Troy has raised his now grown son, Jake, in isolation in the woods miles away from any remnants of civilization[^1^][9].",
         review: "No Reviews added yet.",
-        director: "Drew Mylrea"
+        director: "Drew Mylrea",
+        language: languages["language1"]
     ),
     "movie4": MovieDetails(
         name: "MOONLIGHT",
         image: "MoonLight",
         genre: "ADVENTURE",
-        rating: "R12",
+        duration: "02h 10m", rating: "R12",
         launchDate: "20",
         isComingSoon: true,
         cast: [
@@ -106,13 +111,14 @@ var allMovies = [
         ],
         description: "In Moonfall, a mysterious force knocks the Moon from its orbit around Earth and sends it hurdling on a collision course with life as we know it. With mere weeks before impact and the world on the brink of annihilation, NASA executive and former astronaut Jo Fowler is convinced she has the key to saving us all - but only one astronaut from her past, Brian Harper and a conspiracy theorist K.C. Houseman believe her. These unlikely heroes will mount an impossible last-ditch mission into space, leaving behind everyone they love, only to find that they might have prepared for the wrong mission.",
         review: "No Reviews added yet as Movie is yet to be released.",
-        director: "Roland Emmerich"
+        director: "Roland Emmerich",
+        language: languages["language1"]
     ),
     "movie5": MovieDetails(
         name: "JAWAN",
         image: "Jawan",
         genre: "THRILLER",
-        rating: "R12",
+        duration: "02h 10m", rating: "R12",
         launchDate: "20",
         isComingSoon: false,
         cast: [
@@ -122,13 +128,14 @@ var allMovies = [
         ],
         description: "Jawan is a 2023 Indian Hindi-language action thriller film co-written and directed by Atlee in his Hindi film debut. It is produced by Gauri Khan and Gaurav Verma under Red Chillies Entertainment. The film stars Shah Rukh Khan in a dual role as father and son who team up to rectify corruption in India.",
         review: "Jawan is a thrilling ride that keeps you on the edge of your seat.",
-        director: "Atlee"
+        director: "Atlee",
+        language: languages["language2"]
     ),
     "movie6": MovieDetails(
         name: "OPPENHEIMER",
         image: "Oppenheimer",
         genre: "SUSPENCE",
-        rating: "R12",
+        duration: "02h 10m", rating: "R12",
         launchDate: "20",
         isComingSoon: false,
         cast: [
@@ -138,7 +145,8 @@ var allMovies = [
         ],
         description: "Oppenheimer is a 2023 American biographical drama film directed and produced by Christopher Nolan, based on the life of J. Robert Oppenheimer, one of the lead scientists on the Manhattan Project.",
         review: "Oppenheimer provides a deep and thoughtful look into the life of one of the most influential scientists of the 20th century.",
-        director: "Christopher Nolan" 
+        director: "Christopher Nolan" ,
+        language: languages["language1"]
     )
 ]
 

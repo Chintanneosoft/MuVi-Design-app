@@ -55,7 +55,7 @@ extension FindCollectionTableViewCell: UICollectionViewDelegate, UICollectionVie
             return popularSearchCell
         case 4:
             let preferedExperienceCell = collectionView.getCell(indexPath: indexPath) as PreferedExperienceCell
-            preferedExperienceCell.setCellForCast(cast: popularCast["cast\(indexPath.row)"] ?? [:])
+            preferedExperienceCell.setCellForCast(cast: popularCast["cast\(indexPath.row)"] ?? Cast())
             return preferedExperienceCell
         default:
             print(cell)
@@ -114,7 +114,7 @@ extension FindCollectionTableViewCell: UICollectionViewDelegateFlowLayout{
         case 2:
             return 10
         case 4:
-            return 5
+            return 0
         default:
             return 0
         }
@@ -129,13 +129,13 @@ extension FindCollectionTableViewCell: UICollectionViewDelegateFlowLayout{
             ])
             return CGSize(width: itemSize.width + 35, height: itemSize.height + 20)
         case 1:
-            return CGSize(width: collectionView.bounds.width/3.3, height: collectionView.bounds.width/2)
+            return CGSize(width: collectionView.bounds.width/3.5, height: collectionView.bounds.width/2)
         case 2:
             return CGSize(width: collectionView.bounds.width/3.3, height: 64)
         case 3:
             return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.height/2)
         case 4:
-            return CGSize(width: collectionView.bounds.width/4.2, height: collectionView.bounds.width/2.5 )
+            return CGSize(width: collectionView.bounds.width/4.4, height: collectionView.bounds.height/2 )
         default:
             return CGSize()
         }

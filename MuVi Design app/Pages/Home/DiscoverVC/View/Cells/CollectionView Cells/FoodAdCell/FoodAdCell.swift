@@ -55,7 +55,7 @@ class FoodAdCell: UICollectionViewCell {
             imgFood.layer.cornerRadius =  50 
         } else {
             lblDiscount.text = "\(discount ?? 0)"
-            lblDiscount.setFont(font: Fonts.barlowRegular.rawValue, size: 120)
+            lblDiscount.setFont(font: Fonts.barlowRegular.rawValue, size: 60)
         }
     }
 }

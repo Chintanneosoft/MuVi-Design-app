@@ -51,6 +51,7 @@ class DiscoverCollectionTableViewCell: UITableViewCell {
     
     func configureWithSection(_ section: Int) {
         currentSection = section
+        print (currentSection)
         if section == 0{
             discoverPageControl.isHidden = false
         }

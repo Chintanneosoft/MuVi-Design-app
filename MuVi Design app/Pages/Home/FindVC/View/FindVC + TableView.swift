@@ -50,7 +50,7 @@ extension FindVC: UITableViewDelegate, UITableViewDataSource{
         case 3:
             return UIScreen.main.bounds.width/1.4
         case 4:
-            return UIScreen.main.bounds.width
+            return UIScreen.main.bounds.width/1.2
         default:
             return UITableView.automaticDimension
         }

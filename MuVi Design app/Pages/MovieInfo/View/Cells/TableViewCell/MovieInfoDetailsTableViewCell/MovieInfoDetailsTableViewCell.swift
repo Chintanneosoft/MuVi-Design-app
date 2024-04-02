@@ -29,7 +29,8 @@ class MovieInfoDetailsTableViewCell: UITableViewCell {
     @IBOutlet weak var lblReviewDetails: UILabel!
     
     //variable
-    var movieViewModel = MovieInfoViewModel()
+    var movieDetails:MovieDetails?
+    let gradientLayer = CAGradientLayer()
     
     //MARK: - LifeCycle
     override func awakeFromNib() {
@@ -38,14 +39,22 @@ class MovieInfoDetailsTableViewCell: UITableViewCell {
         setCollectionView()
     }
 
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        gradientLayer.frame = movieImg.bounds
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
     private func setUpUI(){
+        //Labels
+        lblRating.clipsToBounds = true
         lblRating.textColor = AppColors.blackColor
         lblRating.setFont(font: Fonts.barlowBold.rawValue, size: 17)
         lblRating.backgroundColor = AppColors.whiteColor
+        lblRating.layer.cornerRadius = 2
         
         lblMovieName.textColor = AppColors.whiteColor
         lblMovieName.setFont(font: Fonts.barlowRegular.rawValue, size: 30)
@@ -77,6 +86,42 @@ class MovieInfoDetailsTableViewCell: UITableViewCell {
         lblDescription.textColor = AppColors.whiteColor
         lblDescription.setFont(font: Fonts.barlowBold.rawValue, size: 20)
         lblDescription.text = Constants.description.rawValue
+        
+        lblDescriptionDetail.textColor = AppColors.whiteColor
+        lblDescriptionDetail.setFont(font: Fonts.barlowRegular.rawValue, size: 16)
+        lblDescriptionDetail.text = Constants.description.rawValue
+        
+        lblReview.textColor = AppColors.whiteColor
+        lblReview.setFont(font: Fonts.barlowBold.rawValue, size: 20)
+        lblReview.text = Constants.reviews.rawValue
+        
+        lblReviewDetails.textColor = AppColors.whiteColor
+        lblReviewDetails.setFont(font: Fonts.barlowRegular.rawValue, size: 16)
+        lblReviewDetails.text = Constants.description.rawValue
+                
+        //Button
+        let imageSize = btnPlayTrailer.imageView!.image!.size
+        let titleSize = btnPlayTrailer.titleLabel!.bounds.size
+        btnPlayTrailer.setTitleFont(font: Fonts.barlowBold.rawValue, size: 12)
+        btnPlayTrailer.setTitle(Constants.playTrailer.rawValue, for: .normal)
+        btnPlayTrailer.setTitleColor(AppColors.whiteColor, for: .normal)
+        var configuration = UIButton.Configuration.plain()
+        configuration.imagePlacement = .top
+        configuration.titlePadding =  -imageSize.height
+        btnPlayTrailer.configuration = configuration
+
+        //Image
+        gradientLayer.frame = movieImg.bounds
+        let colors = [
+            UIColor.clear.cgColor,
+            AppColors.blackishPurleColor.cgColor
+        ]
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 0, y: 1)
+        gradientLayer.colors = colors
+        gradientLayer.locations = [0.3, 0.9, 1.0]
+        movieImg.layer.addSublayer(gradientLayer)
+        print(gradientLayer.frame, movieImg.frame)
     }
     
     private func setCollectionView(){
@@ -86,13 +131,21 @@ class MovieInfoDetailsTableViewCell: UITableViewCell {
         movieCastCollectionView.register(UINib(nibName: CellIdentifiers.PreferedExperienceCell.rawValue, bundle: nil), forCellWithReuseIdentifier: CellIdentifiers.PreferedExperienceCell.rawValue)
     }
     
-    private func configureCell(){
-        lblRating.text = movieViewModel.movieDetails?.rating
-        setLauchDate(date: movieViewModel.movieDetails?.launchDate ?? "")
-        lblMovieName.text = movieViewModel.movieDetails?.name
-        lblDirectorName.text = movieViewModel.movieDetails?.director
-        lblMovieGenre.text = movieViewModel.movieDetails?.director
-        lblLanguageDuration.text = movieViewModel.movieDetails.
+    func configureCell(movieDetails: MovieDetails){
+        lblRating.text = "  \(movieDetails.rating ?? "")  "
+        setLauchDate(date: movieDetails.launchDate ?? "")
+        lblMovieName.text = movieDetails.name
+        lblDirectorName.text = movieDetails.director
+        lblMovieGenre.text = movieDetails.genre
+        lblLanguageDuration.text = "\(movieDetails.language?.name ?? "") | \(movieDetails.duration ?? "")"
+        lblDescriptionDetail.text = movieDetails.description
+        lblReviewDetails.text = movieDetails.review
+        movieImg.image = UIImage(named: movieDetails.image ?? "")
+        self.movieDetails = movieDetails
+//        NSLayoutConstraint.activate([
+//            self.movieImg.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.45, constant: 0)
+//        ])
+        self.layoutSubviews()
     }
     
     func setLauchDate(date: String){
@@ -112,6 +165,6 @@ class MovieInfoDetailsTableViewCell: UITableViewCell {
         let attributedMonth = NSAttributedString(string: "\(monthString) \n\(yearString)", attributes: [NSAttributedString.Key.font: UIFont(name: Fonts.barlowBold.rawValue, size: 12) ?? UIFont(),NSAttributedString.Key.foregroundColor: AppColors.whiteColor])
         
         lblDate.attributedText = attributedDate
-        lblLaunchMonth.attributedText = attributedMonth
+        lblMonthYear.attributedText = attributedMonth
     }
 }

@@ -46,6 +46,8 @@ extension DiscoverVC: UITableViewDelegate, UITableViewDataSource{
             return tableView.frame.width/2.8
         case 4:
             return tableView.frame.width/3
+        case 5:
+            return tableView.frame.width/1.7
         default:
             return tableView.frame.width
         }
